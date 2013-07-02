@@ -1,4 +1,4 @@
-## Vapaa matikka
+## Vapaa matikka: Lukuteoria ja logiikka (MAA11)
 
 > Tässä repossa on vain MAA11-kirjan lähdekoodi. [Muut kirjat](https://github.com/avoimet-oppimateriaalit-ry/vapaa-matikka).
 
