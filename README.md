@@ -1,4 +1,4 @@
-## Vapaa matikka MAA11 (Lukuteoria ja logiikka)
+## Vapaa matikka: Lukuteoria ja logiikka (MAA11)
 
 > Osa Vapaa matikka -kirjasarjaa lukion matematiikkaan. Part of Vapaa matikka textbook series for high school mathematics.
 
