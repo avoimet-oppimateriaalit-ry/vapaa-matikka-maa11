@@ -156,7 +156,7 @@ Formalisoi lauseet
 \item Liisalla ei ole alibia. 
 \item Liisalla on alibi tai hänellä ei ole motiivia.
 \item Liisalla on motiivi, mutta hänellä on myös alibi.
-\item Alibin puuttuessa Liisalla ei ole motiivia. 
+\item Jos Liisalla ei ole alibia, hänellä ei ole motiivia. 
 \end{enumerate}
 
 {\bf Ratkaisu:}
@@ -166,12 +166,11 @@ Formalisoidut lauseet ovat:
 \item $\lnot A$.
 \item $A \lor \lnot M$.
 \item $M\land A$.
-\item Lause voidaan ymmärtää niin, että Liisalla ei ole alibia eikä hänellä myöskään ole motiivia. Silloin sen formalisointi on $\lnot A \land \lnot M$. Toisaalta lause voidaan tulkita niin, että alibin puuttumisesta seuraa se, että Liisalla ei ole motiivia. Tätä lausetta ei ole suoraviivaista formalisoida negaation, konjunktion ja disjunktion avulla. Siihen tarvitaan niiden lisäksi seuraavassa kappaleessa esiteltävä implikaatio. 
+\item $A \lor (\lnot A \land \lnot M)$ (Lause lyhenee käyttäen seuraavassa kappaleessa esiteltävää implikaatiota.)
 \end{enumerate}
 
 {\bf Vastaus:}
-a) $\lnot A$, b) $A \lor \lnot M$, c) $M\land A$, d) esimerkiksi 
-$\lnot A \land \lnot M$.
+a) $\lnot A$, b) $A \lor \lnot M$, c) $M\land A$, d) $A \lor (\lnot A \land \lnot M)$.
 \end{esimerkki}
 
 %{\bf Esimerkki 3.}
@@ -1043,7 +1042,7 @@ $0$ & $1$ & $1$\\ \hline
 
 
 \subsection*{Moniarvoiset logiikat}% (lisämateriaalia).}
-Lauseen $A \lor \lnot A$ tautologisuus liittyy klassisen logiikan kaksiarvoisuuteen. Voidaan ajatella myös sellaisia päättelymalleja, joissa lause $A \lor \lnot A$ ei ole tautologia. Esimerkki tällaisesta on \termi{kolmiarvoinen logiikka}{kolmiarvoinen logiikka}, jossa mahdollisia totuusarvoja ovat tosi, epätosi ja epävarma.  Toinen esimerkki on niin kutsuttu \termi{sumean logiikka}{sumean logiikka}, jossa on äärettömän monta totuusarvoa. Erilaiset päättelyjärjestelmät eivät kuitenkaan kumoa toisiaan, vaan logiikkaa sovellettaessa käytetään kuhunkin tilanteeseen sopivaa päättelyjärjestelmää. Esimerkiksi kolmiarvoinen logiikka soveltuu tilanteisiin, joissa käytössä oleva informaatio ajatellaan epätäydelliseksi.
+Lauseen $A \lor \lnot A$ tautologisuus liittyy klassisen logiikan kaksiarvoisuuteen. Voidaan ajatella myös sellaisia päättelymalleja, joissa lause $A \lor \lnot A$ ei ole tautologia. Esimerkki tällaisesta on \termi{kolmiarvoinen logiikka}{kolmiarvoinen logiikka}, jossa mahdollisia totuusarvoja ovat tosi, epätosi ja epävarma.  Toinen esimerkki on niin kutsuttu \termi{sumea logiikka}{sumea logiikka}, jossa on äärettömän monta totuusarvoa. Erilaiset päättelyjärjestelmät eivät kuitenkaan kumoa toisiaan, vaan logiikkaa sovellettaessa käytetään kuhunkin tilanteeseen sopivaa päättelyjärjestelmää. Esimerkiksi kolmiarvoinen logiikka soveltuu tilanteisiin, joissa käytössä oleva informaatio ajatellaan epätäydelliseksi.
 
 
 \subsection*{Ristiriitainen lause}
@@ -1299,7 +1298,7 @@ päättelysääntöjen avulla ilman totuustauluja.
 \lnot A\lor \lnot (B\to \lnot A)$.
 \end{enumerate}
 
-\item (Lisämateriaalia) Kolmiarvologiikassa on kolme totuusarvoa $1$
+\item (Lisämateriaalia) Kolmiarvologiikassa on kolme totuusarvoa: $1$
 tosi, $0$ epätosi ja $u$ epävarma. Kleenen totuustaulut
 perustuvat ajatukseen, että epävarma voi myöhemmin
 osoittautua todeksi tai epätodeksi. Alla on esitetty
@@ -1451,7 +1450,7 @@ konjunktio ja disjunktio a) Shefferin viivan avulla b)
 Peircen nuolen avulla.
 
 \item * %(Lisämateriaalia) 
-Sumean logiikka on kaksiarvoisen logiikan
+Sumea logiikka on kaksiarvoisen logiikan
 laajennus, jossa lauseella on diskreetin totuusarvon
 (tosi tai epätosi) sijasta reaalinen totuusarvo, joka
 kuuluu välille $[0, 1]$. Konnektiivit voidaan määritellä
@@ -1475,7 +1474,7 @@ B$, $A\lor B$ ja $A \to B$ totuusarvot.
 \item Osoita, että jos lauseet $A$ ja $B$ saavat
 vain arvoja $0$ ja $1$, niin edellä mainitut määritelmät johtavat
 klassisen kaksiarvoisen logiikan totuustauluihin.
-\item Osoita, että sumean logiikassa $\lnot(A\land B)
+\item Osoita, että sumeassa logiikassa $\lnot(A\land B)
 \lequiv \lnot A \lor \lnot B$.
 \item Etsi Internetistä sumean logiikan
 käyttökohteita.
