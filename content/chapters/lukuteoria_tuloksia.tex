@@ -406,7 +406,7 @@ Tämä osoittaa, että $x=tx_1$ ja $y=ty_1$ on alkuperäisen Diofantoksen yhtäl
 
 Itse asiassa jos $x_0$ ja $y_0$ ovat yhtälön $ax + by = c$ jokin ratkaisu, niin sen kaikki ratkaisut saadaan kaavoista
 \[
-x= x_0 + n\frac{b}{d}, \textrm{ ja } y=y_0 - n\frac{a}{d}, \textrm{ missä } \qquad n\in\Z \textrm{ ja } d=\syt(a, b).
+x= x_0 + n\frac{b}{d}, \textrm{ ja } y=y_0 - n\frac{a}{d}, \textrm{ missä } \qquad n\in\zz \textrm{ ja } d=\syt(a, b).
 \]
 Erityisesti siis jokaisella ratkeavalla Diofantoksen yhtälöllä on äärettömän monta ratkaisua. Ratkaisussa esiintyvät kertoimet saattavat kuitenkin olla negatiivisia lukuja.
 
@@ -477,7 +477,7 @@ yhtälön $172x+20y=1000$ ratkaisuiksi
 \[
 x=500+n\frac{20}{4}\textrm{ ja }y=-4250-n\frac{172}{4}
 \]
-eli $x=500+5n$ ja $y=-4250-43n$, $n\in\Z$.
+eli $x=500+5n$ ja $y=-4250-43n$, $n\in\zz$.
 
 Jotta ehto $|x| +|y|\le 50$ toteutuisi, pitää muuttujien
 $x$ ja $y$ olla itseisarvoiltaan pieniä. Tutkitaan
@@ -524,7 +524,7 @@ $y = 50$. Muita ratkaisuja ei ole, sillä kun $n$ pienenee
 tai suurenee taulukon arvoista, niin sekä $|x|$ että $|
 y|$ suurenevat.
 
-{\bf Vastaus:} Kaikki ratkaisut ovat  $x=500+5n$ ja $y=-4250-43n$, $n\in\Z$. Näistä ehdon $|x|+|y|\le 50$ toteuttavat ratkaisut $x = 10$ ja $y = -36$, $x = 5$ ja $y = 7$ sekä $x = 0$ ja $y = 50$.
+{\bf Vastaus:} Kaikki ratkaisut ovat  $x=500+5n$ ja $y=-4250-43n$, $n\in\zz$. Näistä ehdon $|x|+|y|\le 50$ toteuttavat ratkaisut $x = 10$ ja $y = -36$, $x = 5$ ja $y = 7$ sekä $x = 0$ ja $y = 50$.
 \end{esimerkki}
 
 \begin{esimerkki}
@@ -1043,7 +1043,7 @@ joten myös luku $n^3 - n$ on jaollinen luvulla $3$. Luvut 2 ja
 $2 \cdot 3 = 6$. Väite on tosi.
 \end{esimerkki}
 
-\subsection*{Fermat'n pieni lause} \termi{Fermat'n pieni lause}{Fermat'n pieni lause} sanoo, että jos $a\in\Z$ ja $p$ on alkuluku, niin 
+\subsection*{Fermat'n pieni lause} \termi{Fermat'n pieni lause}{Fermat'n pieni lause} sanoo, että jos $a\in\zz$ ja $p$ on alkuluku, niin 
 \[
 a^p \equiv a \qquad (\mod p).
 \]
@@ -1152,7 +1152,8 @@ Näin isoilla luvuilla laskeminen on luonnollisesti hankalaa laskimenkin avulla.
 
 %\section*{Tehtäviä}
 
-\Harjoitustehtavat
+\newpage
+\subsection*{Harjoitustehtäviä}
 
 \begin{enumerate}
 
@@ -1260,7 +1261,7 @@ Vihje: Eulerin havaitsemat yhtälöt voi kirjoittaa muodossa
 2^4 \equiv -5^4\ (\mod\ 641)\quad\text{ ja }\quad5\cdot 2^7 \equiv -1\ (\mod\ 641).
 \]
 
-\item  Osoita, että kaikilla $n\in\Z_{+}=1, 2, 3, \ldots$ pätee
+\item  Osoita, että kaikilla $n\in\zz_{+}=1, 2, 3, \ldots$ pätee
 \[
 F_{0}F_{1}\cdot \ldots \cdot F_{n-1} = F_{n} - 2.
 \]

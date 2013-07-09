@@ -38,7 +38,7 @@ Tapa 2: Koska $6 = 2 \cdot 3$, luku $3$ on luvun $6$ tekijä. Siis $3 | 6$.
 
 b) Tapa 1: Suoritetaan jakolasku $5/2 = 2$, jää $1$. Jako ei mene tasan, joten luku $5$ ei ole jaollinen luvulla $2$. Siis $2 \nmid 5$.
 
-Tapa 2: Lukua $5$ ei voida kirjoittaa muodossa $2q$, missä $q\in\Z$, sillä luku $5$ ei ole parillinen. Siis $2 \nmid 5$.
+Tapa 2: Lukua $5$ ei voida kirjoittaa muodossa $2q$, missä $q\in\zz$, sillä luku $5$ ei ole parillinen. Siis $2 \nmid 5$.
 
 c) 
 Tapa 1: Suoritetaan jakolasku $12/(-4)=-12/4= -3$. Jako menee tasan, joten luku $12$ on jaollinen luvulla $-4$. Siis $-4 | 12$.
@@ -69,7 +69,7 @@ Jakoyhtälössä esiintyvää lukua $q$ sanotaan lukujen $a$ ja $b$ (vaillinaise
 \begin{todistus}% (Lisämateriaali)
 Todistetaan väite tapauksessa $a\ge 0$. Tutkitaan aluksi joukkoja
 \[
-S = \{ a-nb\,|\, n\in \Z\}.
+S = \{ a-nb\,|\, n\in \zz\}.
 \]
 Koska $a\in S$, tässä joukossa on ainakin yksi epänegatiivinen alkio. Olkoon $r=a-qb$ joukon $S$ pienin epänegatiivinen alkio. Nyt $r < b$, koska muuten luku 
 \[
@@ -159,7 +159,8 @@ Siis $a|(b + c)$.
 
 %\section*{Tehtäviä}
 
-\Harjoitustehtavat
+\newpage
+\subsection*{Harjoitustehtäviä}
 
 \begin{enumerate}
 
@@ -396,7 +397,7 @@ Kongruenssiyhtälön
 \[
 a\equiv b\qquad (\mod k)
 \]
-kanssa on yhtäpitävää, että $a-b=nk$ eli $a=b+nk$ vähintään yhdellä luvulla $n\in \Z$.
+kanssa on yhtäpitävää, että $a-b=nk$ eli $a=b+nk$ vähintään yhdellä luvulla $n\in \zz$.
 
 
 %{\bf Esimerkki 1.} 
@@ -446,7 +447,7 @@ a-kohdan perusteella luku $3$ on kongruentti luvun $45$ kanssa modulo $7$. Kysyt
 \subsection*{Kongruenssin laskusääntöjä} Kongruensseilla on monia ominaisuuksia, jotka muistuttavat yhtälöiden ratkaisemisessa käytettäviä laskusääntöjä.
 
 \laatikko{
-{\bf Lause.} Olkoot $a, b, c, d\in \Z$ ja $k, n \in \Z_+$ sekä $a \equiv c$, $b \equiv d\quad (\mod k)$. Tällöin:
+{\bf Lause.} Olkoot $a, b, c, d\in \zz$ ja $k, n \in \zz_+$ sekä $a \equiv c$, $b \equiv d\quad (\mod k)$. Tällöin:
 \begin{enumerate}
 \item $a+b\equiv c+d\quad (\mod k)$,
 \item $a-b\equiv c-d\quad (\mod k)$,
@@ -458,7 +459,7 @@ a-kohdan perusteella luku $3$ on kongruentti luvun $45$ kanssa modulo $7$. Kysyt
 \begin{todistus}
 Todistetaan kohdat 1 ja 3. Kohdan 2 todistus on kotitehtävänä, ja potenssisääntö 4 todistetaan lisämateriaalina olevan kappaleen 5.4 tehtävässä 13.
 
-Kongruenssin määritelmän perusteella $a=c + mk$ ja $b= d + nk$, missä $m, n\in \Z$.
+Kongruenssin määritelmän perusteella $a=c + mk$ ja $b= d + nk$, missä $m, n\in \zz$.
 
 Siten
 \begin{eqnarray*}
@@ -475,7 +476,7 @@ missä $(cn+dm+mnk)$ on kokonaisluku. Siten erotus $ab - cd$ on jaollinen luvull
 
 
 Erityisesti tuloksesta seuraa, että  jos $a\equiv b \ (\mod k)$, niin $na\equiv nb
-\ (\mod k)$ kaikilla $n\in \Z$.
+\ (\mod k)$ kaikilla $n\in \zz$.
 
 
 %{\bf Esimerkki 4.}
@@ -508,7 +509,7 @@ jaollinen luvulla $4$, kun $n$ on kokonaisluku.
 Kun kokonaisluku jaetaan luvulla $4$, jakojäännös voi olla $0$,
 $1$, $2$ tai $3$. Siten jokainen kokonaisluku $n$ on jotakin
 seuraavaa muotoa: $4q$, $4q + 1$, $4q + 2$ tai $4q + 3$, missä
-$q\in\Z$. Tutkitaan luvun $n^4 + 2n^3 + n^2$ jaollisuutta luvulla
+$q\in\zz$. Tutkitaan luvun $n^4 + 2n^3 + n^2$ jaollisuutta luvulla
 $4$ erikseen kussakin näistä osajoukoista.
 
 Tapa 1: Kirjoitetaan lauseke $n^4 + 2n^3 + n^2$ muotoon
@@ -522,7 +523,7 @@ n^4 + 2n^3 + n^2 &=& (4q)^2(4q + 1)^2 = 4^2 \cdot q^2 (4q + 1)
 ^2\\
 &=& 4 \cdot 4q^2 (4q + 1)^2.
 \end{eqnarray*}
-Koska $4q^2 (4q + 1)^2 \in \Z$, niin luku $n^4 + 2n^3 + n^2$ on jaollinen luvulla $4$.
+Koska $4q^2 (4q + 1)^2 \in \zz$, niin luku $n^4 + 2n^3 + n^2$ on jaollinen luvulla $4$.
 
 2) Kun $n = 4q + 1$, niin
 \begin{eqnarray*}
@@ -620,7 +621,7 @@ on kongruentti modulo 4.
 \item
 Tiedetään, että jakojäännös on $2$, kun kokonaisluku $n$ jaetaan luvulla $5$. Mikä on jakojäännös, kun luku $3n^2 + 8n + 7$ jaetaan luvulla $5$?
 
-\item Kokonaisluvut voidaan jakaa osajoukkoihin esimerkiksi niin, että kussakin osajoukossa ovat ne luvut, jotka ovat kongruentteja keskenään jaettaessa luvulla 3. Näihin osajoukkoihin kuuluvia lukuja voidaan merkitä $3q$, $3q + 1$ ja $3q + 2$, missä $q \in \Z$. Miten voidaan merkitä lukuja osajoukoissa, jotka syntyvät, kun kokonaisluvut jaetaan luvulla a) $4$ b) $5$ c) $2$?
+\item Kokonaisluvut voidaan jakaa osajoukkoihin esimerkiksi niin, että kussakin osajoukossa ovat ne luvut, jotka ovat kongruentteja keskenään jaettaessa luvulla 3. Näihin osajoukkoihin kuuluvia lukuja voidaan merkitä $3q$, $3q + 1$ ja $3q + 2$, missä $q \in \zz$. Miten voidaan merkitä lukuja osajoukoissa, jotka syntyvät, kun kokonaisluvut jaetaan luvulla a) $4$ b) $5$ c) $2$?
 
 \item Olkoon $n$ kokonaisluku. Osoita, että $n^2 - n \equiv 0\quad (\mod 2)$.
 
@@ -712,7 +713,7 @@ Olkoot $a$ ja $b$ kokonaislukuja. Osoita väite todeksi tai epätodeksi: jos $ab
 Olkoot $a$ ja $b$ kokonaislukuja. Osoita väite todeksi tai epätodeksi: jos $a^2 \equiv b^2 \quad (\mod m)$, niin $a \equiv b \quad (\mod m)$.
 
 \item * %(Lisämateriaalia)
-Luvun $a$ määräämä \termi{jäännösluokka modulo $m$}{jäännösluokka modulo} $m$ on luvun $a$ kanssa kongruenttien lukujen joukko. Luvun $a$ jäännösluokkaa merkitään $\underline{a}$. Siis $\underline{a} = \{a + km\, |\, k\in \Z\}$. Esimerkiksi jäännösluokat modulo $4$ ovat $\underline{0}=\{4k\, |\, k\in \Z\}$, $\underline{1}=\{1+4k\, |\, k\in \Z\}$, $\underline{2}=\{2+4k\, |\, k\in \Z\}$ ja $\underline{3}=\{3+4k\, |\, k\in \Z\}$.
+Luvun $a$ määräämä \termi{jäännösluokka modulo $m$}{jäännösluokka modulo} $m$ on luvun $a$ kanssa kongruenttien lukujen joukko. Luvun $a$ jäännösluokkaa merkitään $\underline{a}$. Siis $\underline{a} = \{a + km\, |\, k\in \zz\}$. Esimerkiksi jäännösluokat modulo $4$ ovat $\underline{0}=\{4k\, |\, k\in \zz\}$, $\underline{1}=\{1+4k\, |\, k\in \zz\}$, $\underline{2}=\{2+4k\, |\, k\in \zz\}$ ja $\underline{3}=\{3+4k\, |\, k\in \zz\}$.
 \begin{enumerate}[a)]
 \item Määritä jäännösluokat modulo $5$.
 \item Jäännösluokkien yhteenlasku ja kertolasku määritellään seuraavasti: $\underline{a} + \underline{b} = \underline{a + b}$ ja $\underline{a} \cdot \underline{b} = \underline{a\cdot b}$. Täydennä seuraavat jäännösluokkien yhteen- ja kertolaskutaulut modulo $5$.
@@ -1046,16 +1047,16 @@ Lukuteorian yhteydessä on tarpeellista määritellä täsmällisesti, mitä luo
 \item Jos $n$ on luonnollinen luku, niin luku $n+1$ on myös luonnollinen luku.
 \end{enumerate}
 Kohtaa (2) kutsutaan induktioperiaatteeksi. Vaikka joukko
-$\N = \{0, 1, 2, \ldots\}$
-on ääretön, jokainen luku $n\in \N\setminus \{0\}$ on kuitenkin muotoa $n=1+\ldots + 1$, missä yhteenlaskettavia lukuja on äärellisen monta.
+$\nn = \{0, 1, 2, \ldots\}$
+on ääretön, jokainen luku $n\in \nn\setminus \{0\}$ on kuitenkin muotoa $n=1+\ldots + 1$, missä yhteenlaskettavia lukuja on äärellisen monta.
 
 Luonnollisten lukujen määritteleminen induktioperiaatteen avulla johtaa tärkeään todistustyyppiin, jota sanotaan \termi{induktiotodistus}{induktiotodistukseksi}. Induktiotodistuksen ideana on palauttaa luonnollista lukua $n+1$ koskeva väite luonnollista lukua $n$ koskevaksi väitteeksi. Jos lukua $n+1$ koskevan väitteen totuus voidaan päätellä lukua $n$ koskevan väitteen totuudesta, väite pätee  edelleen kaikille luonnollisille luvuille, mikäli se pätee luvulle $0$. 
 
 Induktiotodistuksen muoto on yleensä seuraava.
 \begin{enumerate}
 \item Osoitetaan, että tulos pätee, kun $n=0$. Tämä vaihe on yleensä yksinkertainen lasku. Induktio voidaan aloittaa myös esimerkiksi luvusta $n=1$.
-\item Kiinnitetään $k\in \N$. Oletetaan, että tulos on tosi luvulla $n=k$. Osoitetaan, että tulos on tosi luvulla $n=k+1$.
-\item Nyt induktioperiaatteesta seuraa, että tulos on tosi kaikilla $n\in \N$.
+\item Kiinnitetään $k\in \nn$. Oletetaan, että tulos on tosi luvulla $n=k$. Osoitetaan, että tulos on tosi luvulla $n=k+1$.
+\item Nyt induktioperiaatteesta seuraa, että tulos on tosi kaikilla $n\in \nn$.
 \end{enumerate}
 Todistuksen toista vaihetta kutsutaan \termi{induktioaskel}{induktioaskeleeksi}, siinä esiintyvää oletusta \termi{induktio-oletus}{induktio-oletukseksi} ja väitettä \termi{induktioväite}{induktioväitteeksi}.
 
@@ -1258,7 +1259,7 @@ Osoita induktiolla, että $n$-alkioisessa joukossa on
 \]
 kahden alkion osajoukkoa, kun $n \ge 2$.
 
-\item Todista kappaleessa 5.2 esiteltyjen kongruenssin laskusääntöjä koskevan lauseen kohta 4: Olkoot $a, b \in \Z$ ja $k, n \in \Z_+$ sekä $a \equiv b\ (\mod k)$. Tällöin $a^n \equiv b^n\ (\mod k)$.
+\item Todista kappaleessa 5.2 esiteltyjen kongruenssin laskusääntöjä koskevan lauseen kohta 4: Olkoot $a, b \in \zz$ ja $k, n \in \zz_+$ sekä $a \equiv b\ (\mod k)$. Tällöin $a^n \equiv b^n\ (\mod k)$.
 
 \item Tarkastellaan kuviojonoa, joka muodostuu säännöllisen kuusikulmion muotoisista pistejoukoista. Jonon neljä ensimmäistä kuviota ovat seuraavat:
 
