@@ -39,6 +39,8 @@ Yksinkertaisimpia loogisia lauseita kutsutaan \termi{atomilause}{atomilauseiksi}
 \end{enumerate}
 Atomilauseita ajatellaan eräänlaisina totuusmuuttujina, jotka voivat saada kaksi arvoa: tosi tai epätosi. Yllä olevista lauseista $C$ on epätosi, $D$ on tosi ja kaksi ensimmäistä voivat olla tosia tai epätosia ajankohdasta riippuen. Tässä kurssissa atomilauseita merkitään isoilla kirjaimilla $A$, $B$, $C$, jne. Todelle ja epätodelle käytetään tietotekniikasta tuttuja merkintöjä $1$ ja $0$.
 
+\newpage
+
 Loogisia lauseita voidaan myös muodostaa yhdistelemällä atomilauseita \termi{konnektiivi}{konnektiivien} avulla. Konnektiiveja ovat esimerkiksi \termi{ei}{ei}, \termi{ja}{ja}, \termi{tai}{tai} sekä \termi{jos ... niin}{jos ... niin}. Näillä sanoilla on myös arkikielessä merkityksiä, jotka joskus eivät täysin vastaa niiden merkitystä logiikassa. Lausetta, jossa on vähintään yksi konnektiivi, kutsutaan \termi{yhdistetty lause}{yhdistetyksi lauseeksi}. Yhdistetyn lauseen totuusarvoa tutkitaan \termi{totuustaulu}{totuustaulujen} avulla.
 
 \subsection*{Negaatio} Yksinkertaisin esimerkki konnektiivista on looginen ei, jota kutsutaan \termi{negaatio}{negaatioksi}. Lauseen $A$ negaatiota merkitään $\lnot A$. Negaation totuusarvo on vastakkainen sille lauseelle, johon negaatio liittyy. Jos $A$ on tosi, niin $\lnot A$ on epätosi. Jos $A$ on epätosi, niin $\lnot A$ on tosi.
@@ -82,6 +84,8 @@ Loogista ja-konnektiivia sanotaan \termi{konjunktio}{konjunktioksi}. Kahden laus
 
 Esimerkiksi lauseiden $A$: ''olen vaaleatukkainen'' ja $B$: ''olen ruskeasilmäinen'' konjunktio on $A \land B$: ''olen vaaleatukkainen ja ruskeasilmäinen''. 
 
+\newpage
+
 Konjunktion totuustaulu:
 
 \bigskip
@@ -123,6 +127,8 @@ $0$ & $0$ & $0$\\ \hline
 Kannattaa huomata, että arkikielessä sanalla tai on usein eri merkitys kuin logiikassa, koska tai-lauseen ei aina ajatella olevan tosi tapauksessa, jossa sekä $A$ että $B$ ovat tosia.
 
 Esimerkiksi hampurilaisateriaan voi valita ranskalaiset perunat tai minisalaatin mutta ei molempia. Toisaalta henkilö on vapaa oppivelvollisuudesta, jos hänellä on peruskoulun päästötodistus tai jos koulun aloittamisesta on kulunut kymmenen vuotta. Kumpi tahansa ehto yksinään riittää. Suurimmalla osalla oppivelvollisuudesta vapaista ihmisistä on kummatkin ominaisuudet.
+
+\newpage
 
 %{\bf Esimerkki 1.}
 \begin{esimerkki}
@@ -429,6 +435,7 @@ c)
 \includegraphics[width=4cm]{pictures/boole/boolt-c-ABC}
 \end{center}
 
+\newpage
 d)
 \begin{center}
 \includegraphics[width=4.5cm]{pictures/boole/boolt-d-ABC}
@@ -509,7 +516,7 @@ Kissoilla lyhyen karvan aiheuttaa dominoiva geeni ja pitkän karvan resessiivine
 
 \end{enumerate}
 
-%\newpage
+\newpage
 
 
 \section{Implikaatio ja ekvivalenssi}
@@ -562,6 +569,8 @@ Jos sekä $A\to B$ että $B\to A$ ovat tosia lauseita, sanotaan, että lauseet $
 
 
 Esimerkiksi lauseiden $A$: ''Pekka menee hammaslääkäriin'' ja $B$: ''Pekan hammasta särkee'' ekvivalenssi on $A \lequiv B$: ''Pekka menee hammaslääkäriin, jos ja vain jos hänen hammastaan särkee''.
+
+\newpage
 
 Ekvivalenssin totuustaulu:
 
@@ -736,7 +745,9 @@ Ensin suoritetaan negaatio. Sen jälkeen tulevat sulkeissa olevat ekvivalenssi j
 {\bf Vastaus:} a) epätosi, b) tosi
 \end{esimerkki}
 
-\subsection*{Harvinaisempia konnektiiveja}% (Lisämateriaalia).}
+\newpage
+
+\subsection*{Harvinaisempia konnektiiveja}
 Logiikassa ja tietotekniikassa esiintyy myös muita, harvinaisempia loogisia konnektiiveja. Esimerkki tällaisesta on \termi{poissulkeva tai}{poissulkeva tai} (engl. exclusive or), josta usein käytetään tietotekniikasta tulevaa lyhennettä \termi{xor}{xor}. Poissulkevan tain totuustaulu on seuraava:
 
 \bigskip
@@ -806,6 +817,8 @@ Suomenna lause.
 \item $( A\to B ) \lequiv (C\to B)$
 \end{enumerate}
 
+\newpage
+
 \item Formalisoi lause. Missä tilanteissa lause on tosi?
 \begin{enumerate}[a)]
 \item
@@ -834,6 +847,8 @@ Kumpi lapsista on käynyt suklaavarkaissa?
 \item Olkoot lauseet $A$: ''herään ajoissa'', $B$: ''menen kouluun'' ja $C$: ''opiskelen logiikkaa''.
 Esitä sanoin lause $A \to B \lor C$. Onko lauseen tulkinta $A \to (B \lor C)$ vai $(A \to B) \lor C$? Miten tulkinnat eroavat toisistaan? 
 
+\newpage
+
 \item
 Vertaa lauseiden totuusarvoja atomilauseiden $A$, $B$ ja $C$ eri totuusarvoilla. Onko sulkeiden muuttamisella vaikutusta lauseen totuusarvoon?
 \begin{enumerate}[a)]
@@ -841,10 +856,12 @@ Vertaa lauseiden totuusarvoja atomilauseiden $A$, $B$ ja $C$ eri totuusarvoilla.
 \item $(A\land B)\land C$ ja $A\land (B\land C)$.
 \end{enumerate}
 
-\item (Lisämateriaalia)  Tietokoneet käsittelevät tietoa käyttäen bittejä. Bitillä on kaksi mahdollista arvoa, $0$ ja $1$.
+\item * Tietokoneet käsittelevät tietoa käyttäen bittejä. Bitillä on kaksi mahdollista arvoa, $0$ ja $1$.
 Bittijono on jono, jossa on yksi tai useampia bittejä. Esimerkiksi $1001\, 0010$ on bittijono, jonka pituus on $8$ bittiä. Samanpituisille bittijonoille määritellään bittikohtaiset tai (or), ja (and) sekä poissulkeva tai (xor). Esimerkiksi bittijonojen $1100$ ja $1010$ bittikohtainen tai on jono $1110$, bittikohtainen ja on jono $1000$ sekä bittikohtainen poissulkeva tai on jono $0110$. Muodosta a) bittikohtainen tai  b) bittikohtainen ja c) bittikohtainen poissulkeva tai jonoille $1111\, 0000$ ja $1010\, 1010$.
 
-\item (Lisämateriaalia)  Muodosta bittijono a)  $(0\, 1111 \land 1\, 0101) \lor 0\, 1000$  b) $(0\, 1010 \xor 1\, 1011) \xor 0\, 1001$. 
+\item * Muodosta bittijono\\
+a)  $(0\, 1111 \land 1\, 0101) \lor 0\, 1000$\\
+b) $(0\, 1010 \xor 1\, 1011) \xor 0\, 1001$. 
 
 \end{enumerate}
 
@@ -878,6 +895,8 @@ Formalisoi lause.
 \item Jos ottelu ei pääty tasapeliin, niin joko kotijoukkue tai vierasjoukkue voittaa pelin.
 \end{enumerate}
 
+\newpage
+
 \item Laadi lauseen totuustaulu.
 \begin{enumerate}[a)]
 \item $A\land B\to \lnot B$
@@ -904,6 +923,8 @@ Olkoot $A$: ''Timo opiskelee matematiikkaa'', $B$: ''Timo osallistuu logiikan ku
 \item Poliisit Mauno ja Martti saavat kiinni rikoksesta epäilemänsä Jaskan. Tiedetään, että Jaska ei koskaan valehtele. Mauno toteaa Martille: ''Jos Jaska on syyllinen, on hänellä ollut rikostoveri.'' Jaska vastaa: ''Tuo ei ole totta!'' Tähän Martti tokaisee: ''Sehän tunnusti helpolla!'' Tutki Maunon lausetta ja osoita Martin johtopäätös oikeaksi.
 
 \item Mattia, Seppoa ja Teppoa epäillään polkupyörävarkaudesta. Konstaapeli Reinikainen tietää, että syytön puhuu aina totta ja syyllinen valehtelee aina. Reinikainen kuulustelee kolmea epäiltyä. Matti sanoo: ''Teppo on syyllinen.'' Seppo väittää: ''Matti on syyllinen tai Teppo valehtelee.'' Teppo toteaa: ''Seppo on syyllinen.'' Ratkaise totuustaulun avulla, kuka on syyllinen. 
+
+\newpage
 
 \item Helinä, Heljä ja Helena asuvat samassa talossa. Epäillään, että loton päävoitto on osunut taloon. Luotettavalta taholta on tullut tietoja:
 
@@ -1298,7 +1319,7 @@ päättelysääntöjen avulla ilman totuustauluja.
 \lnot A\lor \lnot (B\to \lnot A)$.
 \end{enumerate}
 
-\item (Lisämateriaalia) Kolmiarvologiikassa on kolme totuusarvoa: $1$
+\item * Kolmiarvologiikassa on kolme totuusarvoa: $1$
 tosi, $0$ epätosi ja $u$ epävarma. Kleenen totuustaulut
 perustuvat ajatukseen, että epävarma voi myöhemmin
 osoittautua todeksi tai epätodeksi. Alla on esitetty
@@ -1391,6 +1412,8 @@ alkuperäisen lauseen kanssa.
 \item $(A\lor B) \land (A\lor \lnot B)$
 \end{enumerate}
 
+\newpage
+
 \item Osoita osittelulait
 \begin{enumerate}[a)]
 \item
@@ -1449,7 +1472,9 @@ edellisen kappaleen kotitehtävässä 12. Esitä negaatio,
 konjunktio ja disjunktio a) Shefferin viivan avulla b)
 Peircen nuolen avulla.
 
-\item * %(Lisämateriaalia) 
+\newpage
+
+\item *
 Sumea logiikka on kaksiarvoisen logiikan
 laajennus, jossa lauseella on diskreetin totuusarvon
 (tosi tai epätosi) sijasta reaalinen totuusarvo, joka
@@ -1480,7 +1505,7 @@ klassisen kaksiarvoisen logiikan totuustauluihin.
 käyttökohteita.
 \end{enumerate}
 
-\item * %(Lisämateriaalia?) 
+\item *
 Tutustu Wolfram Alphan
 logiikkatoimintoihin\\
 \href{http://www.wolframalpha.com/examples/BooleanAlgebra.html}{{\tt http://www.wolframalpha.com/examples/BooleanAlgebra.html}}\\
