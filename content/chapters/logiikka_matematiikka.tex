@@ -302,10 +302,10 @@ Osoita Venn-diagrammia käyttäen, että $\compl A \cap B = B \setminus A$.
 \draw[fill=gray!50] (0,0) rectangle (6.8,4.2);
 \fill[fill=gray,outline=black] (4.25,2.1) circle (2);
 \fill[fill=white,outline=black] (2.55,2.1) circle (2);
-\draw (.5,3.65) node {\LARGE $X$};
+\draw (.5,3.65) node {$X$};
 \draw (2.1,1.0) node {\textcolor{black}{$A$}};
 \draw (4.7,1.0) node {\textcolor{white}{$B$}};
-\coordinate [label=90:\textcolor{white}{$\complement A\cap B$}] (x) at (5.1,2.2);
+\coordinate [label=90:\textcolor{white}{$\complement A\cap B$}] (x) at (5.1,2.4);
 \coordinate [label=90:\textcolor{black}{$\complement A$}] (y) at (.6,.3);
 \end{tikzpicture}
 
@@ -324,10 +324,10 @@ Joukon $A$ komplementtijoukko $\compl A$ on niiden perusjoukon alkioiden joukko,
 \draw[fill=none] (0,0) rectangle (6.8,4.2);
 \fill[fill=gray,outline=black] (4.25,2.1) circle (2);
 \fill[fill=white,outline=black] (2.55,2.1) circle (2);
-\draw (.5,3.65) node {\LARGE $X$};
-\draw (2.1,1.0) node {\textcolor{black}{\LARGE $A$}};
-\draw (4.7,1.0) node {\textcolor{white}{\LARGE $B$}};
-\coordinate [label=90:\textcolor{white}{\LARGE $B\setminus A$}] (x) at (5.1,2.2);
+\draw (.5,3.65) node {$X$};
+\draw (2.1,1.0) node {\textcolor{black}{$A$}};
+\draw (4.7,1.0) node {\textcolor{white}{$B$}};
+\coordinate [label=90:\textcolor{white}{$B\setminus A$}] (x) at (5.1,2.4);
 \end{tikzpicture}
 
 
@@ -602,8 +602,6 @@ Onko lause tosi?
 \item $B \cap \compl B = B$
 \end{enumerate}
 
-\newpage
-
 \item Merkitään kuvan ympyröiden sisään jääviä joukkoja kirjaimilla $A$, $B$ ja $C$. Ilmaise joukkomerkintöjä käyttäen joukkojen $A$, $B$ ja $C$ avulla kuvan
 \begin{enumerate}[a)]
 \item alue $D$,
@@ -648,7 +646,7 @@ Onko lause tosi?
 \newpage
 
 
-\section{Avoin lause ja konnektiivien joukko-opillinen tulkinta.}
+\section{Avoin lause ja konnektiivien joukko-opillinen tulkinta}
 
 \subsection*{Tutkimustehtävä}
 \begin{enumerate}
@@ -782,9 +780,9 @@ Heitetään kahta noppaa, punaista ja sinistä. Tuloksena saadaan lukupari $(x, 
 \]
 Olkoot avoimet lauseet $S(x, y)$: ''$x + y > 9$'' ja $Y(x, y)$: ''$x = y$''. Määritä avoimen lauseen a) $S(x, y)$, b) $Y(x, y)$, c) $\lnot S(x, y) \land Y(x, y)$, d) $\lnot S(x, y) \to Y(x, y)$ ratkaisujoukko.
 
-\begin{center}
-\includegraphics[width=5.3cm]{pictures/6x6}
-\end{center}
+%\begin{center}
+%\includegraphics[width=5.3cm]{pictures/6x6}
+%\end{center}
 
 {\bf Ratkaisu:}
 
@@ -812,6 +810,7 @@ c) $\{(1, 1), (2, 2), (3, 3), (4, 4)\}$
 d) $\{(1, 1), (2, 2), (3, 3), (4, 4), (4, 6), (5, 5), (5, 6), (6, 4), (6, 5), (6, 6)\}$
 \end{esimerkki}
 
+\newpage
 
 \begin{esimerkki}
 %{\bf Esimerkki 5.}
@@ -874,9 +873,6 @@ a) $x = -4$ tai $x = -\sqrt{2}$ tai $x = \sqrt{2}$
 b) Yhtälöparilla ei ole ratkaisuja.
 \end{esimerkki}
 
-%\newpage
-%\section*{Tehtäviä}
-
 \Harjoitustehtavat
 
 \begin{enumerate}
@@ -914,6 +910,22 @@ Olkoon $P(x, y)$ avoin lause ''$x^2 + y \le 0$''. Onko
 lause a) $P(0, 0)$ b) $P(-1, 1)$ c) $P(5, -100)$ tosi?
 
 \item
+Olkoot $S(x)$ avoin lause ''kuvio $x$ on symmetrinen
+jonkin suoran suhteen'' ja $P(x)$ avoin lause ''kuvio $x$
+on symmetrinen jonkin pisteen suhteen''. Perusjoukon
+muodostavat oheiset kuviot. Ratkaise avoin lause.
+\begin{enumerate}[a)]
+\item $S(x)$,
+\item $P(x)$,
+\item $\lnot (S(x) \lor P(x))$,
+\item $S(x) \lequiv P(x)$.
+\end{enumerate}
+
+\begin{center}
+\includegraphics[width=6cm]{pictures/kpl3_2_teht7}
+\end{center}
+
+\item
 Ratkaise avoin lause $4x^2 + 7x - 2 = 0$, kun perusjoukko
 on a) reaalilukujen joukko b) kokonaislukujen joukko.
 
@@ -927,25 +939,6 @@ Ratkaise avoin lause.
 \item $A(x) \land B(x)$,
 \item $\lnot A(x) \to B(x)$.
 \end{enumerate}
-
-\begin{center}
-\includegraphics[width=10cm]{pictures/kpl3_2_teht7}
-\end{center}
-
-\item
-Olkoot $S(x)$ avoin lause ''kuvio $x$ on symmetrinen
-jonkin suoran suhteen'' ja $P(x)$ avoin lause ''kuvio $x$
-on symmetrinen jonkin pisteen suhteen''. Perusjoukon
-muodostavat oheiset kuviot. Ratkaise avoin lause.
-\begin{enumerate}[a)]
-\item $S(x)$,
-\item $P(x)$,
-\item $\lnot (S(x) \lor P(x))$,
-\item $S(x) \lequiv P(x)$.
-\end{enumerate}
-
-
-
 
 \item
 Arvotaan kaksi lukua, joista molemmat voivat olla 1, 2 tai 3. Arvonnan tuloksena saadaan lukupari $(x, y)$, missä $x$ on ensimmäisen arvonnan tulos ja $y$ toisen arvonnan tulos. Olkoot avoimet lauseet $S(x, y)$: ''$x \le y$'' ja $T(x, y)$: ''tulo $xy$ on jaollinen luvulla 3''. Ratkaise avoin lause, kun perusjoukon muodostavat arvonnan tuloksena saatavat mahdolliset lukuparit
@@ -1053,6 +1046,8 @@ Ratkaise avoin lause.
 \item $\lnot C(x) \land D(x)$,
 \item $C(x) \lequiv D(x)$.
 \end{enumerate}
+
+\newpage
 
 \item
 Arvotaan kolme lukua, joista jokainen voi olla 1 tai
