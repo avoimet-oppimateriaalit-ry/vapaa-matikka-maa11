@@ -25,6 +25,7 @@ Lukujen $30$ ja $84$ yhteiset positiiviset tekijät ovat $1, 2, 3$ ja $6$. Yhtei
 Yhteiset positiiviset tekijät ovat $1, 2, 3$ ja $6$. Suurin yhteinen tekijä on $6$.
 \end{esimerkki}
 
+\newpage
 \laatikko{
 {\bf Suurin yhteinen tekijä.}
 Olkoot $a$ ja $b$ positiivisia kokonaislukuja. Positiivista kokonaislukua $d$ sanotaan lukujen $a$ ja $b$  suurimmaksi yhteiseksi tekijäksi, jos seuraavat ehdot ovat voimassa:
@@ -87,6 +88,7 @@ r_1 = q_3r_2 + r_3, \qquad 0 \le r_3 < r_2.
 
 Näin jatkamalla päädytään lopulta jakolaskuun, joka menee tasan. Lukujen $a$ ja $b$ suurin yhteinen tekijä on viimeinen nollasta eroava jakojäännös. Koska algoritmissa esiintyy laskeva jono $b>r_1>r_2> \cdots \ge 0$, tarvitaan enintään $b$ askelta. Algoritmissa tarvittavat jakolaskut kannattaa yleensä tehdä laskimella.
 
+\newpage
 \begin{esimerkki}
 %{\bf Esimerkki 2.}
 Määritä $\syt(84, 30)$ Eukleideen
@@ -605,10 +607,9 @@ $d=12-10=2$.
 
 {\bf Vastaus:} On otettava esimerkiksi $8$ pulloa $5$
 markan viiniä ja $2$ pulloa $10$ markan viiniä.
-
-Esimerkiksi tietokonetta käyttämällä voidaan löytää
+\footnote{Esimerkiksi tietokonetta käyttämällä voidaan löytää
 ongelman kaikki ratkaisut. Niitä on yhteensä seitsemän.
-Ei ole tiedossa, miten Kexlerus itse ratkaisi ongelmansa.
+Ei ole tiedossa, miten Kexlerus itse ratkaisi ongelmansa.}
 \end{esimerkki}
 
 %\newpage
@@ -800,6 +801,7 @@ niin $z=qm>\sqrt{n}\cdot \sqrt{n}=n$, mikä ei ole mahdollista. Koska $q\le \sqr
 
 Eratostheneen seula on käyttö\-kelpoinen etsittäessä suhteellisen pieniä alkulukuja. Suurempien alkulukujen etsimiseen on kehitetty monenlaisia matemaattisia algoritmeja. Suurten alkulukujen löytäminen on joskus tarpeellista etenkin lukuteoriaan pohjaavia salakirjoitusmenetelmiä käytettäessä.
 
+\vspace*{6pt}
 \begin{esimerkki}
 %{\bf Esimerkki 2.}
 Etsi Eratostheneen seulaa käyttäen alkuluvut välillä $2, \ldots, 60$.
@@ -922,6 +924,7 @@ alkutekijähajotelmaksi
 
 Alkutekijähajotelma voidaan määrittää myös symbolisen laskimen tekijöihin jakoon tarkoitetulla komennolla. Esimerkiksi edellinen esimerkki voidaan ratkaista komennolla {\tt factor(4200)}.
 
+\vspace*{39pt}
 \begin{esimerkki}
 %{\bf Esimerkki 4.}
 Tutki, onko luku $457$ alkuluku.
@@ -1024,6 +1027,7 @@ Koska $\syt(a, b)=1$, täytyy päteä $q_i\neq r_j$ kaikilla indekseillä $i, j$
 
 Edellisen lauseen tulos pätee siis erityisesti silloin, kun luvut $a$ ja $b$ ovat alkulukuja. Jos esimerkiksi luku on jaollinen alkuluvuilla $3$ ja $5$, niin se on myös jaollinen niiden tulolla $15$. Lausetta ei voida kuitenkaan soveltaa tilanteessa, jossa lukujen $a$ ja $b$ suurin yhteinen tekijä ei ole yksi. Esimerkiksi luku $12$ on jaollinen sekä luvulla $4$ että luvulla $6$, mutta se ei ole jaollinen niiden tulolla $24$.
 
+\vspace*{22pt}
 %{\bf Esimerkki 6.}
 \begin{esimerkki}
 Osoita väite todeksi tai epätodeksi: Luku $n^3 - n$ on jaollinen luvulla $6$, kun $n$ on
@@ -1083,7 +1087,7 @@ Lukuja voidaan esittää kahden alkuluvun summana useilla eri tavoilla. Esimerki
 \]
 
 \subsection*{Eulerin $\varphi$-funktio.} 
-Olkoot $n$ ja $k$ positiivisia kokonaislukuja. Funktio $\varphi(n)$ ilmaisee niiden kokonaislukujen $k$ lukumäärän, joille pätee  $\syt(n, k) = 1$, kun $1\le k \le n$. Selvästi $\varphi(n)=n-1$, jos ja vain jos $n$ on alkuluku. Hieman vaikeammalla päättelyllä voidaan osoittaa, että $\varphi(n)$ on \termi{Multiplikatiivinen funktio}{multiplikatiivinen funktio} eli $\varphi(mn)=\varphi(m)\varphi(n)$, kun $\syt(m, n)=1$.
+Olkoot $n$ ja $k$ positiivisia kokonaislukuja. Funktio $\varphi(n)$ ilmaisee niiden kokonaislukujen $k$ lukumäärän, joille pätee  $\syt(n, k) = 1$, kun $1\le k \le n$. Selvästi $\varphi(n)=n-1$, jos ja vain jos $n$ on alkuluku. Hieman vaikeammalla päättelyllä voidaan osoittaa, että $\varphi(n)$ on \termi{multiplikatiivinen funktio}{multiplikatiivinen funktio} eli $\varphi(mn)=\varphi(m)\varphi(n)$, kun $\syt(m, n)=1$.
 Eulerin $\varphi$-funktion laskemisessa voidaan käyttää esimerkiksi harjoitustehtävissä esiteltävää \termi{Eulerin tulokaava}{Eulerin tulokaavaa}. Funktiolla $\varphi(n)$ on monia teoreettisia ja käy\-tän\-nöl\-li\-siä sovelluksia, kuten seuraavaksi esiteltävä RSA-algoritmi.
 
 \subsection*{RSA-algoritmi} Tällä hetkellä ehkä merkittävin lukuteorian käy\-tän\-nöl\-li\-nen sovellus on niin kutsuttu \termi{julkisen avaimen salakirjoitus}{julkisen avaimen salakirjoitus}. Julkisen avaimen salakirjoituksen esittelivät MIT:n (Massachusetts Institute of Technology) tutkijat Ron Rivest, Adi Shamir ja Leonard Adleman vuonna 1978. % vuonna 1977?
@@ -1106,6 +1110,7 @@ d\cdot e \equiv 1\quad (\mod\varphi(n)) %\ vai \ d \cdot e \equiv 1 \ (\mod\varp
 \end{enumerate}
 Salakirjoituksessa julkinen avain on lukupari $(n, e)$. Salainen avain on lukupari $(n, d)$. 
 
+\newpage
 Viesti voidaan lähettää turvallisesti seuraavasti. Olkoon lähetettävä viesti kokonaisluku $m$, jolle $0<m<n$. Lasketaan
 \[
 c= m^e\quad (\mod n).
@@ -1216,6 +1221,7 @@ uudestaan yhtä aikaa lähtölinjalla?
 \item Olkoot $x$ ja $y$ kokonaislukuja. Ratkaise yhtälö $(3x+2y)
 (x+y)=21$.
 
+\newpage
 \item Perustele väite todeksi tai epätodeksi.
 \begin{enumerate}[a)]
 \item Jos luku on jaollinen luvuilla $6$ ja $25$, niin se on
@@ -1391,6 +1397,7 @@ olevien alkulukujen lukumäärän. Alkulukujen tiheys välillä $[0, x]
 $ saadaan jakamalla $\pi(x)$ välin pituudella $x$.
 \begin{enumerate}[a)]
 \item Laske $\pi(10^n)$, kun $n=1, 2, 3, 4, 5$.
+\newpage
 \item Mitä alkulukujen määrälle $\pi(x)$ näyttää tapahtuvan,
 kun $x$ kasvaa? Miksi?
 \item Laske alkulukujen tiheys väleillä $[0, 10^n]$, kun
