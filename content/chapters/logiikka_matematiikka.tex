@@ -32,19 +32,19 @@ Alkion $x$ kuulumista joukkoon havainnollistetaan usein niin kutsutun \termi{Ven
 
 \begin{center}
 \begin{tikzpicture}[outline/.style={draw=#1,thick}]
-\draw[fill=none] (0,0) rectangle (8,4.94);
-%\fill[red!60,outline=red] (3,2.47) circle (2);
-\fill[fill=none,outline=black] (3,2.47) circle (2);
+\draw[fill=none] (0,0) rectangle (6.8,4.2);
+%\fill[red!60,outline=red] (2.55,2.1) circle (2);
+\fill[fill=none,outline=black] (2.55,2.1) circle (2);
 %\begin{scope}
 %\pgfsetfillopacity{0.5}
-%\fill[blue,outline=blue] (5,2.47) circle (2);
-\fill[fill=none,outline=black] (5,2.47) circle (2);
+%\fill[blue,outline=blue] (4.25,2.1) circle (2);
+\fill[fill=none,outline=black] (4.25,2.1) circle (2);
 %\end{scope}
-\draw (.6,4.3) node {\LARGE $X$};
-\draw (2.5,1.2) node {\textcolor{black}{\LARGE $A$}};
-\draw (5.5,1.2) node {\textcolor{black}{\LARGE $B$}};
-\coordinate [label=60:\textcolor{black}{\LARGE $x$}] (x) at (5.6,3);
-\fill[black] (x) circle (.08);
+\draw (.5,3.65) node {\LARGE $X$};
+\draw (2.1,1.0) node {\textcolor{black}{\LARGE $A$}};
+\draw (4.7,1.0) node {\textcolor{black}{\LARGE $B$}};
+\coordinate [label=60:\textcolor{black}{\LARGE $x$}] (x) at (4.8,2.55);
+\fill[black] (x) circle (.07);
 \end{tikzpicture}
 
 \end{center}
@@ -58,17 +58,17 @@ Jos kaikki joukon $A$ alkiot ovat myös joukon $B$ alkioita, niin joukkoa $A$ ku
 %%  Kuva s. 55
 
 \begin{tikzpicture}[outline/.style={draw=#1,thick}]
-\draw[fill=none] (0,0) rectangle (8,4.94);
-%\fill[red!60,outline=red] (4,2.47) circle (2);
-\fill[fill=none,outline=black] (4,2.47) circle (2);
+\draw[fill=none] (0,0) rectangle (6.8,4.2);
+%\fill[red!60,outline=red] (3.4,2.1) circle (2);
+\fill[fill=none,outline=black] (3.4,2.1) circle (2);
 %\begin{scope}
 %\pgfsetfillopacity{0.5}
-%\fill[blue,outline=blue] (4.2,2.6) circle (1);
-\fill[fill=none,outline=black] (4.2,2.6) circle (1);
+%\fill[blue,outline=blue] (3.5,2.2) circle (1);
+\fill[fill=none,outline=black] (3.5,2.2) circle (1);
 %\end{scope}
-\draw (.6,4.3) node {\LARGE $X$};
-\draw (4.4,2.2) node {\textcolor{black}{\LARGE $A$}};
-\draw (3.4,1.2) node {\textcolor{black}{\LARGE $B$}};
+\draw (.5,3.65) node {\LARGE $X$};
+\draw (3.75,1.9) node {\textcolor{black}{\LARGE $A$}};
+\draw (2.9,0.9) node {\textcolor{black}{\LARGE $B$}};
 \end{tikzpicture}
 
 \end{center}
@@ -115,11 +115,11 @@ Ne perusjoukon $X$ alkiot, jotka eivät kuulu joukkoon $A$, muodostavat joukon $
 %%  Ylempi kuva s. 56
 
 \begin{tikzpicture}[outline/.style={draw=#1,thick}]
-\draw[fill=gray,outline=black] (0,0) rectangle (8,4.94);
-\fill[white,outline=black] (3,2.47) circle (2);
-\draw (.6,4.3) node {\textcolor{white}{\LARGE $X$}};
-\draw (2.5,1.2) node {\textcolor{black}{\LARGE $A$}};
-\coordinate [label=right:\textcolor{white}{\LARGE $\complement A$}] (x) at (5.6,2);
+\draw[fill=gray,outline=black] (0,0) rectangle (6.8,4.2);
+\fill[white,outline=black] (2.55,2.1) circle (2);
+\draw (.5,3.65) node {\textcolor{white}{\LARGE $X$}};
+\draw (2.1,1.0) node {\textcolor{black}{\LARGE $A$}};
+\coordinate [label=right:\textcolor{white}{\LARGE $\complement A$}] (x) at (4.7,1.7);
 \end{tikzpicture}
 
 
@@ -127,25 +127,23 @@ Ne perusjoukon $X$ alkiot, jotka eivät kuulu joukkoon $A$, muodostavat joukon $
 
 Perusjoukon $X$ komplementti on \termi{tyhjä joukko}{tyhjä joukko}, jota merkitään $\emptyset$. Tyhjässä joukossa ei ole alkioita. Erityisesti tyhjä joukko on minkä tahansa joukon osajoukko.
 
-%{\bf KUVA}
-
 Joukkojen $A$ ja $B$ \termi{leikkaus}{leikkaus} $A\cap B$ on niiden perusjoukon alkioiden joukko, jotka kuuluvat sekä joukkoon $A$ että joukkoon $B$. Leikkausta voidaan havainnollistaa Venn-diagrammilla:
 
 \begin{center}
 %%  Alempi kuva s. 56
 
 \begin{tikzpicture}[outline/.style={draw=#1,thick}]
-\draw[fill=none] (0,0) rectangle (8,4.94);
+\draw[fill=none] (0,0) rectangle (6.8,4.2);
 \begin{scope}
-\clip (3,2.47) circle (2);
-\fill[gray,outline=black] (5,2.47) circle (2);
+\clip (2.55,2.1) circle (2);
+\fill[gray,outline=black] (4.25,2.1) circle (2);
 \end{scope}
-\fill[fill=none,outline=black] (3,2.47) circle (2);
-\fill[fill=none,outline=black] (5,2.47) circle (2);
-\draw (.6,4.3) node {\LARGE $X$};
-\draw (2.5,1.2) node {\textcolor{black}{\LARGE $A$}};
-\draw (5.5,1.2) node {\textcolor{black}{\LARGE $B$}};
-\coordinate [label=90:\textcolor{white}{\LARGE $A\cap B$}] (x) at (4,2.2);
+\fill[fill=none,outline=black] (2.55,2.1) circle (2);
+\fill[fill=none,outline=black] (4.25,2.1) circle (2);
+\draw (.5,3.65) node {\LARGE $X$};
+\draw (2.1,1.0) node {\textcolor{black}{\LARGE $A$}};
+\draw (4.7,1.0) node {\textcolor{black}{\LARGE $B$}};
+\coordinate [label=90:\textcolor{white}{\LARGE $A\cap B$}] (x) at (3.4,1.9);
 \end{tikzpicture}
 
 \end{center}
@@ -159,14 +157,14 @@ Joukkojen yhdistettä voidaan jälleen havainnollistaa Venn-diagrammin avulla:
 %%  Ylempi kuva s. 57
 
 \begin{tikzpicture}[outline/.style={draw=#1,thick}]
-\draw[fill=none] (0,0) rectangle (8,4.94);
-\fill[fill=gray,outline=black] (3,2.47) circle (2);
-\fill[fill=gray,outline=black] (5,2.47) circle (2);
-\fill[fill=none,outline=black] (3,2.47) circle (2);
-\draw (.6,4.3) node {\LARGE $X$};
-\draw (2.5,1.2) node {\textcolor{white}{\LARGE $A$}};
-\draw (5.5,1.2) node {\textcolor{white}{\LARGE $B$}};
-\coordinate [label=90:\textcolor{white}{\LARGE $A\cup B$}] (x) at (3.2,2.8);
+\draw[fill=none] (0,0) rectangle (6.8,4.2);
+\fill[fill=gray,outline=black] (2.55,2.1) circle (2);
+\fill[fill=gray,outline=black] (4.25,2.1) circle (2);
+\fill[fill=none,outline=black] (2.55,2.1) circle (2);
+\draw (.5,3.65) node {\LARGE $X$};
+\draw (2.1,1.0) node {\textcolor{white}{\LARGE $A$}};
+\draw (4.7,1.0) node {\textcolor{white}{\LARGE $B$}};
+\coordinate [label=90:\textcolor{white}{\LARGE $A\cup B$}] (x) at (3.4,1.9);
 \end{tikzpicture}
 
 \end{center}
@@ -180,14 +178,15 @@ Joukkojen $A$ ja $B$ \termi{erotus}{erotuksella} tarkoitetaan joukkoa, joka jä�
 \begin{center}
 %%  Alempi kuva s. 57
 
+
 \begin{tikzpicture}[outline/.style={draw=#1,thick}]
-\draw[fill=none] (0,0) rectangle (8,4.94);
-\fill[fill=gray,outline=black] (3,2.47) circle (2);
-\fill[fill=white,outline=black] (5,2.47) circle (2);
-\draw (.6,4.3) node {\LARGE $X$};
-\draw (2.5,1.2) node {\textcolor{white}{\LARGE $A$}};
-\draw (5.5,1.2) node {\textcolor{black}{\LARGE $B$}};
-\coordinate [label=90:\textcolor{white}{\LARGE $A\setminus B$}] (x) at (2,2.2);
+\draw[fill=none] (0,0) rectangle (6.8,4.2);
+\fill[fill=gray,outline=black] (2.55,2.1) circle (2);
+\fill[fill=white,outline=black] (4.25,2.1) circle (2);
+\draw (.5,3.65) node {\LARGE $X$};
+\draw (2.1,1.0) node {\textcolor{white}{\LARGE $A$}};
+\draw (4.7,1.0) node {\textcolor{black}{\LARGE $B$}};
+\coordinate [label=90:\textcolor{white}{\LARGE $A\setminus B$}] (x) at (1.6,1.9);
 \end{tikzpicture}
 
 \end{center}
@@ -214,7 +213,8 @@ d) Vastaavasti erotukseen $B \setminus A$ kuuluvat ne alkiot, jotka kuuluvat jou
 \begin{esimerkki}
 Koulussa on $700$ opiskelijaa. Erään kyselyn tuloksena saatiin selville, että $550$ heistä 
 seuraa uutisia säännöllisesti sanomalehdistä ja $400$ Internetistä. Opiskelijoista $350$  
-seuraa uutisia säännöllisesti kummastakin lähteestä. Havainnollista tilannetta Venn-diagrammilla ja vastaa seuraaviin kysymyksiin.
+seuraa uutisia säännöllisesti kummastakin lähteestä. Vastaa seuraaviin kysymyksiin
+havainnollistaen tilanteita Venn-diagrammeilla.
 \begin{enumerate}[a)]
 \item Kuinka moni opiskelija seuraa uutisia vain Internetistä?
 \item Kuinka moni opiskelija ei seuraa uutisia ollenkaan?
@@ -222,31 +222,39 @@ seuraa uutisia säännöllisesti kummastakin lähteestä. Havainnollista tilanne
 
 {\bf Ratkaisu:}
 
-%[Venn-diagrammi]		
+Perusjoukko $X$ sisältää kaikki koulun opiskelijat. Joukkoon $A$ kuuluvat opiskelijat, jotka seuraavat uutisia sanomalehdistä, ja joukkoon $B$ opiskelijat, jotka seuraavat uutisia Internetistä.
+
+a)
+
 \begin{center}
 
-
-%%  Kuva s. 58....onko tämä kuten pitää?
-
 \begin{tikzpicture}[outline/.style={draw=#1,thick}]
-\draw[fill=none] (0,0) rectangle (8,4.94);
-\fill[fill=none,outline=black] (3,2.47) circle (2);
-\begin{scope}
-\pgfsetfillopacity{0.5}
-\fill[fill=none,outline=black] (5,2.47) circle (2);
-\end{scope}
-\draw (.6,4.3) node {\LARGE $X$};
-\draw (2.5,1.2) node {\textcolor{black}{\LARGE $A$}};
-\draw (5.5,1.2) node {\textcolor{black}{\LARGE $B$}};
+\draw[fill=none] (0,0) rectangle (6.8,4.2);
+\fill[fill=gray,outline=black] (4.25,2.1) circle (2);
+\fill[fill=white,outline=black] (2.55,2.1) circle (2);
+\draw (.5,3.65) node {\LARGE $X$};
+\draw (2.1,1.0) node {\textcolor{black}{\LARGE $A$}};
+\draw (4.7,1.0) node {\textcolor{black}{\LARGE $B$}};
 \end{tikzpicture}
 
 \end{center}
 
-Perusjoukko $X$ sisältää kaikki koulun opiskelijat. Joukkoon $A$ kuuluvat opiskelijat, jotka seuraavat uutisia sanomalehdistä, ja joukkoon $B$ opiskelijat, jotka seuraavat uutisia Internetistä.
+b)
 
-a) Opiskelijoista $400$ seuraa uutisia Internetistä ja $350$ heistä seuraa uutisia myös sanomalehdistä. Näin ollen $400 - 350 = 50$ opiskelijaa seuraa uutisia vain Internetistä. Tämä on joukon $B \setminus A$ alkioiden lukumäärää. 
+\begin{center}
 
-b) Ainakin toisesta lähteestä uutisia seuraa $550 + 400 - 350 = 600$ opiskelijaa. Tällöin $700 - 600 = 100$ opiskelijaa ei seuraa uutisia ollenkaan. Tämä on joukon $\compl(A\cup B)$ alkioiden lukumäärä.
+\begin{tikzpicture}[outline/.style={draw=#1,thick}]
+\draw[fill=gray] (0,0) rectangle (6.8,4.2);
+\fill[fill=white,outline=black] (2.55,2.1) circle (2);
+\fill[fill=white,outline=black] (4.25,2.1) circle (2);
+\draw (.5,3.65) node {\LARGE $X$};
+\draw (2.1,1.0) node {\textcolor{black}{\LARGE $A$}};
+\draw (4.7,1.0) node {\textcolor{black}{\LARGE $B$}};
+\end{tikzpicture}
+
+\end{center}
+
+Ainakin toisesta lähteestä uutisia seuraa $550 + 400 - 350 = 600$ opiskelijaa. Tällöin $700 - 600 = 100$ opiskelijaa ei seuraa uutisia ollenkaan. Tämä on joukon $\compl(A\cup B)$ alkioiden lukumäärä.
 
 {\bf Vastaus:} a) $50$ opiskelijaa b) $100$ opiskelijaa
 \end{esimerkki}
@@ -285,14 +293,14 @@ Osoita Venn-diagrammia käyttäen, että $\compl A \cap B = B \setminus A$.
 %%  Kuva s. 59
 
 \begin{tikzpicture}[outline/.style={draw=#1,thick}]
-\draw[fill=gray!50] (0,0) rectangle (8,4.94);
-\fill[fill=gray,outline=black] (5,2.47) circle (2);
-\fill[fill=white,outline=black] (3,2.47) circle (2);
-\draw (.6,4.3) node {\LARGE $X$};
-\draw (2.5,1.2) node {\textcolor{black}{\LARGE $A$}};
-\draw (5.5,1.2) node {\textcolor{white}{\LARGE $B$}};
-\coordinate [label=90:\textcolor{white}{\LARGE $\complement A\cap B$}] (x) at (6,2.2);
-\coordinate [label=90:\textcolor{black}{\LARGE $\complement A$}] (y) at (.9,.5);
+\draw[fill=gray!50] (0,0) rectangle (6.8,4.2);
+\fill[fill=gray,outline=black] (4.25,2.1) circle (2);
+\fill[fill=white,outline=black] (2.55,2.1) circle (2);
+\draw (.5,3.65) node {$X$};
+\draw (2.1,1.0) node {\textcolor{black}{$A$}};
+\draw (4.7,1.0) node {\textcolor{white}{$B$}};
+\coordinate [label=90:\textcolor{white}{$\complement A\cap B$}] (x) at (5.1,2.4);
+\coordinate [label=90:\textcolor{black}{$\complement A$}] (y) at (.6,.3);
 \end{tikzpicture}
 
 
@@ -307,13 +315,13 @@ Joukon $A$ komplementtijoukko $\compl A$ on niiden perusjoukon alkioiden joukko,
 %%  Kuva s. 60
 
 \begin{tikzpicture}[outline/.style={draw=#1,thick}]
-\draw[fill=none] (0,0) rectangle (8,4.94);
-\fill[fill=gray,outline=black] (5,2.47) circle (2);
-\fill[fill=white,outline=black] (3,2.47) circle (2);
-\draw (.6,4.3) node {\LARGE $X$};
-\draw (2.5,1.2) node {\textcolor{black}{\LARGE $A$}};
-\draw (5.5,1.2) node {\textcolor{white}{\LARGE $B$}};
-\coordinate [label=90:\textcolor{white}{\LARGE $B\setminus A$}] (x) at (5.9,2.1);
+\draw[fill=none] (0,0) rectangle (6.8,4.2);
+\fill[fill=gray,outline=black] (4.25,2.1) circle (2);
+\fill[fill=white,outline=black] (2.55,2.1) circle (2);
+\draw (.5,3.65) node {$X$};
+\draw (2.1,1.0) node {\textcolor{black}{$A$}};
+\draw (4.7,1.0) node {\textcolor{white}{$B$}};
+\coordinate [label=90:\textcolor{white}{$B\setminus A$}] (x) at (5.1,2.4);
 \end{tikzpicture}
 
 
@@ -322,11 +330,6 @@ Joukon $A$ komplementtijoukko $\compl A$ on niiden perusjoukon alkioiden joukko,
 Joukko $B \setminus A$ sisältää ne joukon $B$ alkiot, jotka eivät kuulu joukkoon $A$.
 Venn-diagrammit havainnollistavat, että on kyse samasta joukosta. Siis $\compl A\cap B = B \setminus A$.
 \end{esimerkki}
-
-%\newpage
-
-
-%\section*{Tehtäviä}
 
 \newpage
 \subsection*{Harjoitustehtäviä}
@@ -374,18 +377,18 @@ Olkoot $A$ koulussa opiskelevien täysi-ikäisten opiskelijoiden joukko ja $B$ n
 %
 %\begin{center}
 %
-%%%  Kuva s. 62
+%%% Kuva s. 62
 %
 %\begin{tikzpicture}[outline/.style={draw=#1,thick}]
-%\draw[fill=none] (0,0) rectangle (8,4.94);
-%\fill[fill=none,outline=black] (3,2.47) circle (2);
+%\draw[fill=none] (0,0) rectangle (6.8,4.2);
+%\fill[fill=none,outline=black] (2.55,2.1) circle (2);
 %\begin{scope}
 %\pgfsetfillopacity{0.5}
-%\fill[fill=none,outline=black] (5,2.47) circle (2);
+%\fill[fill=none,outline=black] (4.25,2.1) circle (2);
 %\end{scope}
-%\draw (.6,4.3) node {\LARGE $X$};
-%\draw (2.5,1.2) node {\textcolor{black}{\LARGE $A$}};
-%\draw (5.5,1.2) node {\textcolor{black}{\LARGE $B$}};
+%\draw (.5,3.65) node {\LARGE $X$};
+%\draw (2.1,1.0) node {\textcolor{black}{\LARGE $A$}};
+%\draw (4.7,1.0) node {\textcolor{black}{\LARGE $B$}};
 %\end{tikzpicture}
 %
 %\end{center}
@@ -453,7 +456,7 @@ Olkoot perusjoukko kokonaislukujen joukko $\zz$, $W$ parillisten kokonaislukujen
 
 \item Määritä joukon a) $\{1, 2\}$ b) $\{1, 2, 3\}$ kaikki osajoukot.
 
-\item * %(Lisämateriaalia)
+\item *
 Joukon $A$ \termi{potenssijoukko}{potenssijoukoksi} $\mathcal{P}(A)$ kutsutaan kaikkien joukon $A$ osajoukkojen muodostamaa joukkoa:
 \[
 \mathcal{P}(A)=\{ B \, | \, B\subset A\}.
@@ -464,7 +467,7 @@ Joukon $A$ \termi{potenssijoukko}{potenssijoukoksi} $\mathcal{P}(A)$ kutsutaan k
 \item Joukko $\{\emptyset\}$ on joukko, jonka ainut alkio on tyhjä joukko. Määritä joukon $\{\emptyset\}$ potenssijoukko.
 \end{enumerate}
 
-\item * %(Lisämateriaalia)
+\item *
 Luonnolliset luvut voidaan tulkita joukko-opillisesti käyttämällä edellisessä tehtävässä esitettyä potenssijoukon käsitettä. Ajatuksena on, että lukua $0$ vastaa tyhjä joukko $\emptyset$ ja kutakin luonnollista lukua $n + 1$ vastaava joukko on luonnollista lukua $n$ vastaavan joukon potenssijoukko. Siis esimerkiksi lukua $1$ vastaa tyhjän joukon $\emptyset$ potenssijoukko $\mathcal{P}(\emptyset)$, lukua $2$ potenssijoukko $\mathcal{P}(\mathcal{P}(\emptyset))$ ja niin edelleen.
 \begin{enumerate}[a)]
 \item Määritä lukuja $3$ ja $4$ vastaavat joukot.
@@ -581,41 +584,6 @@ Onko lause tosi?
 \item $B \cap \compl B = B$
 \end{enumerate}
 
-\item Merkitään kuvan ympyröiden sisään jääviä joukkoja kirjaimilla $A$, $B$ ja $C$. Ilmaise joukkomerkintöjä käyttäen joukkojen $A$, $B$ ja $C$ avulla kuvan
-\begin{enumerate}[a)]
-\item alue $D$,
-\item alue $E$,
-\item alue $F$,
-\item alue $G$.
-\end{enumerate}
-
-\medskip
-
-\begin{center}
-% Kuva s. 66, MUUTA TEHTÄVÄ VASTAAMAAN KUVAA
-
-\begin{tikzpicture}[outline/.style={draw=#1,thick}]
-\draw[fill=none] (0,0) rectangle (8,4.94);
-\fill[fill=none,outline=black] (3.3,3.2) circle (1.4);
-\fill[fill=none,outline=black] (4.7,3.2) circle (1.4);
-\fill[fill=none,outline=black] (4,1.7) circle (1.4);
-\draw (.6,4.3) node {\LARGE $X$};
-\draw (2.4,3.4) node {\LARGE $A$};
-\draw (5.6,3.4) node {\LARGE $B$};
-\draw (4,.8) node {\LARGE $C$};
-\draw (4,3.6) node {$D$};
-\draw (4,2.6) node {$E$};
-\draw (4,1.5) node {$F$};
-\draw (3.2,2.2) node {$G$};
-\draw (4.8,2.2) node {$G$};
-\end{tikzpicture}
-
-
-\end{center}
-%PICXX3
-
-\medskip
-
 \item Tarkastellaan kaksinumeroisia luonnollisia lukuja $10, 11, \ldots, 98, 99$.
 \begin{enumerate}[a)]
 \item Kuinka monta kaksinumeroista luonnollista lukua on olemassa?
@@ -627,12 +595,44 @@ Onko lause tosi?
 \item Piirrä tilanteesta Venn-diagrammi.
 \end{enumerate}
 
+
+\item Merkitään kuvan ympyröiden sisään jääviä joukkoja kirjaimilla $A$, $B$ ja $C$. Ilmaise joukkomerkintöjä käyttäen joukkojen $A$, $B$ ja $C$ avulla kuvan
+\begin{enumerate}[a)]
+\item alue $D$,
+\item alue $E$,
+\item alue $F$,
+\item alue $G$.
+\end{enumerate}
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[outline/.style={draw=#1,thick}]
+\draw[fill=none] (0,0) rectangle (6.8,4.2);
+\fill[fill=none,outline=black] (2.7,2.7) circle (1.4);
+\fill[fill=none,outline=black] (4.1,2.7) circle (1.4);
+\fill[fill=none,outline=black] (3.4,1.5) circle (1.4);
+\draw (.5,3.65) node {\LARGE $X$};
+\draw (1.9,2.9) node {\LARGE $A$};
+\draw (4.9,2.9) node {\LARGE $B$};
+\draw (3.4,.5) node {\LARGE $C$};
+\draw (3.4,3.2) node {$D$};
+\draw (3.4,2.2) node {$E$};
+\draw (3.4,1.1) node {$F$};
+\draw (2.6,1.9) node {$G$};
+\draw (4.2,1.9) node {$G$};
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+
 \end{enumerate}
 
 \newpage
 
 
-\section{Avoin lause ja konnektiivien joukko-opillinen tulkinta.}
+\section{Avoin lause ja konnektiivien joukko-opillinen tulkinta}
 
 \subsection*{Tutkimustehtävä}
 \begin{enumerate}
@@ -702,14 +702,14 @@ Jouk\-ko-opin soveltamisen kannalta on usein hyödyllistä \termi{samastus}{sama
 % Kuva s. 70
 
 \begin{tikzpicture}[outline/.style={draw=#1,thick}]
-\draw[fill=none] (0,0) rectangle (8,4.94);
-\fill[fill=none,outline=black] (4,2.47) circle (2);
-\draw (.6,4.3) node {\LARGE $X$};
-\draw (3.4,1.2) node {\textcolor{black}{\LARGE $P$}};
-\coordinate [label=60:\textcolor{black}{\LARGE $x$}] (x) at (4.2,3);
-\fill[black] (x) circle (.08);
-\coordinate [label=100:\textcolor{black}{\LARGE $y$}] (y) at (1.2,1);
-\fill[black] (y) circle (.08);
+\draw[fill=none] (0,0) rectangle (6.8,4.2);
+\fill[fill=none,outline=black] (3.4,2.1) circle (2);
+\draw (.5,3.65) node {\LARGE $X$};
+\draw (2.9,1.0) node {\textcolor{black}{\LARGE $P$}};
+\coordinate [label=60:\textcolor{black}{\LARGE $x$}] (x) at (3.55,2.55);
+\fill[black] (x) circle (.07);
+\coordinate [label=100:\textcolor{black}{\LARGE $y$}] (y) at (1.0,0.85);
+\fill[black] (y) circle (.07);
 \end{tikzpicture}
 
 
@@ -766,9 +766,9 @@ Heitetään kahta noppaa, punaista ja sinistä. Tuloksena saadaan lukupari $(x, 
 \]
 Olkoot avoimet lauseet $S(x, y)$: ''$x + y > 9$'' ja $Y(x, y)$: ''$x = y$''. Määritä avoimen lauseen a) $S(x, y)$, b) $Y(x, y)$, c) $\lnot S(x, y) \land Y(x, y)$, d) $\lnot S(x, y) \to Y(x, y)$ ratkaisujoukko.
 
-\begin{center}
-\includegraphics[width=5.3cm]{pictures/6x6}
-\end{center}
+%\begin{center}
+%\includegraphics[width=5.3cm]{pictures/6x6}
+%\end{center}
 
 {\bf Ratkaisu:}
 
@@ -858,9 +858,6 @@ a) $x = -4$ tai $x = -\sqrt{2}$ tai $x = \sqrt{2}$
 b) Yhtälöparilla ei ole ratkaisuja.
 \end{esimerkki}
 
-%\newpage
-%\section*{Tehtäviä}
-
 \Harjoitustehtavat
 
 \begin{enumerate}
@@ -898,6 +895,22 @@ Olkoon $P(x, y)$ avoin lause ''$x^2 + y \le 0$''. Onko
 lause a) $P(0, 0)$ b) $P(-1, 1)$ c) $P(5, -100)$ tosi?
 
 \item
+Olkoot $S(x)$ avoin lause ''kuvio $x$ on symmetrinen
+jonkin suoran suhteen'' ja $P(x)$ avoin lause ''kuvio $x$
+on symmetrinen jonkin pisteen suhteen''. Perusjoukon
+muodostavat oheiset kuviot. Ratkaise avoin lause.
+\begin{enumerate}[a)]
+\item $S(x)$,
+\item $P(x)$,
+\item $\lnot (S(x) \lor P(x))$,
+\item $S(x) \lequiv P(x)$.
+\end{enumerate}
+
+\begin{center}
+\includegraphics[width=10cm]{pictures/kpl3_2_teht7}
+\end{center}
+
+\item
 Ratkaise avoin lause $4x^2 + 7x - 2 = 0$, kun perusjoukko
 on a) reaalilukujen joukko b) kokonaislukujen joukko.
 
@@ -911,25 +924,6 @@ Ratkaise avoin lause.
 \item $A(x) \land B(x)$,
 \item $\lnot A(x) \to B(x)$.
 \end{enumerate}
-
-\begin{center}
-\includegraphics[width=10cm]{pictures/kpl3_2_teht7}
-\end{center}
-
-\item
-Olkoot $S(x)$ avoin lause ''kuvio $x$ on symmetrinen
-jonkin suoran suhteen'' ja $P(x)$ avoin lause ''kuvio $x$
-on symmetrinen jonkin pisteen suhteen''. Perusjoukon
-muodostavat oheiset kuviot. Ratkaise avoin lause.
-\begin{enumerate}[a)]
-\item $S(x)$,
-\item $P(x)$,
-\item $\lnot (S(x) \lor P(x))$,
-\item $S(x) \lequiv P(x)$.
-\end{enumerate}
-
-
-
 
 \item
 Arvotaan kaksi lukua, joista molemmat voivat olla 1, 2 tai 3. Arvonnan tuloksena saadaan lukupari $(x, y)$, missä $x$ on ensimmäisen arvonnan tulos ja $y$ toisen arvonnan tulos. Olkoot avoimet lauseet $S(x, y)$: ''$x \le y$'' ja $T(x, y)$: ''tulo $xy$ on jaollinen luvulla 3''. Ratkaise avoin lause, kun perusjoukon muodostavat arvonnan tuloksena saatavat mahdolliset lukuparit
@@ -1269,17 +1263,13 @@ Lause $\forall x\in \nn(2x-3 \le 0)$ on epätosi, sillä esimerkiksi tapauksessa
 b) $\forall x\in \nn(2x-3 \le 0)$. Negaatio on epätosi.
 \end{esimerkki}
 
-
-%\newpage
-
-%\section*{Tehtäviä}
-
 \Harjoitustehtavat
 
 \begin{enumerate}
 
-\item Olkoon perusjoukko kaikki koulun opiskelijat. Olkoon lause
-$T(x)$: ''opiskelija $x$ on täysi-ikäinen''. Suomenna lause.
+\item Olkoon lause
++$T(x)$: ''opiskelija $x$ on täysi-ikäinen'' ja
++perusjoukko kaikki koulun opiskelijat. Suomenna lause.
 \begin{enumerate}[a)]
 \item $\forall x T(x)$
 \item $\exists x T(x)$
@@ -1327,7 +1317,13 @@ Formalisoi lause. Onko lause tosi?
 \item Onko lause tosi? Perustele.
 \begin{enumerate}[a)]
 \item $\forall x\in \rr\exists y\in \rr (xy=1)$
-\item $\exists y\in \rr\forall x\in \rr (xy =x)$
+\item $\exists x\in \R\forall y\in \R (xy=y)$
+\end{enumerate}
+
+\item Onko lause tosi? Perustele. % NVI
+\begin{enumerate}[a)]
+\item $\exists x\in \R\exists y\in \R (xy=x+y)$
+\item $\forall x\in \R\exists y\in \R (xy=x+y)$ 
 \end{enumerate}
 
 \item Olkoon $M(x)$: ''$x$ on matemaatikko''. Formalisoi lause.
@@ -1351,7 +1347,7 @@ Muodosta lauseen negaatio.
 \item Osoita, että lause $\exists a, b, c \in \zz_{+} (a^2 + b^2 =
 c^2)$ on tosi.
 
-\item * % (Lisämateriaalia) 
+\item *
 Olkoot $M(x)$: ''$x$ on matemaatikko'' ja
 $I(x)$: ''$x$ on iloinen''. Formalisoi lause.
 \begin{enumerate}[a)]
@@ -1361,7 +1357,7 @@ $I(x)$: ''$x$ on iloinen''. Formalisoi lause.
 \item Kaikki matemaatikot eivät ole iloisia.
 \end{enumerate}
 
-\item * %(Lisämateriaalia)
+\item *
 Olkoot $K(x)$: ''$x$ on kampaaja'' ja
 $T(x, y)$: ''$x$ tekee $y$:lle kampauksen''. Formalisoi lause.
 \begin{enumerate}[a)]
@@ -1462,7 +1458,7 @@ Funktiolta edellytetään lisäksi, että
 Tulkitse sanallisesti tai kuvaa käyttäen, mitä tämä määritelmä
 tarkoittaa.
 
-\item * %(Lisämateriaalia)
+\item *
  Olkoot $S(x, y)$: ''$x$ on suorittanut
 kurssin $y$'' ja $L(x)$: ''$x$ on lukiolainen''. Formalisoi lause.
 \begin{enumerate}[a)]
@@ -1470,7 +1466,7 @@ kurssin $y$'' ja $L(x)$: ''$x$ on lukiolainen''. Formalisoi lause.
 \item Kukaan lukiolainen ei ole suorittanut kaikkia kursseja.
 \end{enumerate}
 
-\item * %(Lisämateriaalia)
+\item *
 Olkoot $S(x, y)$: ''$x$ on suorittanut
 kurssin $y$'', $L(x)$: ''$x$ on lukiolainen'' ja $M(y)$: ''$y$ on
 pitkän matematiikan kurssi''. Formalisoi lause.
@@ -1485,26 +1481,26 @@ suoritettuna.
 lukiolainen ei ole suorittanut.
 \end{enumerate}
 
-\item * %(Lisämateriaalia)
+\item *
 Määritä kaikki funktiot $f\colon X\to Y$,
 kun $X=\{a, b, c\}$ ja $Y=\{1, 2\}$.
 
-\item * %(Lisämateriaalia)
+\item *
 Määritä kaikki funktiot $f\colon X\to Y$,
 kun $X=\emptyset$ ja $Y\neq \emptyset$.
 
-\item * %(Lisämateriaalia)
+\item *
 Määritä kaikki funktiot $f\colon X\to Y$,
 kun $X\neq \emptyset$ ja $Y= \emptyset$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%FIX ME, linkki toimimaton  %%%%%%%
-\item * %(Lisämateriaalia)
-Tutustu logiikkapohjaiseen Prolog-ohjelmointikieleen\\
-\href{http://www.cs.helsinki.fi/u/wikla/OKP/OppaatK07/prolog.html}
-{{\tt http://www.cs.helsinki.fi/u/wikla/OKP/OppaatK07/prolog.html}}
-
-Lataa koneellesi Prolog-tulkki \href{http://www.gprolog.org/}
-{{\tt http://www.gprolog.org/}}
-ja kokeile Prolog-ohjelmointia.
+%\item *
+%Tutustu logiikkapohjaiseen Prolog-ohjelmointikieleen\\
+%\href{http://www.cs.helsinki.fi/u/wikla/OKP/OppaatK07/prolog.html}
+%{{\tt http://www.cs.helsinki.fi/u/wikla/OKP/OppaatK07/prolog.html}}
+%
+%Lataa koneellesi Prolog-tulkki \href{http://www.gprolog.org/}
+%{{\tt http://www.gprolog.org/}}
+%ja kokeile Prolog-ohjelmointia.
 
 \end{enumerate}
