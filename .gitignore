@@ -2,6 +2,7 @@
 *.bbl
 *.blg
 *.dvi
+*.ent
 *.fdb_latexmk
 *.glg
 *.glo
@@ -26,6 +27,7 @@
 *.snm
 *.sty.backup
 *.synctex.gz
+*.synctex.gz(busy)
 *.tdo
 *.tex.backup
 *.toc
