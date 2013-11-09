@@ -33,7 +33,7 @@
 %luku logiikka ja päättely
 
 
-%Harj.Tehtävät Luku 1
+%Harj.Tehtävät Luku 1, Vastausten tekijä Valtteri Vistiaho 9.11.2013
 \begin{tehtava}
     Onko päättely loogisesti pätevä? Perustele.
     \begin{alakohdat}
@@ -153,7 +153,7 @@
     \end{vastaus}
     
 \end{tehtava}
-%Kotitehtävät Luku 1
+%Kotitehtävät Luku 1, Vastausten tekijä Valtteri Vistiaho 9.11.2013
 \begin{tehtava}
     Ovatko seuraavat päättelyt päteviä? Perustele.
     \begin{alakohdat}
@@ -245,7 +245,7 @@
     \end{vastaus}
     
 \end{tehtava}
-%Harj. Tehtävät Luku 2
+%Harj. Tehtävät Luku 2, Vastausten tekijä Valtteri Vistiaho 9.11.2013
 \begin{tehtava}
     Onko lause atomilause?
     \begin{alakohdat}
@@ -644,7 +644,7 @@ vastaava looginen piiri.}
     \end{vastaus}
     
 \end{tehtava}
-%Luku 2 Kotitehtävät
+%Luku 2 Kotitehtävät, Vastausten tekijä Valtteri Vistiaho 9.11.2013
 \begin{tehtava}
     Kirjoita lauseen negaatio.
     \begin{alakohdat}
@@ -768,16 +768,86 @@ vastaava looginen piiri.}
     \begin{alakohdat}
         \alakohta{$\lnot(A\lor B)$,}
         \alakohta{$\lnot A\land B$,}
-        \alakohta{$ (\lnot A\lor B)\land (A\lor \lnot B)$. \\ 
+        \alakohta{$(\lnot A\lor B)\land (A\lor \lnot B)$. \\ 
         Millä atomilauseiden $A$ ja  $B$ totuusarvojen yhdistelmillä lauseet ovat tosia?} 
     \end{alakohdat}
 
     \begin{vastaus}
         \begin{alakohdat}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|}\hline
+		    $A$ & $B$ & $A\lor B$ & $\lnot(A\lor B)$\\ \hline
+		    $1$ & $1$ & $1$ & $0$ \\ %\hline
+		    $1$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $0$ \\
+		    $0$ & $0$ & $1$ & $0$ \\ \hline \\
+		    Lause on tosi, kun $A$ on tosi ja $B$ epätosi.
+\end{tabular}
+\end{center}}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|}\hline
+		    $A$ & $B$ & $\lnot A$ & $\lnot A\land B$ \\ \hline
+		    $1$ & $1$ & $0$ & $0$  \\ %\hline
+		    $1$ & $0$ & $0$ & $0$ \\
+		    $0$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $0$ \\ \hline \\
+		    Lause on tosi, kun $A$ on epätosi ja $B$ tosi.
+\end{tabular}
+\end{center}}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $\lnot A$ & $\lnot B$ & $(\lnot A\lor B)$ & $(A\lor \lnot B)$ & $(\lnot A\lor B)\land (A\lor \lnot B)$ \\ \hline
+		    $1$ & $1$ & $0$ & $0$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ \\
+		    $0$ & $1$ & $1$ & $0$ & $1$ & $0$ & $0$ \\
+		    $0$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ \hline \\
+		    Lause on tosi, kun $A$ ja $B$ ovat tosia.
+\end{tabular}
+\end{center}}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    
+    \begin{alakohdat}
+        \alakohta{Laadi totuustaulu lauseelle $A\lor (B\land C)$.}
+        \alakohta{Laadi totuustaulu lauseelle $(A\lor B)\land C$.}
+        \alakohta{Vertaa kohtien a) ja b) lauseiden totuusarvoja. Mitä voit päätellä?}
+    \end{alakohdat}
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{
+            \begin{center}
+		    \begin{tabular}{|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $A\lor (B\land C)$\\ \hline
+		    $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $1$ & $0$ & $1$ \\
+		    $1$ & $0$ & $1$ & $1$ \\
+		    $1$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $0$ \\
+		    $0$ & $1$ & $0$ & $0$ \\
+		    $0$ & $0$ & $0$ & $0$ \\ \hline
+\end{tabular}
+\end{center}}
+            \alakohta{
+            \begin{center}
+		    \begin{tabular}{|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $(A\lor B)\land C$\\ \hline
+		    $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $1$ & $0$ & $0$ \\
+		    $1$ & $0$ & $1$ & $1$ \\
+		    $1$ & $0$ & $0$ & $0$ \\
+		    $0$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $0$ \\
+		    $0$ & $1$ & $0$ & $0$ \\
+		    $0$ & $0$ & $0$ & $0$ \\ \hline
+\end{tabular}
+\end{center}}
+            \alakohta{Sulkujen paikka on merkitsevä, ???????????????????} %En tiedä, mitä tehtävän tekijä tässä ajaa takaa.
         \end{alakohdat}
     \end{vastaus}
     
@@ -1023,284 +1093,5 @@ vastaava looginen piiri.}
     
 \end{tehtava}
 
-\begin{tehtava}
-    
-    \begin{alakohdat}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-    \end{alakohdat}
 
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
 
-%Harj.Tehtävät Luku 6
-
-% \section{Suurin yhteinen tekijä ja Eukleideen algoritmi}
-\begin{tehtava}
-    Määritä lukujen suurin yhteinen tekijä.
-    
-    \begin{alakohdat}
-        \alakohta{$15$ ja $20$}
-        \alakohta{$9$ ja $36$}
-        \alakohta{$4$ ja $7$}
-    \end{alakohdat}
-
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{$5$}
-            \alakohta{$9$}
-            \alakohta{$1$}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    Määritä Eukleideen algoritmia käyttäen
-    
-    \begin{alakohdat}
-        \alakohta{$\syt(184, 152)$}
-        \alakohta{$\syt(227, 143)$.}
-    \end{alakohdat}
-
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{$8$}
-            \alakohta{$1$}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    Määritä Eukleideen algoritmia käyttäen
-    
-    \begin{alakohdat}
-        \alakohta{$\syt(272, 1479)$}
-        \alakohta{$\syt(4719, 18207)$.}
-    \end{alakohdat}
-
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{$17$}
-            \alakohta{$3$}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    Esitä murtoluku
-    \begin{alakohdat}
-        \alakohta{$\frac{143}{605}$}
-        \alakohta{$\frac{5989}{30899}$}
-    \end{alakohdat}
-    supistetussa muodossa. Vihje: Määritä osoittajan ja nimittäjän suurin yhteinen tekijä.
-
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{$\frac{13}{55}$}
-            \alakohta{$\frac{113}{583}$}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    % Tarkistettu (Topi Talvitie, 9.11.2013)
-    Osoita, että murtoluku $\frac{8788}{13475}$ ei supistu.
-\end{tehtava}
-
-\begin{tehtava}
-    Leirille osallistui 780 tyttöä ja 612 poikaa. Osallistujat jaettiin keskenään yhtä suuriin ryhmiin siten, että kussakin ryhmässä oli vain tyttöjä tai poikia. Mikä oli suurin mahdollinen ryhmäkoko?
-    
-    \begin{vastaus}
-        12
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    Määritä lukujen $188000100$ ja $188$ suurin yhteinen tekijä.
-
-    \begin{vastaus}
-        $4$
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    Olkoon $a$ positiivinen kokonaisluku. Määritä
-    \begin{alakohdat}
-        \alakohta{$\syt(a, a)$}
-        \alakohta{$\syt(a, 1)$}
-        \alakohta{$\syt(a^2, a)$}
-        \alakohta{$\syt((a+1)!, a!)$.}
-    \end{alakohdat}
-    Merkintä $a!$ tarkoittaa luvun $a$ \termi{kertoma}{kertomaa}. Se on tulo $a! = a \cdot (a-1) \cdot (a-2) \cdot \ldots \cdot 3 \cdot 2 \cdot 1$.
-
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{$a$}
-            \alakohta{$1$}
-            \alakohta{$a$}
-            \alakohta{$a!$}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    % Tarkistettu (Topi Talvitie, 9.11.2013)
-    Olkoon $n$ positiivinen kokonaisluku. Osoita Eukleideen algoritmia käyttäen, että $\syt(n+1, n)=1$.
-\end{tehtava}
-
-\begin{tehtava}
-    Olkoon $n$ positiivinen kokonaisluku. Määritä lukujen $n^2 + 2n$ ja $n + 1$ suurin yhteinen tekijä.
-    
-    \begin{vastaus}
-        1
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    % Tarkistettu (Topi Talvitie, 9.11.2013)
-    Olkoon $n$ positiivinen kokonaisluku. Osoita, että
-    \[\syt(3^{n+1} + 10, 3^n + 2)=1.\]
-\end{tehtava}
-
-% \subsection*{Kotitehtäviä}
-\begin{tehtava}
-    Määritä lukujen suurin yhteinen tekijä.
-    
-    \begin{alakohdat}
-        \alakohta{$63$ ja $7$}
-        \alakohta{$64$ ja $33$}
-        \alakohta{$45$ ja $60$}
-    \end{alakohdat}
-
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{$7$}
-            \alakohta{$1$}
-            \alakohta{$15$}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    Määritä Eukleideen algoritmia käyttäen
-    
-    \begin{alakohdat}
-        \alakohta{$\syt(657, 306)$}
-        \alakohta{$\syt(2197, 4641)$}
-        \alakohta{$\syt(15787, 4111)$.}
-    \end{alakohdat}
-
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{$9$}
-            \alakohta{$13$}
-            \alakohta{$1$}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    Esitä murtoluku
-    \begin{alakohdat}
-        \alakohta{$\frac{182}{299}$}
-        \alakohta{$\frac{7697}{32041}$}
-    \end{alakohdat}
-    supistetussa muodossa.
-
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{$\frac{14}{23}$}
-            \alakohta{$\frac{43}{179}$}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    Leipomo suljettiin remontin ajaksi. Ennen sulkemista laskettiin, että leipomon varastossa oli 4896 vehnäsämpylää ja 1408 grahamsämpylää. Sämpylät pakattiin kuljetusta varten keskenään samankokoisiin pusseihin siten, että kuhunkin pussiin tuli vain vehnä- tai grahamsämpylöitä. Mikä oli suurin mahdollinen pussikoko? Oletetaan, että vehnäsämpylä oli samankokoinen kuin grahamsämpylä ja että yksikään pussi ei jäänyt vajaaksi.
-
-    \begin{vastaus}
-        $32$
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    Määritä lukujen $468468468108$ ja $234$ suurin yhteinen tekijä.
-    
-    \begin{vastaus}
-        $18$
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    Olkoot $a$, $b$ ja $c$ positiivisia kokonaislukuja. Lukujen $a$, $b$ ja $c$ suurin yhteinen tekijä eli $\syt(a, b, c)$ voidaan määrittää siten, että ensin määritetään kahden luvun suurin yhteinen tekijä ja sitten tämän ja kolmannen luvun suurin yhteinen tekijä. Määritä
-    
-    \begin{alakohdat}
-        \alakohta{$\syt(15, 30, 40)$}
-        \alakohta{$\syt(6, 9, 11)$}
-        \alakohta{$\syt(171, 456, 665)$.}
-    \end{alakohdat}
-
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{$5$}
-            \alakohta{$1$}
-            \alakohta{$19$}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    Olkoot $a$ ja $b$ positiivisia kokonaislukuja ja $\syt(a, b)=9$. Voiko tällöin yhtälö $a + b = 186$ olla tosi?
-    
-    \begin{vastaus}
-        Ei voi.
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    Olkoon $n$ positiivinen kokonaisluku. Tutki, mitä arvoja $\syt(n+4, n)$ voi saada.
-    
-    \begin{vastaus}
-        $1$, $2$ ja $4$.
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    Olkoon $n$ positiivinen kokonaisluku. Määritä lukujen $n^2 + 3n$ ja $n + 2$ suurin yhteinen tekijä.
-    
-    \begin{vastaus}
-        Jos $n$ on parillinen, $\syt(n^2 + 3n, n + 2) = 2$, muuten $\syt(n^2 + 3n, n + 2) = 1$.
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    % Tarkistettu (Topi Talvitie, 9.11.2013)
-    Olkoot $a$ ja $b$ positiivisia kokonaislukuja. Osoita, että $\syt(a, b)$ on jaollinen kaikilla lukujen $a$ ja $b$ yhteisillä tekijöillä.
-\end{tehtava}
