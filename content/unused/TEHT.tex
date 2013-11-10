@@ -780,30 +780,30 @@ vastaava looginen piiri.}
 		    $1$ & $1$ & $1$ & $0$ \\ %\hline
 		    $1$ & $0$ & $0$ & $1$ \\
 		    $0$ & $1$ & $1$ & $0$ \\
-		    $0$ & $0$ & $1$ & $0$ \\ \hline \\
-		    Lause on tosi, kun $A$ on tosi ja $B$ epätosi.
+		    $0$ & $0$ & $1$ & $0$ \\ \hline
 \end{tabular}
-\end{center}}
+\end{center}
+		    Lause on tosi, kun $A$ on tosi ja $B$ epätosi.}
             \alakohta{\begin{center}
 		    \begin{tabular}{|c|c|c|c|}\hline
 		    $A$ & $B$ & $\lnot A$ & $\lnot A\land B$ \\ \hline
 		    $1$ & $1$ & $0$ & $0$  \\ %\hline
 		    $1$ & $0$ & $0$ & $0$ \\
 		    $0$ & $1$ & $1$ & $1$ \\
-		    $0$ & $0$ & $1$ & $0$ \\ \hline \\
-		    Lause on tosi, kun $A$ on epätosi ja $B$ tosi.
+		    $0$ & $0$ & $1$ & $0$ \\ \hline
 \end{tabular}
-\end{center}}
+\end{center}
+		    Lause on tosi, kun $A$ on epätosi ja $B$ tosi.}
             \alakohta{\begin{center}
 		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $\lnot A$ & $\lnot B$ & $(\lnot A\lor B)$ & $(A\lor \lnot B)$ & $(\lnot A\lor B)\land (A\lor \lnot B)$ \\ \hline
 		    $1$ & $1$ & $0$ & $0$ & $1$ & $1$ & $1$ \\ %\hline
 		    $1$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ \\
 		    $0$ & $1$ & $1$ & $0$ & $1$ & $0$ & $0$ \\
-		    $0$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ \hline \\
-		    Lause on tosi, kun $A$ ja $B$ ovat tosia.
+		    $0$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ \hline
 \end{tabular}
-\end{center}}
+\end{center}
+		    Lause on tosi, kun $A$ ja $B$ ovat tosia.}
         \end{alakohdat}
     \end{vastaus}
     
@@ -854,7 +854,364 @@ vastaava looginen piiri.}
 \end{tehtava}
 
 \begin{tehtava}
+    Olkoot lauseet $A$: ''$x\in [-3, 1]$'' ja $B$: ''$ x \in [-1, 5]$''. Formalisoi lause.
+    \begin{alakohdat}
+        \alakohta{$x\in [-3, 5]$,}
+        \alakohta{$x\in [-1, 1]$,}
+        \alakohta{$x\in [-3, -1[$}
+        \alakohta{$x\in ]-\infty, -3[$  tai $x\in ]1, \infty[$ ja}
+        \alakohta{$x\in]-\infty, -3[$  tai $x\in ]5, \infty[$.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{$A\lor B$}
+            \alakohta{$A\land B$}
+            \alakohta{$A\land \lnot B$}
+            \alakohta{$\lnot A$}
+            \alakohta{$\lnot(A\land B$}
+        \end{alakohdat}
+    \end{vastaus}
     
+\end{tehtava}
+
+\begin{tehtava}
+    Kolme koiranpentua, Alli, Buh ja Caesar ovat epäiltyinä isännän tohvelin repimisestä. Luotettava henkilö, joka puhuu aina totta, antaa seuraavan todistuksen: ''Ei ole totta, että Alli on syyllinen tai Buh ei ole syyllinen. Mutta kuitenkin Alli on syyllinen tai Caesar on syyllinen.'' Käytä atomilauseita $A$: ''Alli on syyllinen'', $B$: ''Buh on syyllinen'' ja $C$: ''Caesar on syyllinen'' ja formalisoi luotettavan henkilön lausunto. Muodosta sille totuustaulu ja päättele, mikä tai mitkä koiranpennuista ovat syyllisiä.
+
+    \begin{vastaus}
+            \begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $\lnot B$ & $\lnot(A\lor \lnot B)$ & $A\lor C$ & $\lnot(A\lor \lnot B)\land (A\lor C)$\\ \hline
+		    $1$ & $1$ & $1$ & $0$ & $0$ & $1$ & $0$ \\ %\hline
+		    $1$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ \\
+		    $1$ & $0$ & $1$ & $1$ & $0$ & $1$ & $0$ \\
+		    $1$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ \\
+		    $0$ & $1$ & $1$ & $0$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $0$ & $1$ & $0$ \\
+		    $0$ & $1$ & $0$ & $0$ & $1$ & $0$ & $0$ \\
+		    $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $0$ \\ \hline
+\end{tabular}
+\end{center}
+		    Buh ja Caesar ovat syyllisiä.
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Tutkitaan lausetta ''Suomen kuningas ei ole viiksekäs''. Lause voidaan tulkita ainakin kahdella eri tavalla:
+    \begin{alakohdat}
+        \alakohta{Suomella on kuningas, joka ei ole viiksekäs.}
+        \alakohta{Ei ole niin, että olisi olemassa Suomen viiksekästä kuningasta.}
+    \end{alakohdat}
+    Oletetaan, että Suomessa ei ole kuningasta. Onko lause tosi vai epätosi?
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{Epätosi}
+            \alakohta{Tosi}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Kissoilla lyhyen karvan aiheuttaa dominoiva geeni ja pitkän karvan resessiivinen geeni. Merkitään lyhyen karvan geeniä S ja pitkän karvan geeniä s. Kaikilla nisäkkäillä tiettyyn ominaisuuteen vaikuttaa geenipari, joista toinen geeni on saatu isältä ja toinen emolta. Jos kissan geeneistä ainakin toinen on S, niin se on lyhytkarvainen. Kissa on pitkäkarvainen vain siinä tapauksessa, että se on saanut geenin s molemmilta vanhemmiltaan.  Pentujen emokissa on pitkäkarvainen (ss) ja isäkissa lyhytkarvainen (SS tai Ss). Millaisia pentuja kissat voivat saada, kun isäkissan geenipari on
+    \begin{alakohdat}
+        \alakohta{SS}
+        \alakohta{Ss?}
+    \end{alakohdat}
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{Lyhytkarvaisia. (eli Ss)}
+            \alakohta{Lyhyt- tai pitkäkarvaisia. (Ss tai ss)}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Olkoot $A$: ''Matti on insinööri'' ja $B$: ''Matilla on hyvä työpaikka''.
+Suomenna lause.
+    \begin{alakohdat}
+        \alakohta{$A\land B$,}
+        \alakohta{$\lnot A \lor B$,}
+        \alakohta{$A\to B$,}
+        \alakohta{$\lnot B\to A$,}
+        \alakohta{$\lnot( B \to A )$ ja}
+        \alakohta{$ B \lequiv A$.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{Matti on insinööri, jolla on hyvä työpaikka.}
+            \alakohta{Matti ei ole insinööri tai hänellä on hyvä työpaikka.}
+            \alakohta{Jos Matti on insinööri, hänellä on hyvä työpaikka.}
+            \alakohta{Jos Matilla ei ole hyvää työpaikkaa, hän on insinööri.}
+            \alakohta{Ei ole totta, että jos Matilla on hyvä työpaikka, hän olisi insinööri.}
+            \alakohta{Matilla on hyvä työpaikka, jos ja vain jos hän on insinööri.}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Olkoot $A$: ''Liisa on lomalla'' ja $B$: ''Liisa on iloinen''. Formalisoi lauseet:
+    \begin{alakohdat}
+        \alakohta{Jos Liisa on lomalla, hän on iloinen.}
+        \alakohta{Liisa on lomalla, mutta hän ei ole iloinen.}
+        \alakohta{Liisa on iloinen silloin ja vain silloin, kun hän on lomalla.}
+        \alakohta{Jos Liisa ei ole iloinen, hän ei ole lomalla.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{$A\to B$}
+            \alakohta{$A\land B$}
+            \alakohta{$B\lequiv A$}
+            \alakohta{$\lnot B\to \lnot A$}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Onko lause tosi?
+    \begin{alakohdat}
+        \alakohta{Jos Tallinna on Norjan pääkaupunki, niin Tukholma on Ruotsin pääkaupunki.}
+        \alakohta{Jos Tallinna on Norjan pääkaupunki, niin Budapest on Ruotsin pääkaupunki.}
+        \alakohta{Jos Leonardo da Vinci on kuollut, niin Aleksis Kivi on saksalainen ralliautoilija.}
+        \alakohta{Jos Leonardo da Vinci on kuollut, niin Leo Tolstoi on venäläinen kirjailija.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{Epätosi}
+            \alakohta{Tosi}
+            \alakohta{Epätosi}
+            \alakohta{Tosi}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Laadi lauseen totuustaulu.
+    \begin{alakohdat}
+        \alakohta{$\lnot A \to B$}
+        \alakohta{$A\lequiv \lnot B$}
+        \alakohta{$\lnot( A\land B )\to A$}
+    \end{alakohdat}
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|}\hline
+		    $A$ & $B$ & $\lnot A$ & $\lnot A \to B$ \\ \hline
+		    $1$ & $1$ & $0$ & $1$ \\ %\hline
+		    $1$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $0$ \\ \hline
+\end{tabular}
+\end{center}}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|}\hline
+		    $A$ & $B$ & $\lnot B$ & $A\lequiv \lnot B$ \\ \hline
+		    $1$ & $1$ & $0$ & $0$ \\ %\hline
+		    $1$ & $0$ & $1$ & $1$ \\
+		    $0$ & $1$ & $0$ & $1$ \\
+		    $0$ & $0$ & $1$ & $0$ \\ \hline
+\end{tabular}
+\end{center}}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $A\land B$ & $\lnot(A\land B)$ & $\lnot(A\land B)\to A$ \\ \hline
+		    $1$ & $1$ & $1$ & $0$ & $1$ \\ %\hline
+		    $1$ & $0$ & $0$ & $1$ & $1$ \\
+		    $0$ & $1$ & $0$ & $1$ & $0$ \\
+		    $0$ & $0$ & $0$ & $1$ & $0$ \\ \hline
+\end{tabular}
+\end{center}}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Laadi lauseen totuustaulu.
+    \begin{alakohdat}
+        \alakohta{$\lnot A \lor B \to C \land A$}
+        \alakohta{$( A\to B ) \lequiv (C\to B)$}
+    \end{alakohdat}
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{
+            \begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $\lnot A$ & $\lnot A \lor B$ & $C\land A$ & $\lnot A \lor B \to C \land A$\\ \hline
+		    $1$ & $1$ & $1$ & $0$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $1$ & $0$ & $0$ & $1$ & $0$ & $0$ \\
+		    $1$ & $0$ & $1$ & $0$ & $0$ & $1$ & $1$ \\
+		    $1$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $1$ & $1$ & $0$ & $0$ \\
+		    $0$ & $0$ & $1$ & $1$ & $1$ & $0$ & $0$ \\
+		    $0$ & $1$ & $0$ & $1$ & $1$ & $0$ & $0$ \\
+		    $0$ & $0$ & $0$ & $1$ & $1$ & $0$ & $0$ \\ \hline
+\end{tabular}
+\end{center}}
+            \alakohta{
+            \begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $A\to B$ & $C\to B$ & $(A\to B)\lequiv(C\to B)$ \\ \hline
+		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $1$ & $0$ & $1$ & $1$ & $1$ \\
+		    $1$ & $0$ & $1$ & $0$ & $0$ & $1$ \\
+		    $1$ & $0$ & $0$ & $0$ & $1$ & $0$ \\
+		    $0$ & $1$ & $1$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $0$ & $0$ \\
+		    $0$ & $1$ & $0$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $0$ & $1$ & $1$ & $1$ \\ \hline
+\end{tabular}
+\end{center}}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Formalisoi lause. Missä tilanteissa lause on tosi?
+    \begin{alakohdat}
+        \alakohta{Jos mustikat polun varrella eivät ole kypsiä, niin polulla vaeltaminen on turvallista.}
+        \alakohta{Jos mustikat polun varrella ovat kypsiä, niin silloin polulla vaeltaminen on turvallista, jos ja vain jos karhuja ei ole nähty alueella. }
+        \alakohta{Polulla vaeltaminen on turvallista silloin ja vain silloin, kun mustikat eivät ole kypsiä tai alueella ei ole nähty karhuja.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    Olkoot $A$: ''Mustikat polun varrella ovat kypsiä.'', $B$: ''Polulla vaeltaminen on turvallista.'' ja $C$: ''Karhuja on nähty alueella.''
+        \begin{alakohdat}
+            \alakohta{$\lnot A\to B$, ?????????????????????} %En ymmärrä, mitä kysymyksen tekijä ajaa takaa kohdassa ''Missä tilanteissa lause on tosi?''
+            \alakohta{$(A\to B)\lequiv \lnot C$, ?????????????????????} %En ymmärrä, mitä kysymyksen tekijä ajaa takaa kohdassa ''Missä tilanteissa lause on tosi?''
+            \alakohta{$B\lequiv(\lnot A\lor \lnot C)$, ?????????????????????} %En ymmärrä, mitä kysymyksen tekijä ajaa takaa kohdassa ''Missä tilanteissa lause on tosi?''
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Formalisoi lause ja laadi lauseen totuustaulu. Mitä huomaat? Kertooko lause mitään siitä, onko logiikan opiskelu oikeasti hauskaa juuri tällä hetkellä? 
+    \begin{alakohdat}
+        \alakohta{Jos sataa ja ei sada, niin logiikan opiskelu on hauskaa.}
+        \alakohta{Jos sataa ja ei sada, niin logiikan opiskelu ei ole hauskaa.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    Olkoot $A$: ''Sataa.'' ja $B$: ''Logiikan opiskelu on hauskaa.''
+        \begin{alakohdat}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $\lnot A$ & $A\land \lnot A$ & $(A\land \lnot A)\to B$ \\ \hline
+		    $1$ & $1$ & $0$ & $0$ & $1$ \\ %\hline
+		    $1$ & $0$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $0$ & $1$ \\
+		    $0$ & $0$ & $1$ & $0$ & $1$ \\ \hline
+\end{tabular}
+\end{center}
+	Ei kerro.}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $\lnot A$ & $A\land \lnot A$ & $(A\land \lnot A)\to \lnot B$ \\ \hline
+		    $1$ & $1$ & $0$ & $0$ & $1$ \\ %\hline
+		    $1$ & $0$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $0$ & $1$ \\
+		    $0$ & $0$ & $1$ & $0$ & $1$ \\ \hline
+\end{tabular}
+\end{center}
+	Ei kerro.}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Perheen lapsia Annaa ja Markusta epäillään kaappiin piilotetun suklaalevyn katoamisesta. Luotettava todistaja kertoo tiedot:
+Anna on syyllinen tai Markus on syyllinen.
+Anna on syytön tai Markus on syytön. 
+Jos Anna on syyllinen, niin Markus on syyllinen.
+
+Kumpi lapsista on käynyt suklaavarkaissa?
+    \begin{vastaus} \newline
+        Olkoot $A$: ''Anna on syyllinen.'' ja $B$: ''Markus on syyllinen.
+        \begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $\lnot A$ & $\lnot B$ & $A\lor B$ & $\lnot A\lor \lnot B$ & $A\to B$ & $(A\lor B)\land(\lnot A\lor \lnot B)\land(A\to B)$ \\ \hline
+		    $1$ & $1$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ \\ %\hline
+		    $1$ & $0$ & $0$ & $1$ & $1$ & $1$ & $0$ & $0$ \\
+		    $0$ & $1$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $0$ & $1$ & $1$ & $0$ \\ \hline
+\end{tabular}
+\end{center}
+    Markus on syyllinen.
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Edwards, Petterson ja Smith ovat syytettyinä omenavarkaudesta. Neiti Marble kuulustelee heitä. Edwards sanoo: ''Jos Petterson on syytön, niin minä olen syyllinen.'' Petterson toteaa: ''Minä olen syyllinen, jos ja vain jos Edwards on syyllinen.'' Smith väittää: ''Olemme kaikki syyttömiä.'' Neiti Marble tietää, että syylliset valehtelevat aina ja syyttömät puhuvat aina totta. Ratkaise totuustaulun avulla, kuka tai ketkä syytetyistä ovat käyneet omenavarkaissa.
+    \begin{vastaus}
+    Olkoot $E$: ''Edwards on syyllinen.'', $P$: ''Petterson on syyllinen.'' ja $S$: ''Smith on syyllinen.''
+            \begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
+		    $E$ & $P$ & $S$ & $\lnot E$ & $\lnot P$ & $\lnot S$ & $\lnot P\to E$ & $P\lequiv E$ & $\lnot E\land \lnot P \land \lnot S$ \\ \hline
+		    $1$ & $1$ & $1$ & $0$ & $0$ & $0$ & $1$ & $1$ & $0$ \\ %\hline
+		    $1$ & $1$ & $0$ & $0$ & $0$ & $1$ & $1$ & $1$ & $0$ \\
+		    $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $0$ \\
+		    $1$ & $0$ & $0$ & $0$ & $1$ & $1$ & $1$ & $0$ & $0$ \\
+		    $0$ & $1$ & $1$ & $1$ & $0$ & $0$ & $1$ & $0$ & $0$ \\
+		    $0$ & $0$ & $1$ & $1$ & $1$ & $0$ & $0$ & $1$ & $0$ \\
+		    $0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $1$ & $0$ & $0$ \\
+		    $0$ & $0$ & $0$ & $1$ & $1$ & $1$ & $0$ & $1$ & $1$ \\ \hline
+\end{tabular}
+\end{center}
+    Petterson ja Smith ovat syyllisiä. ?????????????????????????????????? %Tähän voisi lisätä selityksen, miksi näin on.
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Eräässä maassa kaikki kuuluvat joko hattujen tai myssyjen puolueeseen. Hatut valehtelevat aina ja myssyt puhuvat aina totta. Kolme kansalaista keskusteli keskenään. Heidän joukossaan saattoi olla vieraan puolueen vakoilija. Arthur sanoi, että Claus on myssy. Berit totesi, että Arthur on myssy ja myös hän itse on myssy. Claus väitti, että jos Arthur on hattu, niin myös hän itse on hattu. Tutki totuustaulun avulla, kuka oli mahdollinen vakoilija.
+     \begin{vastaus} \newline
+    Olkoot $A$: ''Arthur on myssy.'', $B$: ''Berit on myssy.'', $C$: ''Claus on myssy.'' ja niiden negaatiot tarkoittavat heidän kuuluvan hattuihin.
+        \begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $\lnot A$ & $\lnot C$ & $A\land B$ & $\lnot A\to \lnot C$ \\ \hline
+		    $1$ & $1$ & $1$ & $0$ & $0$ & $1$ & $1$ \\ %\hline
+		    $1$ & $1$ & $0$ & $0$ & $1$ & $1$ & $1$ \\
+		    $1$ & $0$ & $1$ & $0$ & $0$ & $0$ & $1$ \\
+		    $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $1$ & $0$ & $0$ & $0$ \\
+		    $0$ & $0$ & $1$ & $1$ & $0$ & $0$ & $0$ \\
+		    $0$ & $1$ & $0$ & $1$ & $1$ & $0$ & $1$ \\
+		    $0$ & $0$ & $0$ & $1$ & $1$ & $0$ & $1$ \\ \hline
+\end{tabular}
+\end{center}
+		Berit on mahdollinen vakoilija. ??????????????????????? %Tähän voisi lisätä selityksen, miksi näin on.   
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Olkoot lauseet $A$: ''herään ajoissa'', $B$: ''menen kouluun'' ja $C$: ''opiskelen logiikkaa''.
+     Esitä sanoin lause $A \to B \lor C$. Onko lauseen tulkinta $A \to (B \lor C)$ vai $(A \to B) \lor C$? Miten tulkinnat eroavat toisistaan? 
+        \begin{vastaus} \newline
+	 Jos herään ajoissa, menen kouluun tai opiskelen logiikkaa. Lause tulkitaan $A\to (B\lor C)$, koska konnektiivien suoritusjärjestyksessä disjunktio on ennen implikaatiota. $(A\to B)\lor C$ tarkottaa: ''Jos herään ajoissa, menen kouluun, tai opiskelen logiikkaa.'' Tämän voi tulkita: ''Jos herään ajoissa, menen kouluun ja opiskelen logiikkaa.'' tai ''En herää ajoissa ja opiskelen logiikkaa joko koulussa tai muualla.'' ???????????? 
+	 %Voisi tehdä selvemmäksi.
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     
     \begin{alakohdat}
         \alakohta{}
         \alakohta{}
@@ -863,6 +1220,7 @@ vastaava looginen piiri.}
     \end{alakohdat}
 
     \begin{vastaus}
+    
         \begin{alakohdat}
             \alakohta{}
             \alakohta{}
@@ -874,7 +1232,7 @@ vastaava looginen piiri.}
 \end{tehtava}
 
 \begin{tehtava}
-    
+     
     \begin{alakohdat}
         \alakohta{}
         \alakohta{}
@@ -883,6 +1241,7 @@ vastaava looginen piiri.}
     \end{alakohdat}
 
     \begin{vastaus}
+    
         \begin{alakohdat}
             \alakohta{}
             \alakohta{}
@@ -894,7 +1253,7 @@ vastaava looginen piiri.}
 \end{tehtava}
 
 \begin{tehtava}
-    
+     
     \begin{alakohdat}
         \alakohta{}
         \alakohta{}
@@ -903,6 +1262,7 @@ vastaava looginen piiri.}
     \end{alakohdat}
 
     \begin{vastaus}
+    
         \begin{alakohdat}
             \alakohta{}
             \alakohta{}
@@ -914,7 +1274,7 @@ vastaava looginen piiri.}
 \end{tehtava}
 
 \begin{tehtava}
-    
+     
     \begin{alakohdat}
         \alakohta{}
         \alakohta{}
@@ -923,6 +1283,7 @@ vastaava looginen piiri.}
     \end{alakohdat}
 
     \begin{vastaus}
+    
         \begin{alakohdat}
             \alakohta{}
             \alakohta{}
@@ -934,7 +1295,7 @@ vastaava looginen piiri.}
 \end{tehtava}
 
 \begin{tehtava}
-    
+     
     \begin{alakohdat}
         \alakohta{}
         \alakohta{}
@@ -943,6 +1304,7 @@ vastaava looginen piiri.}
     \end{alakohdat}
 
     \begin{vastaus}
+    
         \begin{alakohdat}
             \alakohta{}
             \alakohta{}
@@ -954,7 +1316,7 @@ vastaava looginen piiri.}
 \end{tehtava}
 
 \begin{tehtava}
-    
+     
     \begin{alakohdat}
         \alakohta{}
         \alakohta{}
@@ -963,6 +1325,7 @@ vastaava looginen piiri.}
     \end{alakohdat}
 
     \begin{vastaus}
+    
         \begin{alakohdat}
             \alakohta{}
             \alakohta{}
@@ -974,7 +1337,7 @@ vastaava looginen piiri.}
 \end{tehtava}
 
 \begin{tehtava}
-    
+     
     \begin{alakohdat}
         \alakohta{}
         \alakohta{}
@@ -983,6 +1346,7 @@ vastaava looginen piiri.}
     \end{alakohdat}
 
     \begin{vastaus}
+    
         \begin{alakohdat}
             \alakohta{}
             \alakohta{}
@@ -993,105 +1357,7 @@ vastaava looginen piiri.}
     
 \end{tehtava}
 
-\begin{tehtava}
-    
-    \begin{alakohdat}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-    \end{alakohdat}
 
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    
-    \begin{alakohdat}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-    \end{alakohdat}
-
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    
-    \begin{alakohdat}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-    \end{alakohdat}
-
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    
-    \begin{alakohdat}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-    \end{alakohdat}
-
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
-
-\begin{tehtava}
-    
-    \begin{alakohdat}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-    \end{alakohdat}
-
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-        \end{alakohdat}
-    \end{vastaus}
-    
-\end{tehtava}
 
 %Harj.Tehtävät Luku 6
 
