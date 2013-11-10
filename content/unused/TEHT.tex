@@ -2377,7 +2377,361 @@ toinen kokonaisluvuista $m$ ja $n$ on jaollinen luvulla $149$.}
     Jos luvut $n$ ja $n + 2$ ovat alkulukuja, niin kyseistä lukuparia kutsutaan alkulukukaksosiksi. Se, onko alkulukukaksosia äärettömän monta, on vielä ratkaisematon lukuteorian ongelma. Etsi kymmenen alkulukukaksosta. Käytä laskinta tai tietokonetta apunasi.
     
     \begin{vastaus}
-        Esimerkiksi 10 pienintä $n$ siten että $n$ ja $n + 2$ ovat alkulukukaksoset: $3$, $5$, $11$, $17$, $29$, $41$, $59$, $71$, $101$, $107$.
+        Esimerkiksi 10 pienintä $n$ siten että $n$ ja $n + 2$ ovat alkulukukaksoset ovat: $3$, $5$, $11$, $17$, $29$, $41$, $59$, $71$, $101$, $107$.
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Mikä on lukujen suurin yhteinen tekijä?
+    \begin{alakohdat}
+        \alakohta{$2^2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13$ ja
+$2^{11} \cdot 3^8 \cdot 11 \cdot 17^{10}$}
+        \alakohta{$5 \cdot 7^3 \cdot 19^2$ ja $3 \cdot 11^2 \cdot 41$}
+    \end{alakohdat}
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{$132 = 2^2\cdot 3\cdot 11$}
+            \alakohta{$1$}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Mikä on lukujen pienin yhteinen jaettava?
+    
+    \begin{alakohdat}
+        \alakohta{$7^3 \cdot 11^2$ ja $2^4 \cdot 7^2 \cdot 11$}
+        \alakohta{$41 \cdot 43$ ja $41 \cdot 43$}
+        \alakohta{$2 \cdot 7$ ja $5 \cdot 13$}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{$2^4\cdot 7^3\cdot 11^2$}
+            \alakohta{$1763 = 41\cdot 43$}
+            \alakohta{$910 = 2\cdot 5\cdot 7\cdot 13$}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Määritä alkutekijähajotelman avulla lukujen
+    \begin{alakohdat}
+        \alakohta{$70$ ja $385$}
+        \alakohta{$240$ ja $4900$}
+        \alakohta{$2310$ ja $17199$}
+    \end{alakohdat}
+    suurin yhteinen tekijä ja pienin yhteinen jaettava.
+
+    \begin{vastaus}
+        Suurin yhteinen tekijä:
+        \begin{alakohdatrivi}
+            \alakohta{$35$}
+            \alakohta{$20$}
+            \alakohta{$21$.}
+        \end{alakohdatrivi}
+
+        Pienin yhteinen jaettava:
+        \begin{alakohdat}
+            \alakohta{$770 = 2\cdot 5\cdot 7\cdot 11$}
+            \alakohta{$58800 = 2^4\cdot 3\cdot 5^2\cdot 7^2$}
+            \alakohta{$2\cdot 3^3\cdot 5\cdot 7^2\cdot 11\cdot 13$.}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Määritä $\syt(117325, 16625)$ ja $\pyj(117325, 16625)$.
+    
+    \begin{vastaus}
+        \begin{align*}
+        \syt(117325, 16625) &= 5^2\cdot 19 = 475 \\
+        \pyj(117325, 16625) &= 5^3\cdot 7\cdot 13\cdot 19^2
+        \end{align*}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Pulsarit ovat nopeasti pyöriviä ja rytmisiä radiopulsseja säteileviä tähtiä. Pulsari X lähettää radiopulssin $510$ millisekunnin välein, pulsari Y taas $357$ millisekunnin välein.
+
+    \begin{alakohdat}
+        \alakohta{Eräänä ajanhetkenä molempien pulsarien lähettämä pulssi
+havaitaan yhtä aikaa. Kuinka pitkän ajan kuluttua molempien
+pulsarien pulssit havaitaan yhtä aikaa seuraavan kerran?}
+        \alakohta{Kuinka monta kierrosta pulsarit pyörähtävät kyseisenä
+aikana?} % FIXME: ei voi ratkoa, poista kun yhteensopivuuden voi rikkoa
+    \end{alakohdat}
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{$3570$ millisekunnin kuluttua.}
+            \alakohta{Virhe kirjassa: tehtävää ei voi ratkaista annetuilla tiedoilla, mikäli ei tunneta pulsarien pyörimisen yhteyttä radiopulsseihin.}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Perustele väite todeksi tai epätodeksi.
+    \begin{alakohdat}
+        \alakohta{Jos luku on jaollinen luvuilla $15$ ja $12$, niin se on
+jaollinen myös luvulla $180$.}
+        \alakohta{Jos luku on jaollinen luvuilla $36$ ja $5$, niin se on
+jaollinen myös luvulla $180$}
+    \end{alakohdat}
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{Väite ei päde. Vastaesimerkki: luku $60$ on jaollinen luvuilla $15$ ja $12$ mutta ei luvulla $180$.}
+            \alakohta{Väite pätee sillä $\syt(36, 5) = 1$ ja $180 = 36\cdot 5$.}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    % Tarkistettu (Topi Talvitie, 10.11.2013)
+    Osoita, että luku $5n^3 - 5n$ on jaollinen luvulla $30$, kun $n$ on luonnollinen luku.
+\end{tehtava}
+
+\begin{tehtava}
+    % Tarkistettu (Topi Talvitie, 10.11.2013)
+    Osoita, että muotoa $p^2 - 1$ oleva luku on jaollinen luvulla $12$, kun $p$ on alkuluku ja suurempi kuin $3$. [YO kevät 2010 tehtävä 12]
+\end{tehtava}
+
+\begin{tehtava}
+    Erään maan olympiajoukkueessa oli vain yleisurheilijoita ja
+    purjehtijoita. Yleisurheilijoita oli neljä kertaa niin paljon kuin
+    purjehtijoita. Naisia oli kaksi kertaa niin paljon kuin miehiä.
+    Kun joukkue matkusti 100-paikkaisella lentokoneella kisoihin,
+    oli koneen matkustajista noin puolet joukkueen urheilijoita ja
+    loput valmentajia, huoltajia ja median edustajia. Kuinka monta
+    urheilijaa joukkueessa oli? [Tarkennus tehtävään: tässä "noin puolet" tarkoittaa että erotus 50:een on alle 7.] % FIXME: Korjaa tehtävä kun yhteensopivuus voidaan rikkoa.
+    
+    \begin{vastaus}
+        45
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    % Tarkistettu (Topi Talvitie, 10.11.2013)
+    Olkoon $n$ kokonaisluku. Osoita, että luku $n^5+10n^4+35n^3+50n^2+24n$ on jaollinen luvulla $120$. Vihje: Käytä symbolisen laskimen {\tt factor}-toimintoa.
+\end{tehtava}
+
+\begin{tehtava}
+    
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
     \end{vastaus}
     
 \end{tehtava}
