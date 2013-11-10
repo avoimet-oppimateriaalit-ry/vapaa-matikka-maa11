@@ -2041,10 +2041,10 @@ Kumpi lapsista on käynyt suklaavarkaissa?
 
 \begin{tehtava}
     Millä luvuilla on luvun $241$ jaollisuus vähintään tutkittava, jotta saadaan selville, onko se alkuluku?
-    \begin{vastaus}
-        Riittää tarkistaa jaollisuus alkuluvuilla $\sqrt{241}$ asti.
-    \end{vastaus}
     
+    \begin{vastaus}
+        Riittää tarkistaa jaollisuus alkuluvuilla $\sqrt{241}$ asti, eli siis alkuluvuilla $2$, $3$, $5$, $7$, $11$, $13$.
+    \end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -2217,4 +2217,167 @@ jaollinen myös luvulla $54$.}
     \]
     Osoita lauseen tämän muodon avulla, että $n^{19}\equiv n \quad
     (\mod 19)$ kaikilla luonnollisilla luvuilla $n$.
+\end{tehtava}
+
+\begin{tehtava}
+    Muotoa $F_n = 2^{2^n}+1$, $n=0, 1, 2, \ldots$ olevia lukuja sanotaan \termi{Fermat'n luvut}{Fermat'n luvuiksi}. Euler tutki 1700-luvulla, ovatko kaikki Fermat'n luvut alkulukuja. Ratkaise tämä Eulerin ongelma laskinta käyttäen.
+    
+    \begin{vastaus}
+        Kaikki Fermat'n luvut eivät ole alkulukuja, sillä $F_5$ ei ole alkuluku. Tämä voidaan todeta laskimella käymällä Fermat'n lukuja läpi.
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+    % Tarkistettu (Topi Talvitie, 10.11.2013)
+    % Tämä spoilaa edellisen tehtävän, pitäisikö järjestellä uudestaan?
+    Fermat'n luvut $F_0, F_1, F_2, F_3, F_4$ ovat alkulukuja. Tämän perusteella Fermat oletti, että loputkin luvut $F_n$, $n=5, 6, \ldots$, ovat alkulukuja. Vuonna 1732 Euler kuitenkin havaitsi, että $5^4 + 2^4 = 641$
+ja $1 + 5\cdot 2^7 = 641$ ja onnistui näiden yhtälöiden avulla todistamaan, että $641 | F_5$. Todista tämä tulos.
+
+Vihje: Eulerin havaitsemista yhtälöistä seuraa, että
+\[
+2^4 \equiv -5^4\ (\mod\ 641)\quad\text{ ja }\quad5\cdot 2^7 \equiv -1\ (\mod\ 641).
+\]
+\end{tehtava}
+
+\begin{tehtava}
+    % Tarkistettu (Topi Talvitie, 10.11.2013)
+    Osoita, että kaikilla $n\in\zz_{+}=1, 2, 3, \ldots$ pätee
+\[
+F_{0}F_{1}\cdot \ldots \cdot F_{n-1} = F_{n} - 2.
+\]
+Esitä tämän yhtälön perusteella uusi todistus sille,
+että alkulukuja on äärettömän monta.
+\end{tehtava}
+
+\begin{tehtava}
+    Päättele, kuinka monta nollaa on luvun $50!$ lopussa.
+
+    \begin{vastaus}
+        12
+    \end{vastaus}
+    
+\end{tehtava}
+
+% \subsection*{Kotitehtäviä}
+
+\begin{tehtava}
+    Onko luku
+    \begin{alakohdat}
+        \alakohta{$43$}
+        \alakohta{$39$}
+        \alakohta{$79$}
+        \alakohta{$221$}
+    \end{alakohdat}
+    alkuluku?
+    
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{On.}
+            \alakohta{Ei ole.}
+            \alakohta{On.}
+            \alakohta{Ei ole.}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Pitääkö väite paikkansa? Perustele.
+    
+    \begin{alakohdat}
+        \alakohta{Jos tulo $mn$ on jaollinen luvulla $171$, niin ainakin
+toinen kokonaisluvuista $m$ ja $n$ on jaollinen luvulla $171$.}
+        \alakohta{Jos tulo $mn$ on jaollinen luvulla $149$, niin ainakin
+toinen kokonaisluvuista $m$ ja $n$ on jaollinen luvulla $149$.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{Väite ei pidä paikkaansa. Vastaesimerkki: $m = 9$ ja $n = 19$.}
+            \alakohta{Väite pitää paikkansa Eukleideen lemman nojalla, sillä $149$ on alkuluku.}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Määritä luvun alkutekijähajotelma.
+
+    \begin{alakohdat}
+        \alakohta{$126$}
+        \alakohta{$13200$}
+        \alakohta{$1000000$}
+    \end{alakohdat}
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{$2\cdot 3^2\cdot 7$}
+            \alakohta{$2^4\cdot 3\cdot 5^2\cdot 11$}
+            \alakohta{$2^6\cdot 5^6$}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Millä luvuilla on luvun $267$ jaollisuus vähintään tutkittava, jotta saadaan selville, onko se alkuluku?
+    
+    \begin{vastaus}
+        Riittää tarkistaa jaollisuus alkuluvuilla $\sqrt{267}$ asti, eli siis alkuluvuilla $2$, $3$, $5$, $7$, $11$, $13$.
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Onko luku
+    \begin{alakohdat}
+        \alakohta{$229$}
+        \alakohta{$251$}
+        \alakohta{$707$}
+        \alakohta{$2827$}
+    \end{alakohdat}
+    alkuluku?
+    
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{On.}
+            \alakohta{On.}
+            \alakohta{Ei ole.}
+            \alakohta{Ei ole.}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Tutki laskimen {\tt factor}-toiminnolla, onko luku
+    \begin{alakohdat}
+        \alakohta{$72\,222\,222\,227$}
+        \alakohta{$7\,222\,222\,227$}
+        \alakohta{$722\,222\,227$}
+    \end{alakohdat}
+    alkuluku.
+
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{Luku ei ole alkuluku.}
+            \alakohta{Luku ei ole alkuluku.}
+            \alakohta{Luku on alkuluku.}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+    Etsi Internetistä, mikä on tällä hetkellä suurin tunnettu alkuluku.
+\end{tehtava}
+
+\begin{tehtava}
+    Jos luvut $n$ ja $n + 2$ ovat alkulukuja, niin kyseistä lukuparia kutsutaan alkulukukaksosiksi. Se, onko alkulukukaksosia äärettömän monta, on vielä ratkaisematon lukuteorian ongelma. Etsi kymmenen alkulukukaksosta. Käytä laskinta tai tietokonetta apunasi.
+    
+    \begin{vastaus}
+        Esimerkiksi 10 pienintä $n$ siten että $n$ ja $n + 2$ ovat alkulukukaksoset: $3$, $5$, $11$, $17$, $29$, $41$, $59$, $71$, $101$, $107$.
+    \end{vastaus}
+    
 \end{tehtava}
