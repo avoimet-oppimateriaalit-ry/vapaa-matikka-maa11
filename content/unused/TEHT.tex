@@ -33,7 +33,7 @@
 %luku logiikka ja päättely
 
 
-%Harj.Tehtävät Luku 1, Vastausten tekijä Valtteri Vistiaho 9.11.2013
+%Harj.Tehtävät Luku 1, vastausten tekijä Valtteri Vistiaho 9.11.2013
 \begin{tehtava}
     Onko päättely loogisesti pätevä? Perustele.
     \begin{alakohdat}
@@ -153,7 +153,7 @@
     \end{vastaus}
     
 \end{tehtava}
-%Kotitehtävät Luku 1, Vastausten tekijä Valtteri Vistiaho 9.11.2013
+%Kotitehtävät Luku 1, vastausten tekijä Valtteri Vistiaho 9.11.2013
 \begin{tehtava}
     Ovatko seuraavat päättelyt päteviä? Perustele.
     \begin{alakohdat}
@@ -245,7 +245,7 @@
     \end{vastaus}
     
 \end{tehtava}
-%Harj. Tehtävät Luku 2, Vastausten tekijä Valtteri Vistiaho 9.11.2013
+%Harj. Tehtävät Luku 2.1, vastausten tekijä Valtteri Vistiaho 9.11.2013
 \begin{tehtava}
     Onko lause atomilause?
     \begin{alakohdat}
@@ -644,7 +644,7 @@ vastaava looginen piiri.}
     \end{vastaus}
     
 \end{tehtava}
-%Luku 2 Kotitehtävät, Vastausten tekijä Valtteri Vistiaho 9.11.2013
+%Luku 2.1 Kotitehtävät, vastausten tekijä Valtteri Vistiaho 9.11.2013
 \begin{tehtava}
     Kirjoita lauseen negaatio.
     \begin{alakohdat}
@@ -762,7 +762,7 @@ vastaava looginen piiri.}
     \end{vastaus}
     
 \end{tehtava}
-
+%Luku 2.1 kotitehtäviä, vastauksien tekijä Valtteri Vistiaho 10.11.2013
 \begin{tehtava}
     Laadi totuustaulu lauseille
     \begin{alakohdat}
@@ -929,7 +929,7 @@ vastaava looginen piiri.}
     \end{vastaus}
     
 \end{tehtava}
-
+%Luku 2.2 Harjoitustehtäviä, vastauksien tekijä Valtteri Vistiaho 10.11.2013
 \begin{tehtava}
     Olkoot $A$: ''Matti on insinööri'' ja $B$: ''Matilla on hyvä työpaikka''.
 Suomenna lause.
@@ -1206,6 +1206,675 @@ Kumpi lapsista on käynyt suklaavarkaissa?
         \begin{vastaus} \newline
 	 Jos herään ajoissa, menen kouluun tai opiskelen logiikkaa. Lause tulkitaan $A\to (B\lor C)$, koska konnektiivien suoritusjärjestyksessä disjunktio on ennen implikaatiota. $(A\to B)\lor C$ tarkottaa: ''Jos herään ajoissa, menen kouluun, tai opiskelen logiikkaa.'' Tämän voi tulkita: ''Jos herään ajoissa, menen kouluun ja opiskelen logiikkaa.'' tai ''En herää ajoissa ja opiskelen logiikkaa joko koulussa tai muualla.'' ???????????? 
 	 %Voisi tehdä selvemmäksi.
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Vertaa lauseiden totuusarvoja atomilauseiden $A$, $B$ ja $C$ eri totuusarvoilla. Onko sulkeiden muuttamisella vaikutusta lauseen totuusarvoon?
+    \begin{alakohdat}
+        \alakohta{$(A\to B)\to C$ ja $A\to (B\to C)$.}
+        \alakohta{$(A\land B)\land C$ ja $A\land (B\land C)$.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $A\to B$ & $B\to C$ & $(A\to B)\to C$ & $A\to(B\to C)$ \\ \hline
+		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $1$ & $0$ & $1$ & $0$ & $0$ & $0$ \\
+		    $1$ & $0$ & $1$ & $0$ & $1$ & $1$ & $1$ \\
+		    $1$ & $0$ & $0$ & $0$ & $1$ & $1$ & $1$ \\
+		    $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ \\
+		    $0$ & $1$ & $0$ & $1$ & $0$ & $0$ & $1$ \\
+		    $0$ & $0$ & $0$ & $1$ & $1$ & $0$ & $1$ \\ \hline
+\end{tabular}
+\end{center}
+Sulkeiden muuttamisella on vaikutusta.}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $A\land B$ & $B\land C$ & $(A\land B)\land C$ & $A\land(B\land C)$ \\ \hline
+		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $1$ & $0$ & $1$ & $0$ & $0$ & $0$ \\
+		    $1$ & $0$ & $1$ & $0$ & $0$ & $0$ & $0$ \\
+		    $1$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\
+		    $0$ & $1$ & $1$ & $0$ & $1$ & $0$ & $0$ \\
+		    $0$ & $0$ & $1$ & $0$ & $0$ & $0$ & $0$ \\
+		    $0$ & $1$ & $0$ & $0$ & $0$ & $0$ & $0$ \\
+		    $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ \hline
+\end{tabular}
+\end{center}
+Sulkeiden muuttamisella ei ole vaikutusta.}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     * Tietokoneet käsittelevät tietoa käyttäen bittejä. Bitillä on kaksi mahdollista arvoa, $0$ ja $1$.
+Bittijono on jono, jossa on yksi tai useampia bittejä. Esimerkiksi $1001\, 0010$ on bittijono, jonka pituus on $8$ bittiä. Samanpituisille bittijonoille määritellään bittikohtaiset tai (or), ja (and) sekä poissulkeva tai (xor). Esimerkiksi bittijonojen $1100$ ja $1010$ bittikohtainen tai on jono $1110$, bittikohtainen ja on jono $1000$ sekä bittikohtainen poissulkeva tai on jono $0110$. Muodosta a) bittikohtainen tai  b) bittikohtainen ja c) bittikohtainen poissulkeva tai jonoille $1111\, 0000$ ja $1010\, 1010$.
+    \begin{alakohdat}
+        \alakohta{bittikohtainen tai}
+        \alakohta{bittikohtainen ja}
+        \alakohta{bittikohtainen poissulkeva tai jonoille $1111\, 0000$ ja $1010\, 1010$.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{$1111\, 1010$}
+            \alakohta{$1010\, 0000$}
+            \alakohta{$0101\, 1010$}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     * Muodosta bittijono 
+    \begin{alakohdat}
+        \alakohta{$(0\, 1111 \land 1\, 0101) \lor 0\, 1000$}
+        \alakohta{$(0\, 1010 \xor 1\, 1011) \xor 0\, 1001$. }
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{$0\, 1101$}
+            \alakohta{$1\, 1000$}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+%Luku 2.2 kotitehtävät, vastauksien tekijä Valtteri Vistiaho 10.11.2013
+\begin{tehtava}
+     Olkoot $A$: ''Timo opiskelee matematiikkaa'', $B$: ''Timo osallistuu logiikan kurssille'' ja $C$: ''Timo opiskelee filosofiaa''. Suomenna lause.
+    \begin{alakohdat}
+        \alakohta{$\lnot A \to \lnot B$.}
+        \alakohta{$A\lequiv B$.}
+        \alakohta{$A\lor C \to B$.}
+        \alakohta{$C\lequiv (B\to \lnot A)$.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{Jos Timo ei opiskele matematiikkaa, Timo ei osallistu logiikan kurssille.}
+            \alakohta{Timo opiskelee matematiikkaa, jos ja vain jos Timo osallistuu logiikan kurssille.}
+            \alakohta{Jos Timo opiskelee matematiikkaa tai filosofiaa, Timo osallistuu logiikan kurssille.}
+            \alakohta{Timo opiskelee filosofiaa, jos ja vain jos Timo osallistuu logiikan kurssille, silloin kun hän ei opiskele matematiikka. ???????????} %Tämä kohta tuntuu kömpelöltä.
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Onko lause tosi?
+    \begin{alakohdat}
+        \alakohta{Jos $(-2)^3= -8$, niin $(-2)^3= -8$.}
+        \alakohta{Jos $(-2)^3= -8$, niin $(-2)^3=  8$.}
+        \alakohta{Jos luku $8$ on pariton, niin luku $8$ on pariton.}
+        \alakohta{Jos luku $8$ on pariton, niin luku $8$ on parillinen.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{On}
+            \alakohta{Ei}
+            \alakohta{On}
+            \alakohta{Ei, ?????????????????} %Hieman oudot kysymykset, en ole ihan täysin varma näistä.
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Formalisoi lause.
+    \begin{alakohdat}
+        \alakohta{Jos opettaja on pirteä, niin televisiosta ei ole tullut illalla jalkapalloa.}
+        \alakohta{Suomi voittaa jalkapallon maailmanmestaruuden silloin ja vain silloin, kun lehmät lentävät ja vaaleanpunaiset norsut kävelevät kadulla.}
+        \alakohta{En seuraa jalkapalloa eikä Suomen maajoukkue menesty.}
+        \alakohta{Jos ottelu ei pääty tasapeliin, niin joko kotijoukkue tai vierasjoukkue voittaa pelin.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{Olkoot $A$: ''Opettaja on pirteä.'' ja $B$: ''Televisiosta on tullut illalla jalkapalloa.'' \newline
+            $A\to \lnot B$}
+            \alakohta{Olkoot $A$: ''Suomi voittaa jalkapallon maailmanmestaruuden.'', $B$: ''Lehmät lentävät.'' ja $C$: ''Vaaleanpunaiset norsut kävelevät kadulla.'' \newline
+            $A\lequiv (B\land C)$}
+            \alakohta{Olkoot $A$: ''Seuraan jalkapalloa.'' ja $B$: ''Suomen maajoukkue menestyy.'' \newline
+            $\lnot A\land \lnot B$}
+            \alakohta{Olkoot $A$: ''Ottelu päättyy tasapeliin.'', $B$: ''Kotijoukkue voittaa pelin.'' ja $C$: ''Vierasjoukkue voittaa pelin.'' \newline
+            $\lnot A\to (B\lor C)$}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Laadi lauseen totuustaulu.
+    \begin{alakohdat}
+        \alakohta{$A\land B\to \lnot B$}
+        \alakohta{$(A\lequiv B)\land B\to C\lor A$}
+        \alakohta{$(\lnot A\to B)\lequiv (C\to B\land A)$}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $\lnot B$ & $A\land B$ & $A\land B\to \lnot B$ \\ \hline
+		    $1$ & $1$ & $0$ & $1$ & $0$ \\ %\hline
+		    $1$ & $0$ & $1$ & $0$ & $1$ \\
+		    $0$ & $1$ & $0$ & $0$ & $1$ \\
+		    $0$ & $0$ & $1$ & $0$ & $1$ \\ \hline
+\end{tabular}
+\end{center}}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $A\lequiv B$ & $(A\lequiv B)\land B$ & $C\lor A$ & $(A\lequiv B)\land B\to C\lor A$ \\ \hline
+		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ \\
+		    $1$ & $0$ & $1$ & $0$ & $0$ & $1$ & $1$ \\
+		    $1$ & $0$ & $0$ & $0$ & $0$ & $1$ & $1$ \\
+		    $0$ & $1$ & $1$ & $0$ & $0$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $0$ & $0$ & $1$ & $1$ \\
+		    $0$ & $1$ & $0$ & $0$ & $0$ & $0$ & $1$ \\
+		    $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$ \\ \hline
+\end{tabular}
+\end{center}}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $\lnot A$ & $\lnot A\to B$ & $C\to B\land A$ & $(\lnot A\to B)\lequiv (C\to B\land A)$ \\ \hline
+		    $1$ & $1$ & $1$ & $0$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $1$ & $0$ & $0$ & $1$ & $1$ & $1$ \\
+		    $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $0$ \\
+		    $1$ & $0$ & $0$ & $0$ & $1$ & $1$ & $1$ \\
+		    $0$ & $1$ & $1$ & $1$ & $1$ & $0$ & $0$ \\
+		    $0$ & $0$ & $1$ & $1$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ \\ \hline
+\end{tabular}
+\end{center}}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Olkoot $A$: ''Timo opiskelee matematiikkaa'', $B$: ''Timo osallistuu logiikan kurssille'' ja $C$: ''Timo opiskelee filosofiaa''. Formalisoi lause. Missä tilanteissa lause on tosi?
+    \begin{alakohdat}
+        \alakohta{Timo opiskelee matematiikkaa ja filosofiaa.}
+        \alakohta{Jos Timo opiskelee matematiikkaa, hän osallistuu logiikan kurssille.}
+        \alakohta{Timo osallistuu logiikan kurssille silloin ja vain silloin, kun hän opiskelee filosofiaa tai matematiikkaa.}
+        \alakohta{Jos Timo osallistuu logiikan kurssille, opiskelee hän joko matematiikka tai filosofiaa, muttei molempia.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{$A\land C$}
+            \alakohta{$A\to B$}
+            \alakohta{$B\lequiv (A\lor C)$}
+            \alakohta{$B\to A\xor C$ tai $B\to((A\lor C)\land \lnot(A\land C))$}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Poliisit Mauno ja Martti saavat kiinni rikoksesta epäilemänsä Jaskan. Tiedetään, että Jaska ei koskaan valehtele. Mauno toteaa Martille: ''Jos Jaska on syyllinen, on hänellä ollut rikostoveri.'' Jaska vastaa: ''Tuo ei ole totta!'' Tähän Martti tokaisee: ''Sehän tunnusti helpolla!'' Tutki Maunon lausetta ja osoita Martin johtopäätös oikeaksi.
+    \begin{vastaus}
+    
+        Olkoot $A$: ''Jaska on syyllinen.'' ja $B$: ''Hänellä on ollut rikostoveri.''
+        \begin{center}
+		    \begin{tabular}{|c|c|c|c|}\hline
+		    $A$ & $B$ & $A\to B$ & $\lnot(A\to B)$ \\ \hline
+		    $1$ & $1$ & $1$ & $0$ \\ %\hline
+		    $1$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $0$ \\
+		    $0$ & $0$ & $1$ & $0$ \\ \hline
+\end{tabular}
+\end{center}
+Koska Jaska puhuu aina totta ja hän väittää, että ei ole totta, että jos hän olisi syyllinen, olisi hänellä ollut rikostoveri.'', on hän syyllinen eikä hänellä ole rikostoveria.
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Mattia, Seppoa ja Teppoa epäillään polkupyörävarkaudesta. Konstaapeli Reinikainen tietää, että syytön puhuu aina totta ja syyllinen valehtelee aina. Reinikainen kuulustelee kolmea epäiltyä. Matti sanoo: ''Teppo on syyllinen.'' Seppo väittää: ''Matti on syyllinen tai Teppo valehtelee.'' Teppo toteaa: ''Seppo on syyllinen.'' Ratkaise totuustaulun avulla, kuka on syyllinen. 
+    \begin{vastaus}
+      Olkoot $M$:''Matti on syyllinen.'', $S$: ''Seppo on syyllinen.'', $T$: ''Teppo on syyllinen.'' ja $V$: ''Teppo valehtelee.''
+      \begin{center}
+		    \begin{tabular}{|c|c|c|c|c|}\hline
+		    $M$ & $S$ & $T$ & $V$ & $M\lor V$ \\ \hline
+		    $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $1$ & $0$ & $1$ & $1$ \\
+		    $1$ & $1$ & $1$ & $0$ & $1$ \\
+		    $1$ & $1$ & $0$ & $0$ & $1$ \\
+		    $1$ & $0$ & $1$ & $1$ & $1$ \\
+		    $1$ & $0$ & $0$ & $1$ & $1$ \\
+		    $1$ & $0$ & $1$ & $0$ & $1$ \\
+		    $1$ & $0$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $1$ & $1$ \\
+		    $0$ & $1$ & $0$ & $1$ & $1$ \\
+		    $0$ & $1$ & $1$ & $0$ & $0$ \\
+		    $0$ & $1$ & $0$ & $0$ & $0$ \\
+		    $0$ & $0$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $0$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $0$ & $0$ \\
+		    $0$ & $0$ & $0$ & $0$ & $0$ \\ \hline
+\end{tabular}
+\end{center}
+Teppo on syyllinen. ???????????????????????????????????????????? %Vastausta voisi tarkentaa.
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Helinä, Heljä ja Helena asuvat samassa talossa. Epäillään, että loton päävoitto on osunut taloon. Luotettavalta taholta on tullut tietoja:
+
+Jos Heljä on voittaja, niin Helinäkin on. 
+Heljä on voittaja, jos ja vain jos Helena on voittaja.
+Ainakin yksi naisista on voittaja, mutta kaikki eivät ole.
+
+Kuka tai ketkä ovat voittaneet lotossa?
+
+    \begin{vastaus}
+    
+        Olkoot $A$: ''Helinä on voittaja.'', $B$: ''Heljä on voittaja.'' ja $C$: ''Helena on voittaja.''
+        \begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $B\to A$ & $B\lequiv C$ & $(A\lor B\lor C)\land \lnot(A\land B\land C)$ \\ \hline
+		    $1$ & $1$ & $1$ & $1$ & $1$ & $0$ \\ %\hline
+		    $1$ & $1$ & $0$ & $1$ & $0$ & $1$ \\
+		    $1$ & $0$ & $1$ & $1$ & $0$ & $1$ \\
+		    $1$ & $0$ & $0$ & $1$ & $1$ & $1$ \\
+		    $0$ & $1$ & $1$ & $0$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $0$ & $1$ \\
+		    $0$ & $1$ & $0$ & $0$ & $0$ & $1$ \\
+		    $0$ & $0$ & $0$ & $1$ & $1$ & $0$ \\ \hline
+\end{tabular}
+\end{center}
+Helinä on voittaja.
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Mitä eroa on seuraavissa ehdoissa?
+    \begin{alakohdat}
+        \alakohta{Henkilö saa työpaikan matkamuistomyymälässä, jos hänellä on kokemusta kassakoneen käytöstä.}
+        \alakohta{Matkamuistomyymälässä työskentelevältä edellytetään kokemusta kassakoneen käytöstä.}
+        \alakohta{Henkilö saa työpaikan matkamuistomyymälässä silloin ja vain silloin, kun hänellä on kokemusta kassakoneen käytöstä.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+       ????????????????????????????????????????????????????????????????????????? %En keksinyt tähän mitään järkevää vastausta
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Vertaa lauseiden totuusarvoja atomilauseiden $A$, $B$ ja $C$ eri totuusarvoilla. Onko sulkeiden muuttamisella vaikutusta lauseen totuusarvoon?
+    \begin{alakohdat}
+        \alakohta{$(A\lor B)\lor C$ ja $A\lor (B\lor C)$.}
+        \alakohta{$(A\lequiv B)\lequiv C$ ja $A\lequiv (B\lequiv C)$.}
+        \alakohta{$\lnot A \lequiv (B \land C)$ ja $\lnot (A \lequiv B) \land C$.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $A\lor B$ & $B\lor C$ & $(A\lor B)\lor C$ & $A\lor(B\lor C)$ \\ \hline
+		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ \\
+		    $1$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ \\
+		    $1$ & $0$ & $0$ & $1$ & $0$ & $1$ & $1$ \\
+		    $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $0$ & $1$ & $1$ & $1$ \\
+		    $0$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ \hline
+\end{tabular}
+\end{center}}
+Ei vaikutusta.
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $A\lequiv B$ & $B\lequiv C$ & $(A\lequiv B)\lequiv C$ & $A\lequiv (B\lequiv C)$ \\ \hline
+		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $1$ & $0$ & $1$ & $0$ & $0$ & $0$ \\
+		    $1$ & $0$ & $1$ & $0$ & $0$ & $0$ & $0$ \\
+		    $1$ & $0$ & $0$ & $0$ & $1$ & $1$ & $1$ \\
+		    $0$ & $1$ & $1$ & $0$ & $1$ & $0$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $0$ & $1$ & $0$ \\
+		    $0$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ \\
+		    $0$ & $0$ & $0$ & $1$ & $1$ & $0$ & $1$ \\ \hline
+\end{tabular}
+\end{center}}
+Vaikuttaa.
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $\lnot A$ & $B\land C$ & $\lnot A \lequiv (B \land C)$ & $A\lequiv B$ & $\lnot (A\lequiv B)$ & $\lnot (A \lequiv B) \land C$ \\ \hline
+		    $1$ & $1$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $0$ \\ %\hline
+		    $1$ & $1$ & $0$ & $0$ & $0$ & $1$ & $1$ & $0$ & $0$ \\
+		    $1$ & $0$ & $1$ & $0$ & $0$ & $1$ & $0$ & $1$ & $1$ \\
+		    $1$ & $0$ & $0$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ \\
+		    $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $0$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $0$ & $0$ & $1$ & $0$ & $0$ \\
+		    $0$ & $1$ & $0$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ \\
+		    $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$ & $0$ & $0$ \\ \hline
+\end{tabular}
+\end{center}
+Vaikuttaa.}
+
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Olkoon $v$ sellainen funktio, että $v(A) = 1$, jos lause $A$ on tosi, ja $v(A) = 0$, jos lause $A$ on epätosi. Osoita, että yhtälö pätee kaikilla lauseiden $A$ ja $B$ totuusarvojen yhdistelmillä.
+    \begin{alakohdat}
+        \alakohta{$v(A\land B)=v(A)v(B)$,}
+        \alakohta{$v(A\lor B)=v(A)+v(B)- v(A)v(B)$,}
+        \alakohta{$v(A\to B)=1-v(A)(1-v(B))$.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $A\land B$ & $v(A\land B)$ & $v(A)$ & $v(B)$ & $v(A)v(B)$ \\ \hline
+		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$ \\
+		    $0$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ \\
+		    $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ \hline
+\end{tabular}
+\end{center}}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $A\lor B$ & $v(A\lor B)$ & $v(A)$ & $v(B)$ & $v(A)v(B)$ & $v(A)+v(B)- v(A)v(B)$\\ \hline
+		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $0$ & $1$ & $1$ & $1$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $1$ & $0$ & $1$ & $0$ & $1$ \\
+		    $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ \hline
+\end{tabular}
+\end{center}}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $A\to B$ & $v(A\to B)$ & $v(A)$ & $v(B)$ & $1-v(B)$ & $1-v(A)(1-v(B))$\\ \hline
+		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $0$ & $1$ \\ %\hline
+		    $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ \\
+		    $0$ & $1$ & $1$ & $1$ & $0$ & $1$ & $0$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $0$ & $0$ & $1$ & $1$ \\ \hline
+\end{tabular}
+\end{center}}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Peircen nuoli on konnektiivi, joka luonnollisessa kielessä tarkoittaa samaa kuin ''ei $A$ eikä $B$''. Shefferin viiva on konnektiivi, joka luonnollisessa kielessä tarkoittaa samaa kuin ''ei molemmat $A$ ja $B$''. Laadi näiden konnektiivien totuustaulut.
+    \begin{vastaus}
+    \begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $\lnot A$ & $\lnot B$ & $\lnot A\land \lnot B$ & $A\land B$ & $\lnot(A\land B)$\\ \hline
+		    $1$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ \\ %\hline
+		    $1$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $0$ & $0$ & $0$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $1$ & $0$ & $1$ \\ \hline
+\end{tabular}
+\end{center}
+     
+    \end{vastaus}
+    
+\end{tehtava}
+%Luvun 2.3 harjoitustehtävien vastauksia, vastauksien tekijä Valtteri Vistiaho 10.11.2013
+\begin{tehtava}
+     Tutki, onko lause tautologia.
+    \begin{alakohdat}
+        \alakohta{$A\lor \lnot A$,}
+        \alakohta{$A \land \lnot A$,}
+        \alakohta{$A \to B \lor A$,}
+        \alakohta{$A \to B \land A$,}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|}\hline
+		    $A$ & $\lnot A$ & $A\lor \lnot A$ \\ \hline
+		    $1$ & $0$ & $1$ \\ %\hline
+		    $0$ & $1$ & $1$ \\ \hline
+\end{tabular}
+\end{center}
+Lause on tautologia.}
+
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|}\hline
+		    $A$ & $\lnot A$ & $A\land \lnot A$ \\ \hline
+		    $1$ & $0$ & $0$ \\ %\hline
+		    $0$ & $1$ & $0$ \\ \hline
+\end{tabular}
+\end{center}
+Lause ei ole tautologia.}
+
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $B\lor A$ & $A\to B\lor A$\\ \hline
+		    $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $0$ & $1$ & $1$ \\
+		    $0$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $0$ & $1$ \\ \hline
+\end{tabular}
+\end{center}
+Lause on tautologia.}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $B\land A$ & $A\to B\land A$\\ \hline
+		    $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $0$ & $0$ & $0$ \\
+		    $0$ & $1$ & $0$ & $1$ \\
+		    $0$ & $0$ & $0$ & $1$ \\ \hline
+\end{tabular}
+\end{center}
+Lause ei ole tautologia.}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Osoita lause tautologiaksi.
+    \begin{alakohdat}
+        \alakohta{$A\to B\land \lnot B \lequiv \lnot A$.}
+        \alakohta{$(A\to B) \land (B\to C)\to (A\to C)$.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $\lnot A$ & $\lnot B$ & $B\land \lnot B$ & $A\to B\land \lnot B$ & $A\to B\land \lnot B \lequiv \lnot A$ \\ \hline
+		    $1$ & $1$ & $0$ & $0$ & $0$ & $0$ & $1$ \\ %\hline
+		    $1$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $0$ & $0$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $0$ & $1$ & $1$ \\ \hline
+\end{tabular}
+\end{center}
+Koska viimeisen sarakkeen kaikki totuusarvot ovat 1, lause on tautologia.}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $C$ & $A\to B$ & $B\to C$ & $A\to C$ & $(A\to B)\land(B\to C)$ & $(A\to B)\land(B\to C)\to(A\to C)$ \\ \hline
+		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $1$ & $0$ & $1$ & $0$ & $0$ & $0$ & $1$ \\
+		    $1$ & $0$ & $1$ & $0$ & $1$ & $1$ & $0$ & $1$ \\
+		    $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\
+		    $0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $1$ \\
+		    $0$ & $0$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ \hline
+\end{tabular}
+\end{center}
+Koska viimeisen sarakkeen kaikki totuusarvot ovat 1, lause on tautologia.}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Olkoot $A$: ''kello soi'' ja $B$: ''tunti loppuu''.
+Kirjoita luonnollisella kielellä lauseet $A\to B$ ja
+$\lnot(A \land \lnot B )$. Tarkoittavatko ne samaa?
+    
+    \begin{vastaus}
+    
+       Jos kello soi, tunti loppuu. \newline
+       Ei ole totta, että kello soi ja tunti ei lopu. \newline
+       Totuusarvoiltaan lauseet tarkoittavat samaa.
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     Osoita lauseet loogisesti ekvivalenteiksi
+totuustaulujen avulla.
+    \begin{alakohdat}
+        \alakohta{$A\land B$ ja $\lnot(\lnot A\lor \lnot B )$.}
+        \alakohta{$A\lequiv B$ ja $(A\to B)\land (B \to A)$.}
+        \alakohta{$A\lequiv B$ ja $(A\land B) \lor (\lnot A\land
+\lnot B )$.}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $\lnot A$ & $\lnot B$ & $A\land B$ & $\lnot A\lor \lnot B$ & $\lnot(\lnot A\lor \lnot B)$ & $A\land B\lequiv \lnot(\lnot A\lor \lnot B)$ \\ \hline
+		    $1$ & $1$ & $0$ & $0$ & $1$ & $0$ & $1$ & $1$ \\ %\hline
+		    $1$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $0$ & $0$ & $1$ & $0$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $0$ & $1$ & $0$ & $1$ \\ \hline
+\end{tabular}
+\end{center}}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $A\lequiv B$ & $A\to B$ & $B\to A$ & $(A\to B)\land (B\to A)$ & $(A\lequiv B)\lequiv((A\to B)\land (B\to A))$ \\ \hline
+		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
+		    $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $1$ \\
+		    $0$ & $1$ & $0$ & $1$ & $0$ & $0$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ \hline
+\end{tabular}
+\end{center}}
+            \alakohta{\begin{center}
+		    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}\hline
+		    $A$ & $B$ & $\lnot A$ & $\lnot B$ & $A\lequiv B$ & $A\land B$ & $\lnot A\land \lnot B$ & $(A\land B)\lor(\lnot A\land \lnot B)$ & $(A\lequiv B)\lequiv((A\land B)\lor(\lnot A\land \lnot B))$ \\ \hline
+		    $1$ & $1$ & $0$ & $0$ & $1$ & $1$ & $0$ & $1$ & $1$ \\ %\hline
+		    $1$ & $0$ & $0$ & $1$ & $0$ & $0$ & $0$ & $0$ & $1$ \\
+		    $0$ & $1$ & $1$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1$ \\
+		    $0$ & $0$ & $1$ & $1$ & $1$ & $0$ & $1$ & $1$ & $1$ \\ \hline
+\end{tabular}
+\end{center}}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
+    \end{vastaus}
+    
+\end{tehtava}
+
+\begin{tehtava}
+     
+    \begin{alakohdat}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+        \alakohta{}
+    \end{alakohdat}
+
+    \begin{vastaus}
+    
+        \begin{alakohdat}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+            \alakohta{}
+        \end{alakohdat}
     \end{vastaus}
     
 \end{tehtava}
