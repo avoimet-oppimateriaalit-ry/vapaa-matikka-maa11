@@ -1,5 +1,108 @@
-%Tekemättä
+% Niko
 
-\subsubsection*{Harjoitustehtäviä}
+\subsection*{Luvun 7.2 harjoitustehtävät}
 
-\subsubsection*{Kotitehtäviä}
+\setcounter{tehtava}{0}
+
+\begin{tehtava}
+	Osoita, että looginen algebra toteuttaa Boolen algebran ehdot 1, 2, 5--8 ja 10.
+\end{tehtava}
+
+\begin{tehtava}Osoita, että seuraavat laskusäännöt ovat voimassa loogisessa algebrassa.
+	\begin{alakohdat}
+		\alakohta{$x + x = x$}
+		\alakohta{$x \cdot x = x$}
+		\alakohta{$x + 1 = 1$}
+		\alakohta{$x \cdot 0 = 0$}
+		\alakohta{$x + x \cdot y = x$}
+		\alakohta{$x \cdot (x + y) = x$}
+		\alakohta{$x + (-x) \cdot y = x + y$}
+		\alakohta{$x \cdot (-x + y) = x \cdot y$}
+		\alakohta{$-(-x) = x$}
+		\alakohta{$-(x + y) = (-x) \cdot (-y)$}
+		\alakohta{$-(x \cdot y) = (-x) + (-y)$}
+	\end{alakohdat}
+\end{tehtava}
+
+\begin{tehtava}
+	Tulkitse, mitä Boolen algebran tulokset
+	\begin{alakohdat}
+		\alakohta{$x \cdot x = x$}
+		\alakohta{$x + 1 = 1$}
+		\alakohta{$x \cdot 0 = 0$}
+		\alakohta{$-(-x) = x$}
+		\alakohta{$x + x \cdot y = x$}
+		\alakohta{$x \cdot (x + y) = x$}
+	\end{alakohdat}
+	tarkoittavat joukko-opissa. Perustele tulokset myös käyttäen Venn-diagrammeja.
+	\begin{vastaus}
+		Olkoon $x, y \subseteq z$
+		\begin{alakohdat}
+			\alakohta{$x\cap x = x$}
+			\alakohta{$x\cup z = z$}
+			\alakohta{$x\cap \empty = \empty$}
+			\alakohta{$z\setminus (z\setminus x) = x$}
+			\alakohta{$x\cup (x\cap y) = x$}
+			\alakohta{$x\cap (x\cup y) = x$}
+		\end{alakohdat}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	Sievennä lausekkeet Boolen algebran määritelmän ja tehtävän 2 laskusääntöjen avulla.
+	\begin{alakohdat}
+		\alakohta{$x \cdot x + x \cdot x$}
+		\alakohta{$x \cdot x \cdot x \cdot y \cdot y \cdot y$}
+		\alakohta{$(a + b) \cdot (a + c)$}
+		\alakohta{$a + b \cdot a + b$}
+		\alakohta{$(a + (-b)) \cdot b$}
+		\alakohta{$a + b + (-(a \cdot b))$}
+	\end{alakohdat}
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{$x$}
+			\alakohta{$x\cdot y$}
+			\alakohta{$a+(b\cdot c)$}
+			\alakohta{$a+b$}
+			\alakohta{$a\cdot b$}
+			\alakohta{$1$}
+		\end{alakohdat}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	Piirrä Boolen algebran lauseketta
+	\begin{alakohdat}
+		\alakohta{$(x + y) \cdot (x + z)$}
+		\alakohta{$(x + y) \cdot (x + (-y))$}
+		\alakohta{$x + (-x) \cdot y$}
+	\end{alakohdat}
+	vastaava looginen piiri. Sievennä lauseke Boolen algebran säännöillä ja piirrä sievennettyä muotoa vastaava piiri. Loogisia piirejä on käsitelty kappaleessa 2.1 tehtävissä 11 ja 12.
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{$x+(y\cdot z)$}
+			\alakohta{$x$}
+			\alakohta{$x+y$}
+		\end{alakohdat}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	* Osoita, että tehtävän 2 säännöt ovat voimassa kaikissa Boolen algebroissa.
+	%{\bf Vain todellisille matemaatikoille.}
+\end{tehtava}
+
+\begin{tehtava}
+	* Reaalilukujen joukossa $\rr$ määritellään yhteenlaskua muistuttava laskutoimitus $x \circ y$ seuraavasti: $x \circ y = x + y - 2$ kaikilla $x, y \in \rr$. Osoita, että laskutoimitus toteuttaa seuraavat ehdot: 
+	\begin{description}
+	\item[i]
+	$(x \circ y) \circ z = x \circ (y \circ z)$ kaikilla $x, y, z \in \rr$. 
+	\item[ii]
+	$x \circ y = y \circ x$ kaikilla $x, y \in \rr$. 
+	\item[iii]
+	On olemassa sellainen luku $\omega \in \rr$, että $x \circ \omega = \omega \circ x = x$ kaikilla $x \in \rr$. Mikä $\omega$ on? 
+	\item[iv]
+	Jokaisella $x \in \rr$ on vasta-alkio $x^*$, jolle $x \circ x^* = x^* \circ x = \omega$. 
+	\end{description}
+	[YO syksy 1997 tehtävä 9b]
+\end{tehtava}
