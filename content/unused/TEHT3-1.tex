@@ -2,6 +2,8 @@
 
 \subsection*{Luvun 3.1 harjoitustehtävät}
 
+\setcounter{tehtava}{0}
+
 \begin{tehtava}
      Onko lause tosi? 
     \begin{alakohdat}
@@ -130,12 +132,34 @@ Määritä joukot
     \end{alakohdat}
 
     \begin{vastaus}
-    
-        \begin{alakohdat}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-        \end{alakohdat}
+    FIXME! Näitä kuvia pitää piirtää urakalla.
+\begin{tikzpicture}[outline/.style={draw=#1,thick}]
+\draw[fill=none] (0,0) rectangle (6.8,4.2);
+\fill[fill=none,outline=black] (2.7,2.7) circle (1.4);
+\fill[fill=none,outline=black] (4.1,2.7) circle (1.4);
+\fill[fill=none,outline=black] (3.4,1.5) circle (1.4);
+\draw (.5,3.65) node {\LARGE $X$};
+\draw (1.9,2.9) node {\LARGE $A$};
+\draw (4.9,2.9) node {\LARGE $B$};
+\draw (3.4,.5) node {\LARGE $C$};
+\draw (3.4,3.2) node {$D$};
+\draw (3.4,2.2) node {$E$};
+\draw (3.4,1.1) node {$F$};
+\draw (2.6,1.9) node {$G$};
+\draw (4.2,1.9) node {$G$};
+\end{tikzpicture}
+\def\firstcircle{(0,0) circle (1.5cm)}
+\def\thirdcircle{(0:2cm) circle (1.5cm)}
+
+% Now we can draw the sets:
+\begin{tikzpicture}[outline/.style={draw=#1,thick}]
+    \draw[outline=black] \firstcircle node[below] {\LARGE $A$};
+    \draw[outline=black] \thirdcircle node [below] {\LARGE $B$};
+    \begin{scope}
+      \clip \firstcircle;
+      \fill[green, outline=black] \thirdcircle;
+    \end{scope}
+\end{tikzpicture}
     \end{vastaus}
     
 \end{tehtava}
@@ -153,10 +177,10 @@ Vihje: Tilanteesta kannattaa piirtää Venn-diagrammi.
     \begin{vastaus}
     
         \begin{alakohdat}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-        \end{alakohdat}
+            \alakohta{11}
+            \alakohta{9}
+            \alakohta{7}
+        \end{alakohdat} %FIXME piirrä Venn-diagrammi
     \end{vastaus}
     
 \end{tehtava}
@@ -174,10 +198,10 @@ Vihje: Tilanteesta kannattaa piirtää Venn-diagrammi.
     \begin{vastaus}
     
         \begin{alakohdat}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
-            \alakohta{}
+            \alakohta{$[3,5]$}
+            \alakohta{$[1,6]$}
+            \alakohta{$[1,3[$}
+            \alakohta{$]-\infty,1[ \ \cup \ ]5,\infty[$}
         \end{alakohdat}
     \end{vastaus}
     
@@ -197,18 +221,11 @@ D & (x\in A)\land (x\notin B) & 4 & x\in (A\cup B)
 \]
 
     \begin{vastaus}
-    
+    A3, B1, C4, D2
     \end{vastaus}
     
 \end{tehtava}
 
-\item 
-\begin{enumerate}[a)]
-\item 
-
-\item 
-
-\end{enumerate}
 
 \begin{tehtava}
      Osoita Venn-diagrammin avulla, että
