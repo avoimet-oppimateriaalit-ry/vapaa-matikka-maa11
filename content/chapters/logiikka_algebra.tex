@@ -93,24 +93,7 @@ samat totuusarvot kaikilla lauseiden $A$ ja $B$ totuusarvoilla,
 De Morganin laki on pätevä.
 \end{esimerkki}
 
-%\newpage
-
-%\section*{Tehtäviä.}
-
-\newpage
-\subsection*{Harjoitustehtäviä}
-
-\begin{enumerate}
-\item Määritä lauseen a) $\lnot(B\land A)\lor (A\land\lnot B)$, b) $(B\lor \lnot A)\land (A\lor \lnot B)$
- totuusarvo, kun $A$ on tosi ja $B$ on epätosi.
-
-\item Esitä a) kaksoisnegaation laki $\lnot \lnot A \lequiv A$ b) De Morganin laki $\lnot(A\land B)\lequiv \lnot A\lor \lnot B$ loogisen algebran merkinnöin. Laadi totuustaulu laskemalla loogisen algebran laskusäännöillä ja osoita laki päteväksi.
-
-
-\item Esitä a) implikaatio $A\to B$, b) ekvivalenssi $A\lequiv B$ käyttäen loogisen algebran merkintöjä. Laske lauseen totuusarvot atomilauseiden $A$ ja $B$ eri totuusarvoilla käyttäen loogisen algebran laskusääntöjä.
-\end{enumerate}
-
-\newpage
+\input{exercises/TEHT7-1} % TEHTÄVÄT
 
 \section{Boolen algebra}
 
@@ -167,80 +150,4 @@ $= x$
 
 Loogisen algebran lisäksi voidaan määritellä myös muita Boolen algebroita. Esimerkiksi joukon $X$ potenssijoukko eli sen kaikkien osajoukkojen joukko $\mathcal{P}(X)$ yhdessä operaatioiden yhdiste $\cup$, leikkaus $\cap$  ja komplementti $\compl$ kanssa muodostavat Boolen algebran. Näin saadun Boolen algebran nolla-alkio on tyhjä joukko $\emptyset$ ja ykkösalkio on joukko $X$ itse. Esimerkissä 2 johdettu tulos $x + x = x$ vastaa tällöin joukko-opin tulosta $A\cup A=A$. Kun tulos on johdettu Boolen algebrojen teoriassa, se voidaan ottaa suoraan käyttöön joukko-opissa. Boolen algebroja tutkimalla saadaan siten tuloksia, joita voidaan hyödyntää sekä logiikassa että joukko-opissa. Koska Boolen algebra on määritelty hyvin yleisellä tasolla, se on käsitteenä abstrakti. Tämä näkyy esimerkiksi tuloksen $x + x = x$ todistamisessa: todistaminen erikseen sekä logiikassa että joukko-opissa on helppoa, mutta todistus Boolen algebrassa vaatii varsin abstraktia ajattelua.
 
-
-%\newpage
-%\section*{Tehtäviä.}
-
-\Harjoitustehtavat
-
-\begin{enumerate}
-
-\item Osoita, että looginen algebra toteuttaa Boolen algebran ehdot 1, 2, 5--8 ja 10.
-
-\item Osoita, että seuraavat laskusäännöt ovat voimassa loogisessa algebrassa.
-\begin{enumerate}[a)]
-\item $x + x = x$
-\item $x \cdot x = x$
-\item $x + 1 = 1$
-\item $x \cdot 0 = 0$
-\item $x + x \cdot y = x$
-\item $x \cdot (x + y) = x$
-\item $x + (-x) \cdot y = x + y$
-\item $x \cdot (-x + y) = x \cdot y$
-\item $-(-x) = x$
-\item $-(x + y) = (-x) \cdot (-y)$
-\item $-(x \cdot y) = (-x) + (-y)$
-\end{enumerate}
-
-\item
-Tulkitse, mitä Boolen algebran tulokset
-\begin{enumerate}[a)]
-\item $x \cdot x = x$
-\item $x + 1 = 1$
-\item $x \cdot 0 = 0$
-\item $-(-x) = x$
-\item $x + x \cdot y = x$
-\item $x \cdot (x + y) = x$
-\end{enumerate}
-tarkoittavat joukko-opissa. Perustele tulokset myös käyttäen Venn-diagrammeja.
-
-\item
-Sievennä lausekkeet Boolen algebran määritelmän ja tehtävän 2 laskusääntöjen avulla.
-\begin{enumerate}[a)]
-\item $x \cdot x + x \cdot x$
-\item $x \cdot x \cdot x \cdot y \cdot y \cdot y$
-\item $(a + b) \cdot (a + c)$
-\item $a + b \cdot a + b$
-\item $(a + (-b)) \cdot b$
-\item $a + b + (-(a \cdot b))$
-\end{enumerate}
-
-\item
-Piirrä Boolen algebran lauseketta
-\begin{enumerate}[a)]
-\item $(x + y) \cdot (x + z)$
-\item $(x + y) \cdot (x + (-y))$
-\item $x + (-x) \cdot y$
-\end{enumerate}
-vastaava looginen piiri. Sievennä lauseke Boolen algebran säännöillä ja piirrä sievennettyä muotoa vastaava piiri. Loogisia piirejä on käsitelty kappaleessa 2.1 tehtävissä 11 ja 12.
-
-\item
-* Osoita, että tehtävän 2 säännöt ovat voimassa kaikissa Boolen algebroissa.
-%{\bf Vain todellisille matemaatikoille.}
-
-\item
-* Reaalilukujen joukossa $\rr$ määritellään yhteenlaskua muistuttava laskutoimitus $x \circ y$ seuraavasti: $x \circ y = x + y - 2$ kaikilla $x, y \in \rr$. Osoita, että laskutoimitus toteuttaa seuraavat ehdot: 
-\begin{itemize}
-\item[i]
-$(x \circ y) \circ z = x \circ (y \circ z)$ kaikilla $x, y, z \in \rr$. 
-\item[ii]
-$x \circ y = y \circ x$ kaikilla $x, y \in \rr$. 
-\item[iii]
-On olemassa sellainen luku $\omega \in \rr$, että $x \circ \omega = \omega \circ x = x$ kaikilla $x \in \rr$. Mikä $\omega$ on? 
-\item[iv]
-Jokaisella $x \in \rr$ on vasta-alkio $x^*$, jolle $x \circ x^* = x^* \circ x = \omega$. 
-\end{itemize}
-[YO syksy 1997 tehtävä 9b]
-
-\end{enumerate}
-
+\input{exercises/TEHT7-2} % TEHTÄVÄT
