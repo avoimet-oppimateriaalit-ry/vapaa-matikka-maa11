@@ -15,10 +15,10 @@ Merkinnät ovat samat kuin esimerkissä 3.15.
     \begin{vastaus}
     
         \begin{alakohdat}
-            \alakohta{On tosi.}
-            \alakohta{Ei ole tosi.}
-            \alakohta{On tosi.}
-            \alakohta{Ei ole tosi.}
+            \alakohta{Tosi.}
+            \alakohta{Epätosi.}
+            \alakohta{Tosi.}
+            \alakohta{Epätosi.}
         \end{alakohdat}
     \end{vastaus}
 \end{tehtava}
@@ -294,11 +294,11 @@ A\cap (B \cup C) = (A\cap B)\cup(A\cap C).
     \begin{vastaus}
     
         \begin{alakohdat}
-            \alakohta{On tosi.}
-            \alakohta{Ei ole tosi.}
-            \alakohta{On tosi.}
-            \alakohta{Ei ole tosi.}
-            \alakohta{On tosi. Tyhjä joukko on minkä tahansa joukon osajoukko.}
+            \alakohta{Tosi.}
+            \alakohta{Epätosi.}
+            \alakohta{Tosi.}
+            \alakohta{Epätosi.}
+            \alakohta{Tosi. Tyhjä joukko on minkä tahansa joukon osajoukko.}
         \end{alakohdat}
     \end{vastaus}
     
@@ -390,6 +390,10 @@ Luonnolliset luvut voidaan tulkita joukko-opillisesti käyttämällä edellisess
 \end{tehtava}
 
 \end{tehtavasivu}
+
+% -----
+\setcounter{tehtava}{0}
+
 \begin{kotitehtavasivu}
 
 \begin{tehtava}
@@ -425,11 +429,11 @@ Onko lukujoukkoja koskeva lause tosi?
     \begin{vastaus}
     
         \begin{alakohdat}
-        \alakohta{Ei ole tosi.}
-        \alakohta{On tosi.}
-        \alakohta{Ei ole tosi.}
-        \alakohta{Ei ole tosi.}
-        \alakohta{On tosi.} 
+        \alakohta{Epätosi.}
+        \alakohta{Tosi.}
+        \alakohta{Epätosi.}
+        \alakohta{Epätosi.}
+        \alakohta{Tosi.} 
         \end{alakohdat}
     \end{vastaus}
 \end{tehtava}
@@ -564,7 +568,7 @@ tablettia. Kahdella opiskelijalla ei ole mitään tietokonetta.
 \end{tehtava}
 
 \begin{tehtava}
-Olkoot perusjoukko $\rr$ sekä joukot $A$ ja $B$ reaalilukuvälit $A=]-1, 2[$ ja $B=[0, 4[$. Ilmaise välimerkintää käyttäen joukot
+Olkoot perusjoukko $\rr$ sekä joukot $A$ ja $B$ reaalilukuvälit $A=\aavali{-1}{2}$ ja $B=\savali{0}{4}$. Ilmaise välimerkintää käyttäen joukot
     \begin{alakohdat}
         \alakohta{$A \cup B$,}
         \alakohta{$A \cap B$,}
@@ -577,12 +581,12 @@ Olkoot perusjoukko $\rr$ sekä joukot $A$ ja $B$ reaalilukuvälit $A=]-1, 2[$ ja
     \begin{vastaus}
     
         \begin{alakohdat}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{} 
+        \alakohta{$\aavali{-1}{4}$}
+        \alakohta{$\savali{0}{2}$}
+        \alakohta{$\aavali{-\infty}{0} \cup \savali{2}{\infty}$}
+        \alakohta{$\savali{2}{4}$}
+        \alakohta{$\savali{2}{4}$}
+        \alakohta{$\aavali{-1}{0}$}
         \end{alakohdat}
     \end{vastaus}
 \end{tehtava}
@@ -600,13 +604,7 @@ X \setminus (A\cap B) = (X\setminus A)\cup (X\setminus B).
       
     \end{alakohdat}
 
-    \begin{vastaus}
-    
-        \begin{alakohdat}
-        \alakohta{}
-        \alakohta{}
-        \end{alakohdat}
-    \end{vastaus}
+    % ei vastausta tähän
 \end{tehtava}
 
 
@@ -620,8 +618,8 @@ Jos $A\subset B$ ja $B\subset C$, niin mitä voidaan päätellä joukoista $A$ j
     \begin{vastaus}
     
         \begin{alakohdat}
-        \alakohta{}
-        \alakohta{}
+        \alakohta{(kuva jätetty pois)}
+        \alakohta{$A\subset C$}
         \end{alakohdat}
     \end{vastaus}
 \end{tehtava}
@@ -634,17 +632,17 @@ Onko lause tosi?
         \alakohta{$\compl (\compl A) = A$}
         \alakohta{$(A\cup B) \setminus B = A$}
         \alakohta{$A \cap \compl B = A \setminus B$}   
-        \alakohta{$$B \cap \compl B = B$$}             
+        \alakohta{$B \cap \compl B = B$}             
     \end{alakohdat}
 
     \begin{vastaus}
     
         \begin{alakohdat}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{} 
-        \alakohta{}
+        \alakohta{On.}
+        \alakohta{On.}
+        \alakohta{Jos ja vain jos $A\cap B = \emptyset$.}
+        \alakohta{On.}
+        \alakohta{Jos ja vain jos $B = \emptyset$.}
         \end{alakohdat}
     \end{vastaus}
 \end{tehtava}
@@ -665,13 +663,13 @@ Tarkastellaan kaksinumeroisia luonnollisia lukuja $10, 11, \ldots, 98, 99$.
     \begin{vastaus}
     
         \begin{alakohdat}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{} 
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}         
+        \alakohta{$90$}
+        \alakohta{$22$ jaollista, $68$ epäjaollista}
+        \alakohta{$15$}
+        \alakohta{$8$} 
+        \alakohta{$29$}
+        \alakohta{$90-29=61$}
+        \alakohta{(kuva jätetty pois)}
         \end{alakohdat}
     \end{vastaus}
 \end{tehtava}
@@ -710,10 +708,10 @@ Merkitään kuvan ympyröiden sisään jääviä joukkoja kirjaimilla $A$, $B$ j
     \begin{vastaus}
     
         \begin{alakohdat}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{}
-        \alakohta{} 
+        \alakohta{$D = (A\cap B)\setminus C$}
+        \alakohta{$E = (A\cap B)\cap C$}
+        \alakohta{$F = C \setminus (A\cup B)$}
+        \alakohta{$G = ((A\cup B) \cap C) \setminus ((A\cap B) \cap C))$} 
         \end{alakohdat}
     \end{vastaus}
 \end{tehtava}

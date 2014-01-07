@@ -161,9 +161,17 @@ Suomenna lause.
     \begin{vastaus}
     Olkoot $A$: ''Mustikat polun varrella ovat kypsiä.'', $B$: ''Polulla vaeltaminen on turvallista.'' ja $C$: ''Karhuja on nähty alueella.''
         \begin{alakohdat}
-            \alakohta{$\lnot A\to B$, ?????????????????????} %En ymmärrä, mitä kysymyksen tekijä ajaa takaa kohdassa ''Missä tilanteissa lause on tosi?''
-            \alakohta{$(A\to B)\lequiv \lnot C$, ?????????????????????} %En ymmärrä, mitä kysymyksen tekijä ajaa takaa kohdassa ''Missä tilanteissa lause on tosi?''
-            \alakohta{$B\lequiv(\lnot A\lor \lnot C)$, ?????????????????????} %En ymmärrä, mitä kysymyksen tekijä ajaa takaa kohdassa ''Missä tilanteissa lause on tosi?''
+            \alakohta{$\lnot A\to B$. Lause on tosi, kun mustikat ovat kypsiä tai polulla vaeltaminen on turvallista.} % /Niko
+            \alakohta{$A\to (B\lequiv \lnot C)$. Lause on tosi, kun joko \begin{itemize}
+            \item mustikat ovat kypsiä, polulla vaeltaminen ei ole turvallista ja karhuja on nähty alueella,
+            \item mustikat ovat kypsiä, polulla vaeltaminen on turvallista ja karhuja ei ole nähty alueella tai
+            \item mustikat eivät ole kypsiä.
+            \end{itemize}} % /Niko % tässä oli aiemmin $(A\to B)\lequiv \lnot C$
+            \alakohta{$B\lequiv(\lnot A\lor \lnot C)$. Lause on tosi, kun joko \begin{itemize}
+            \item polulla vaeltaminen ei ole turvallista, mustikat ovat kypsiä ja karhuja on nähty alueella,
+            \item polulla vaeltaminen on turvallista ja mustikat eivät ole kypsiä tai
+            \item polulla vaeltaminen on turvallista ja karhuja ei ole nähty alueella.
+            \end{itemize}} % /Niko
         \end{alakohdat}
     \end{vastaus}
     
@@ -244,7 +252,7 @@ Kumpi lapsista on käynyt suklaavarkaissa?
 		    $0$ & $0$ & $0$ & $1$ & $1$ & $1$ & $0$ & $1$ & $1$ \\ \hline
 \end{tabular}
 \end{center}
-    Petterson ja Smith ovat syyllisiä. ?????????????????????????????????? %Tähän voisi lisätä selityksen, miksi näin on.
+    Petterson ja Smith ovat syyllisiä.  %Tähän voisi lisätä selityksen, miksi näin on.
     \end{vastaus}
     
 \end{tehtava}
@@ -266,7 +274,7 @@ Kumpi lapsista on käynyt suklaavarkaissa?
 		    $0$ & $0$ & $0$ & $1$ & $1$ & $0$ & $1$ \\ \hline
 \end{tabular}
 \end{center}
-		Berit on mahdollinen vakoilija. ??????????????????????? %Tähän voisi lisätä selityksen, miksi näin on.   
+		Berit on mahdollinen vakoilija. %Tähän voisi lisätä selityksen, miksi näin on.   
     \end{vastaus}
     
 \end{tehtava}
@@ -275,8 +283,7 @@ Kumpi lapsista on käynyt suklaavarkaissa?
      Olkoot lauseet $A$: ''herään ajoissa'', $B$: ''menen kouluun'' ja $C$: ''opiskelen logiikkaa''.
      Esitä sanoin lause $A \to B \lor C$. Onko lauseen tulkinta $A \to (B \lor C)$ vai $(A \to B) \lor C$? Miten tulkinnat eroavat toisistaan? 
         \begin{vastaus} \newline
-	 Jos herään ajoissa, menen kouluun tai opiskelen logiikkaa. Lause tulkitaan $A\to (B\lor C)$, koska konnektiivien suoritusjärjestyksessä disjunktio on ennen implikaatiota. $(A\to B)\lor C$ tarkottaa: ''Jos herään ajoissa, menen kouluun, tai opiskelen logiikkaa.'' Tämän voi tulkita: ''Jos herään ajoissa, menen kouluun ja opiskelen logiikkaa.'' tai ''En herää ajoissa ja opiskelen logiikkaa joko koulussa tai muualla.'' ???????????? 
-	 %Voisi tehdä selvemmäksi.
+	 Jos herään ajoissa, menen kouluun tai opiskelen logiikkaa. Lause tulkitaan $A\to (B\lor C)$, koska konnektiivien suoritusjärjestyksessä disjunktio on ennen implikaatiota. $(A\to B)\lor C$ tarkottaa: ''Jos herään ajoissa, menen kouluun, tai opiskelen logiikkaa.'' Tämän voi tulkita: ''Jos herään ajoissa, menen kouluun ja opiskelen logiikkaa.'' tai ''En herää ajoissa ja opiskelen logiikkaa joko koulussa tai muualla.'' %Voisi tehdä selvemmäksi.
     \end{vastaus}
     
 \end{tehtava}
@@ -362,6 +369,10 @@ Bittijono on jono, jossa on yksi tai useampia bittejä. Esimerkiksi $1001\, 0010
 \end{tehtava}
 
 \end{tehtavasivu}
+
+% -----
+\setcounter{tehtava}{0}
+
 \begin{kotitehtavasivu}
 
 %Luku 2.2 kotitehtävät, vastauksien tekijä Valtteri Vistiaho 10.11.2013
@@ -380,7 +391,7 @@ Bittijono on jono, jossa on yksi tai useampia bittejä. Esimerkiksi $1001\, 0010
             \alakohta{Jos Timo ei opiskele matematiikkaa, Timo ei osallistu logiikan kurssille.}
             \alakohta{Timo opiskelee matematiikkaa, jos ja vain jos Timo osallistuu logiikan kurssille.}
             \alakohta{Jos Timo opiskelee matematiikkaa tai filosofiaa, Timo osallistuu logiikan kurssille.}
-            \alakohta{Timo opiskelee filosofiaa, jos ja vain jos Timo osallistuu logiikan kurssille, silloin kun hän ei opiskele matematiikka. ???????????} %Tämä kohta tuntuu kömpelöltä.
+            \alakohta{Jos Timo opiskelee matematiikkaa ja osallistuu logiikan kurssille, hän ei opiskele filosofiaa. Muussa tapauksessa hän opiskelee filosofiaa.}
         \end{alakohdat}
     \end{vastaus}
     
@@ -398,10 +409,10 @@ Bittijono on jono, jossa on yksi tai useampia bittejä. Esimerkiksi $1001\, 0010
     \begin{vastaus}
     
         \begin{alakohdat}
-            \alakohta{On}
-            \alakohta{Ei}
-            \alakohta{On}
-            \alakohta{Ei, ?????????????????} %Hieman oudot kysymykset, en ole ihan täysin varma näistä.
+            \alakohta{On.}
+            \alakohta{Ei.}
+            \alakohta{On.}
+            \alakohta{On. (Luku $8$ ei ole pariton.)} % /Niko
         \end{alakohdat}
     \end{vastaus}
     
@@ -548,7 +559,7 @@ Koska Jaska puhuu aina totta ja hän väittää, että ei ole totta, että jos h
 		    $0$ & $0$ & $0$ & $0$ & $0$ \\ \hline
 \end{tabular}
 \end{center}
-Teppo on syyllinen. ???????????????????????????????????????????? %Vastausta voisi tarkentaa.
+Teppo on syyllinen. %Vastausta voisi tarkentaa.
     \end{vastaus}
     
 \end{tehtava}
@@ -592,8 +603,7 @@ Helinä on voittaja.
     \end{alakohdat}
 
     \begin{vastaus}
-    
-       ????????????????????????????????????????????????????????????????????????? %En keksinyt tähän mitään järkevää vastausta
+        a) on riittävä on ehto, b) on välttämätön ehto ja c) riittävä sekä välttämätön ehto. % /Niko
     \end{vastaus}
     
 \end{tehtava}

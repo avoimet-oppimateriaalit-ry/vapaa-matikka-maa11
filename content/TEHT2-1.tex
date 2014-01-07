@@ -14,12 +14,12 @@
 
     \begin{vastaus}
         \begin{alakohdat}
-            \alakohta{On}
-            \alakohta{On}
-            \alakohta{Ei}
-            \alakohta{On}
-            \alakohta{Ei, ?????????} %En ole täysin varma vastauksesta
-            \alakohta{On, ?????????} %En ole täysin varma vastauksesta
+            \alakohta{On.}
+            \alakohta{On.}
+            \alakohta{Ei.}
+            \alakohta{On.}
+            \alakohta{Ei.} % tark. Niko
+            \alakohta{On.} % tark. Niko
         \end{alakohdat}
     \end{vastaus}
     
@@ -247,138 +247,136 @@ b-kohtien lauseet suomen kielellä.}
 		    $0$ & $0$ & $1$ & $1$ & $0$ & $1$ & $1$ & $0$  \\ \hline
 \end{tabular}
 \end{center}
-	??????????????????????????????????????????????????????????????? %Tehtävä on melko epäselvä, mahdollisesti monta eri tulkintaa.
+	Hipsu on menninkäinen ja Vipsu on haltija. Käyttökelpoista tietoa vierailijalle ei kertynyt. % tark. Niko
     \end{vastaus}
     
 \end{tehtava}
 
 \begin{tehtava}
-    Loogisilla piireillä suoritetaan digitaalisissa laitteissa erilaisia loogisia operaatioita. Loogisen piirin toimintaa voidaan kuvata esimerkiksi seuraavalla kaaviolla.
+        Loogisilla piireillä suoritetaan digitaalisissa laitteissa erilaisia loogisia operaatioita. Loogisen piirin toimintaa voidaan kuvata esimerkiksi seuraavalla kaaviolla.
 
-\medskip
+        \medskip
 
-\begin{center}
-\begin{tikzpicture}
-\node [rectangle, draw, fill=gray!20, text width=5em, text centered, rounded corners, minimum height=4em] at (4.1,1) {looginen piiri};
-\draw [->] (0,0.5) -- (3,0.5);
-\draw [->] (0,1.5) -- (3,1.5);
-\draw [->] (5.2,1) -- (7.5,1);
+        \begin{center}
+        \begin{tikzpicture}
+        \node [rectangle, draw, fill=gray!20, text width=5em, text centered, rounded corners, minimum height=4em] at (4.1,1) {looginen piiri};
+        \draw [->] (0,0.5) -- (3,0.5);
+        \draw [->] (0,1.5) -- (3,1.5);
+        \draw [->] (5.2,1) -- (7.5,1);
 
 
-\node at (1,2) {sisäänmenot};
-\node at (6.4,2) {ulostulo};
-\end{tikzpicture}
-\end{center}
+        \node at (1,2) {sisäänmenot};
+        \node at (6.4,2) {ulostulo};
+        \end{tikzpicture}
+        \end{center}
 
-\medskip
+        \medskip
 
-Loogisella piirillä on yksi tai useampi sisäänmeno ja
-yksi tai useampi ulostulo. Tämän kirjan esimerkeissä ja
-tehtävissä käsitellään vain yhden ulostulon piirejä.
-Sisäänmenojen ja ulostulon signaalin arvo
-voi olla 1 tai 0. Edellisessä tapauksessa johtimessa on
-jännite, jälkimmäisessä tapauksessa ei ole.
+        Loogisella piirillä on yksi tai useampi sisäänmeno ja
+        yksi tai useampi ulostulo. Tämän kirjan esimerkeissä ja
+        tehtävissä käsitellään vain yhden ulostulon piirejä.
+        Sisäänmenojen ja ulostulon signaalin arvo
+        voi olla 1 tai 0. Edellisessä tapauksessa johtimessa on
+        jännite, jälkimmäisessä tapauksessa ei ole.
 
-Loogiset piirit kootaan loogisista porteista. Seuraavassa
-taulukossa on lueteltu loogiset portit, niiden toiminta
-ja toimintaa vastaava looginen konnektiivi.
+        Loogiset piirit kootaan loogisista porteista. Seuraavassa
+        taulukossa on lueteltu loogiset portit, niiden toiminta
+        ja toimintaa vastaava looginen konnektiivi.
 
-%\newpage
+        %\newpage
 
-\small
+        \small
 
-\begin{center}
-\begin{tabular}{|>{\centering}m{1.5cm}|>{\raggedright}m{3.8cm}|c|>{\centering\arraybackslash}m{2cm}|}
-\hline
-Looginen portti & \centering Toiminta & Piirrosmerkki & Looginen konnektiivi \\
-% \begin{tabular}{c}
-% %Toimintaa \\
-% %	vastaava \\
-% Looginen \\
-% konnektiivi
-% \end{tabular}
-\hline
+        \begin{center}
+        \begin{tabular}{|>{\centering}m{1.5cm}|>{\raggedright}m{3.8cm}|c|>{\centering\arraybackslash}m{2cm}|}
+        \hline
+        Looginen portti & \centering Toiminta & Piirrosmerkki & Looginen konnektiivi \\
+        % \begin{tabular}{c}
+        % %Toimintaa \\
+        % %	vastaava \\
+        % Looginen \\
+        % konnektiivi
+        % \end{tabular}
+        \hline
 
-Tai &
-Tai-portti antaa jännitteen, kun ainakin toisessa sisäänmenossa on jännite. &
+        Tai &
+        Tai-portti antaa jännitteen, kun ainakin toisessa sisäänmenossa on jännite. &
 
-%\begin{center}
-\raisebox{-.5\height}{\includegraphics[width=2.5cm]{pictures/boole/or-ABC}}
-%\end{center}
-&
-$A\lor B$
-\\ \hline
+        %\begin{center}
+        \raisebox{-.5\height}{\includegraphics[width=2.5cm]{pictures/boole/or-ABC}}
+        %\end{center}
+        &
+        $A\lor B$
+        \\ \hline
 
-Ja &
-Ja-portti antaa jännitteen vain silloin, kun molemmissa sisäänmenoissa on jännite. &
+        Ja &
+        Ja-portti antaa jännitteen vain silloin, kun molemmissa sisäänmenoissa on jännite. &
 
-%\begin{center}
-\raisebox{-.5\height}{\includegraphics[width=2.5cm]{pictures/boole/and-ABC}}
-%\end{center}
-&
-$A\land B$
-\\ \hline
+        %\begin{center}
+        \raisebox{-.5\height}{\includegraphics[width=2.5cm]{pictures/boole/and-ABC}}
+        %\end{center}
+        &
+        $A\land B$
+        \\ \hline
 
-Ei &
-Ei-portti antaa jännitteen silloin, kun sisäänmenossa ei ole jännitettä, ja kääntäen. &
-%\begin{center}
-\raisebox{-.5\height}{\includegraphics[width=2.5cm]{pictures/boole/not-ABC}}
-%\end{center}
-&
-$\lnot A$
-\\ \hline
+        Ei &
+        Ei-portti antaa jännitteen silloin, kun sisäänmenossa ei ole jännitettä, ja kääntäen. &
+        %\begin{center}
+        \raisebox{-.5\height}{\includegraphics[width=2.5cm]{pictures/boole/not-ABC}}
+        %\end{center}
+        &
+        $\lnot A$
+        \\ \hline
 
-\end{tabular}
+        \end{tabular}
 
-\end{center}
+        \end{center}
 
-\normalsize
+        \normalsize
 
-%\newpage
+        %\newpage
 
-\bigskip
+        \bigskip
 
-Esimerkiksi looginen piiri
+        Esimerkiksi looginen piiri
 
-\medskip
+        \medskip
 
-\begin{center}
-\includegraphics[width=3.5cm]{pictures/boole/boolesim-ABC}
-\end{center}
+        \begin{center}
+        \includegraphics[width=3.5cm]{pictures/boole/boolesim-ABC}
+        \end{center}
 
-\medskip
-\noindent
-koostuu kolmesta loogisesta portista ja vastaa
-lausetta \mbox{$\lnot A\land (B \lor C)$}. %Muutettu alkuperäisestä, virhe joko tekstissä tai kuvassa.
+        \medskip
+        \noindent
+        koostuu kolmesta loogisesta portista ja vastaa
+        lausetta \mbox{$\lnot A\land (B \lor C)$}. %Muutettu alkuperäisestä, virhe joko tekstissä tai kuvassa.
 
-%{\bf Tehtäviä}
+        %{\bf Tehtäviä}
 
-%\begin{enumerate}
-Muodosta seuraavia piirejä vastaavat lauseet.
-    \begin{alakohdat}
-        \alakohta{\begin{center}
-		   \includegraphics[width=3.5cm]{pictures/boole/boolt-a-ABC}
-		   \end{center}}
-	\alakohta{\begin{center}
-		   \includegraphics[width=3.5cm]{pictures/boole/boolt-b-ABC}
-		   \end{center}}
-        \alakohta{\begin{center}
-		   \includegraphics[width=4cm]{pictures/boole/boolt-c-ABC}
-		   \end{center}}
-        \alakohta{\begin{center}
-		   \includegraphics[width=4.5cm]{pictures/boole/boolt-d-ABC}
-		   \end{center}}
-    \end{alakohdat}
+        Muodosta seuraavia piirejä vastaavat lauseet.
+            \begin{alakohdat}
+                \alakohta{\begin{center}
+        		   \includegraphics[width=3.5cm]{pictures/boole/boolt-a-ABC}
+        		   \end{center}}
+        	\alakohta{\begin{center}
+        		   \includegraphics[width=3.5cm]{pictures/boole/boolt-b-ABC}
+        		   \end{center}}
+                \alakohta{\begin{center}
+        		   \includegraphics[width=4cm]{pictures/boole/boolt-c-ABC}
+        		   \end{center}}
+                \alakohta{\begin{center}
+        		   \includegraphics[width=4.5cm]{pictures/boole/boolt-d-ABC}
+        		   \end{center}}
+            \end{alakohdat}
 
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{$\lnot A\lor B$}
-            \alakohta{$\lnot(A\lor B)$}
-            \alakohta{$A\lor (\lnot A \land B)$}
-            \alakohta{$\lnot(A\lor B)\lor(B\land C)$}
-        \end{alakohdat}
-    \end{vastaus}
-    
+            \begin{vastaus}
+                \begin{alakohdat}
+                    \alakohta{$\lnot A\lor B$}
+                    \alakohta{$\lnot(A\lor B)$}
+                    \alakohta{$A\lor (\lnot A \land B)$}
+                    \alakohta{$\lnot(A\lor B)\lor(B\land C)$}
+                \end{alakohdat}
+            \end{vastaus}          
 \end{tehtava}
 
 \begin{tehtava}
@@ -390,18 +388,16 @@ Muodosta seuraavia piirejä vastaavat lauseet.
 vastaava looginen piiri.}
     \end{alakohdat}
 
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{KUVA!!!!!!!!!!} %Kuva puuttuu
-            \alakohta{KUVA!!!!!!!!!!} %Kuva puuttuu
-            \alakohta{KUVA!!!!!!!!!!} %Kuva puuttuu
-        \end{alakohdat}
-    \end{vastaus}
+    % tähän ei vastausta (kuvia)
     
 \end{tehtava}
 
 \end{tehtavasivu}
-\begin{kotitehtavasivu} % kotitehtävät
+
+% -----
+\setcounter{tehtava}{0}
+
+\begin{kotitehtavasivu}
 
 %Luku 2.1 Kotitehtävät, vastausten tekijä Valtteri Vistiaho 9.11.2013
 \begin{tehtava}
@@ -422,7 +418,7 @@ vastaava looginen piiri.}
             \alakohta{Kaikki ryhmämme opiskelijat eivät ole Facebookissa.}
             \alakohta{Koulussamme on enemmän tai vähemmän kuin kaksi vasenkätistä opettajaa.}
             \alakohta{Opiskelen latinaa tai kreikkaa.}
-            \alakohta{Maarit pitää lumilautailusta ja käsitöistä tai Maarit ei pidä lumilautailusta eikä käsitöistä. ?????????} %En ole täysin varma vastauksesta
+            \alakohta{Maarit pitää lumilautailusta ja käsitöistä tai Maarit ei pidä kummastakaan.} % tark. Niko
         \end{alakohdat}
     \end{vastaus}
     
@@ -606,7 +602,7 @@ vastaava looginen piiri.}
 		    $0$ & $0$ & $0$ & $0$ & $0$ \\ \hline
 \end{tabular}
 \end{center}}
-            \alakohta{Sulkujen paikka on merkitsevä, ???????????????????} %En tiedä, mitä tehtävän tekijä tässä ajaa takaa.
+            \alakohta{Sulkujen paikalla on merkitystä.} % tark. Niko
         \end{alakohdat}
     \end{vastaus}
     
@@ -666,8 +662,8 @@ vastaava looginen piiri.}
 
     \begin{vastaus}
         \begin{alakohdat}
-            \alakohta{Epätosi}
-            \alakohta{Tosi}
+            \alakohta{Epätosi.}
+            \alakohta{Tosi.}
         \end{alakohdat}
     \end{vastaus}
     
