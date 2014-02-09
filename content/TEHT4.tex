@@ -41,15 +41,29 @@
 	\begin{tehtava}
 		Todista, että kahden rationaaliluvun tulo on rationaalinen.
 		\begin{vastaus}
-			Rationaaliluvut voidaan esittää muodoissa
+		Merkitään rationaalilukuja $q_1 = \frac{m_1}{n_1}$ ja $q_2 = \frac{m_2}{n_2}$. Nyt sekä luvut $m_1$, $n_1$, $m_2$ ja $n_2$ ovat kaikki kokonaislukuja. Lukujen $q_1$ ja $q_2$ tulo on $q_3 = q_1q_2 =  \frac{m_1n_1}{m_2n_2}}$, ja koska kahden kokonaisluvun tulo on aina kokonaisluku, sekä luvun $q_3$ osoittaja että nimittäjä ovat kokonaislukuja, ja siten $q_3$ on rationaaliluku.
+		
 		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
 		Olkoot $a$ ja $b$ kokonaislukuja. Todista, että luku
-		$a + b$ on parillinen silloin ja vain silloin, kun luku
+		$a + b$ on parillinen jos ja vain jos luku
 		$a - b$ on parillinen.
 		\begin{vastaus}
+		Todistetaan ensin väite ''$a + b$ on parillinen'' $\Rightarrow$ ''$a - b$ on parillinen'': Olkoon $a+b = 2c$, jossa $c$ on kokonaisluku. Nyt
+		\begin{align*}
+		 a+b-2b &= 2c-2b \\
+		 a-b &= 2(c-b) 
+		\end{align*}
+		josta nähdään että $a-b$ on parillinen. Vastaavasti todistetaan väite ''$a - b$ on parillinen'' $\Rightarrow$ ''$a + b$ on parillinen''. Oletetaan että $a-b$ on parillinen; tällöin
+		\begin{align*}
+		a - b &= 2c \\
+		a-b+2b &= 2c + 2b \\
+		a+b &= 2(c+b) 
+		\end{align*}
+		josta nähdään että $a+b$ on parillinen. Molemminsuuntaisista implikaatioista seuraa, että koko väite on tosi. %kirjoitin ekstensiivisen todistuksen koska tämän tyyppinen ''jos ja vain jos'' näyttää esiintyvän tässä ensimmäistä kertaa -Jouni
+
 		\end{vastaus}
 	\end{tehtava}
 
@@ -57,6 +71,7 @@
 		Olkoon $m$ sellainen kokonaisluku, että $m^2$ on
 		pariton. Todista, että tällöin $m$ on pariton.
 		\begin{vastaus}
+		Todistetaan käänteisesti olettamalla, että $m$ on parillinen, jolloin $m = 2c$ jossa $c \in \mathbb{Z}$. Tällöin $m^2 = (2c)^2 = 4c^2$, joka on parillinen. Siis väite pätee.
 		\end{vastaus}
 	\end{tehtava}
 
