@@ -1,6 +1,6 @@
 \chapter{Loogiset lauseet}
 
-Logiikkaa ja erilaisia päättelyitä käytetään jatkuvasti arkipäivän tilanteissa. Logiikan tutkimuksessa tarvitaan kuitenkin täsmällisiä mää\-ri\-tel\-miä ja systemaattisia päättelysääntöjä, joihin tutustutaan tässä luvussa.
+Logiikkaa ja erilaisia päättelyitä käytetään jatkuvasti arkipäivän tilanteissa. Logiikan tutkimuksessa tarvitaan kuitenkin täsmällisiä määritelmiä ja systemaattisia päättelysääntöjä, joihin tutustutaan tässä luvussa.
 
 \section{Atomilauseet, konnektiivit ja totuusarvot}
 \label{konnektiivit}
@@ -17,7 +17,7 @@ Jussi (18 v.) on opiskellut yhden vuoden lukiossa ja on juuri palannut Uudesta-S
 Saara (19 v.) on suorittanut ylioppilastutkinnon. Hän kirjoitti mm. pitkän englannin ja lyhyen ranskan. Saara on ollut vuoden vaihto-opiskelijana Englannissa, ja hänellä on ajokortti.
 
 \begin{enumerate}
-\item Jarrumieheksi vuoristoradalle voidaan valita henkilö, joka ei pelkää korkeita paikkoja. Sopiiko a) Hanna b) Heikki teh\-tä\-vään?
+\item Jarrumieheksi vuoristoradalle voidaan valita henkilö, joka ei pelkää korkeita paikkoja. Sopiiko a) Hanna b) Heikki tehtävään?
 \item Oppaalta vaaditaan lukion pitkän englannin oppimäärä tai yli puolen vuoden oleskelu englanninkielisessä maassa. Sopiiko a) Jussi b) Saara c) Hanna tehtävään?
 \item Jäätelökärryn kuljettajalta vaaditaan täysi-ikäisyyttä ja hygieniapassia. Sopiiko a) Saara b) Hanna c) Heikki tehtävään?
 \end{enumerate}
@@ -30,25 +30,23 @@ Saara (19 v.) on suorittanut ylioppilastutkinnon. Hän kirjoitti mm. pitkän eng
 
 \bigskip
 
-Yksinkertaisimpia loogisia lauseita kutsutaan \termi{atomilause}{atomilauseiksi}. Atomilauseita käytetään ilmaisemaan asioiden tilaa. Esimeriksi seuraavat lauseet ovat atomilauseita:
+Logiikassa väitteitä, jotka ilmaisevat asioiden tilaa, kutsutaan \termi{propositio}{propositioiksi}. Propositioille on aina määritettävissä oleva totuusarvo – toisin kuin esimerkiksi huudahduksilla (`'Varo!'') tai kysymyksillä (``Paljonko kello on?''). Propositioista yksinkertaisimmat ovat \termi{atomilause}{atomilauseita}. Esimerkiksi seuraavat lauseet ovat propositioita ja atomilauseita:
 \begin{enumerate}[$A:$]
 \item On yö.
 \item Aurinko paistaa.
 \item Pariisi on Italiassa.
 \item Oulu on Suomessa.
 \end{enumerate}
-Atomilauseita ajatellaan eräänlaisina totuusmuuttujina, jotka voivat saada kaksi arvoa: tosi tai epätosi. Yllä olevista lauseista $C$ on epätosi, $D$ on tosi ja kaksi ensimmäistä voivat olla tosia tai epätosia ajankohdasta riippuen. Tässä kurssissa atomilauseita merkitään isoilla kirjaimilla $A$, $B$, $C$, jne. Todelle ja epätodelle käytetään tietotekniikasta tuttuja merkintöjä $1$ ja $0$.
 
-Loogisia lauseita voidaan myös muodostaa yhdistelemällä atomilauseita \termi{konnektiivi}{konnektiivien} avulla. Konnektiiveja ovat esimerkiksi \termi{ei}{ei}, \termi{ja}{ja}, \termi{tai}{tai} sekä \termi{jos ... niin}{jos ... niin}. Näillä sanoilla on myös arkikielessä merkityksiä, jotka joskus eivät täysin vastaa niiden merkitystä logiikassa. Lausetta, jossa on vähintään yksi konnektiivi, kutsutaan \termi{yhdistetty lause}{yhdistetyksi lauseeksi}. Yhdistetyn lauseen totuusarvoa tutkitaan \termi{totuustaulu}{totuustaulujen} avulla.
+Atomilauseita ajatellaan eräänlaisina totuusmuuttujina, jotka voivat saada kaksi arvoa: tosi tai epätosi. Yllä olevista lauseista $C$ on epätosi, $D$ on tosi ja kaksi ensimmäistä voivat olla tosia tai epätosia ajankohdasta riippuen. Tässä kurssissa atomilauseita merkitään isoilla kirjaimilla $A$, $B$, $C$ jne. Todelle ja epätodelle käytetään tietotekniikasta tuttuja merkintöjä $1$ ja $0$.
+
+Loogisia lauseita voidaan myös muodostaa yhdistelemällä atomilauseita \termi{konnektiivi}{konnektiivien} avulla. Konnektiiveja ovat esimerkiksi \termi{ei}{ei}, \termi{ja}{ja}, \termi{tai}{tai} sekä \termi{jos ... niin}{jos ... niin}. Näillä sanoilla on myös arkikielessä merkityksiä, jotka joskus eivät täysin vastaa niiden merkitystä logiikassa. Lausetta, jossa on vähintään yksi konnektiivi, kutsutaan \termi{yhdistetty lause}{yhdistetyksi lauseeksi} eli \termi{molekyylilause}{molekyylilauseeksi}. Yhdistetyn lauseen totuusarvoa tutkitaan \termi{totuustaulu}{totuustaulujen} avulla.
 
 \subsection*{Negaatio} Yksinkertaisin esimerkki konnektiivista on looginen ei, jota kutsutaan \termi{negaatio}{negaatioksi}. Lauseen $A$ negaatiota merkitään $\lnot A$. Negaation totuusarvo on vastakkainen sille lauseelle, johon negaatio liittyy. Jos $A$ on tosi, niin $\lnot A$ on epätosi. Jos $A$ on epätosi, niin $\lnot A$ on tosi.
 
 Esimerkiksi lauseen $A$: ''uimahalli on auki'' negaatio on $\lnot A$: ''uimahalli on suljettu''.
 
-%Logiikassa on tapana esittää rakenteita \termi{totuustaulu}{totuustaulun} avulla. 
 Negaation totuustaulu on seuraava:
-
-%\bigskip
 
 \bigskip
 
@@ -564,7 +562,7 @@ $0$ & $1$ & $1$\\ \hline
 Lauseen $A \lor \lnot A$ tautologisuus liittyy klassisen logiikan kaksiarvoisuuteen. Voidaan ajatella myös sellaisia päättelymalleja, joissa lause $A \lor \lnot A$ ei ole tautologia. Esimerkki tällaisesta on \termi{kolmiarvoinen logiikka}{kolmiarvoinen logiikka}, jossa mahdollisia totuusarvoja ovat tosi, epätosi ja epävarma.  Toinen esimerkki on niin kutsuttu \termi{sumea logiikka}{sumea logiikka}, jossa on äärettömän monta totuusarvoa. Erilaiset päättelyjärjestelmät eivät kuitenkaan kumoa toisiaan, vaan logiikkaa sovellettaessa käytetään kuhunkin tilanteeseen sopivaa päättelyjärjestelmää. Esimerkiksi kolmiarvoinen logiikka soveltuu tilanteisiin, joissa käytössä oleva informaatio ajatellaan epätäydelliseksi.
 
 
-\subsection*{Ristiriitainen lause}
+\subsection*{Ristiriitainen lause} %mainitaan kontradiktio tautulogian vastineeksi
 Lausetta, joka ei toteudu missään tilanteessa, kutsutaan loogisesti ristiriitaiseksi. Lauseen ristiriitaisuutta voidaan jälleen tutkia totuustaulun avulla. Loogisesti ristiriitaisen lauseen negaatio on tautologia. 
 
 Yksinkertaisin esimerkki ristiriitaisesta lauseesta on lause $A\land \lnot A$. Sen totuustaulu on seuraava:
