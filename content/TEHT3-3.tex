@@ -12,6 +12,14 @@
 	\alakohta{$\exists x \lnot T(x)$}
 	\alakohta{$\forall x \lnot T(x)$}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{Kaikki koulun opiskelijat ovat täysi-ikäisiä.}
+			\alakohta{Ainakin yksi koulun opiskelija on täysi-ikäinen.}
+			\alakohta{Ainakin yksi koulun opiskelija ei ole täysi-ikäinen.}
+			\alakohta{Yksikään koulun opiskelija ei ole täysi-ikäinen.}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -22,6 +30,14 @@
 	\alakohta{$\exists x\in\nn (x^2 < 2)$}
 	\alakohta{$\exists x\in\nn (x^2 = 2)$}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{Lause on epätosi, sillä $0 \in \mathbb{R}$ ja $|0| = 0$.}
+			\alakohta{Lause on tosi, sillä reaaliluvun itseisarvo on aina suurempaa tai yhtä suurta kuin $0$.}
+			\alakohta{Lause on tosi, sillä $1 \in \mathbb{N}$ ja $1^2 < 2$.}
+			\alakohta{Lause on epätosi, sillä yhtälön $x^2 = 2$ ratkaisut $\sqrt{2}$ ja $-\sqrt{2}$ eivät ole luonnollisia lukuja.}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -33,11 +49,21 @@
 	yhtä suuri kuin luku itse.}
 	\alakohta{Minkään kokonaisluvun neliö ei ole $7$.}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{$\forall x \in \mathbb{R}(x \ne 0)$ Lause on epätosi, sillä $0 \in \mathbb{R}$.}
+			\alakohta{$\exists x \in \mathbb{Z}(\sqrt{x} = x)$ Lause on tosi, sillä $1 \in \mathbb{Z}$ ja $\sqrt{1} = 1$.}
+			\alakohta{$\forall x \in \mathbb{Z}(x^2 \ne 7)$ Lause on tosi, sillä yhtälön $x^2 = 7$ ratkaisut $\sqrt{7}$ ja $-\sqrt{7}$ eivät ole kokonaislukuja.}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Osoita, että yhtälö $\sqrt{x^2} = x$ ei pidä paikkaansa
 	kaikilla reaaliluvuilla.%
+	\begin{vastaus}
+		Koska $-1 \in \mathbb{R}$ ja $\sqrt{(-1)^2} = \sqrt{1} = 1 \ne -1$, niin yhtälö $\forall x \in \mathbb{R}(\sqrt{x^2} = x)$ on epätosi.
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -49,6 +75,13 @@
 	\alakohta{$\exists x \forall y P(x, y)$}
 	\alakohta{$\exists y \forall x P(x, y)$}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{Jokaisella on jonkun puhelinnumero.}
+			\alakohta{Ainakin yhdellä pelaajalla on kaikkien puhelinnumerot.}
+			\alakohta{Ainakin yhden pelaajan puhelinnumero on kaikilla pelaajilla.}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -57,6 +90,12 @@
 	\alakohta{Positiivisten kokonaislukujen joukossa on pienin alkio.}
 	\alakohta{Negatiivisten kokonaislukujen joukossa on pienin alkio.}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{$\exists x \in \mathbb{Z}_{+} \forall y \in \mathbb{Z}_{+}(x \le y)$ Lause on tosi, sillä tämä pätee, kun $x = 1$.}
+			\alakohta{$\exists x \in \mathbb{Z}_{-} \forall y \in \mathbb{Z}_{-}(x \le y)$ Lause on epätosi, sillä jos $x \in \mathbb{Z}_{-}$, niin $x - 1 \in \mathbb{Z}_{-}$ ja $x - 1 < x$ $\forall x \in \mathbb{Z}_{-}$.}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -65,6 +104,12 @@
 	\alakohta{$\forall x\in \rr\exists y\in \rr (xy=1)$}
 	\alakohta{$\exists x\in \rr\forall y\in \rr (xy=y)$}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{Lause on epätosi, sillä $0 \in \mathbb{R}$ ja $\neg \exists x \in \mathbb{R}(x \cdot 0 = 1)$.}
+			\alakohta{Lause on tosi, sillä luku $1$ on tällainen luku.}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -73,6 +118,12 @@
 	\alakohta{$\exists x\in \rr\exists y\in \rr (xy=x+y)$}
 	\alakohta{$\forall x\in \rr\exists y\in \rr (xy=x+y)$}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{Lause on tosi, sillä $2 \in \mathbb{R}$ ja $2 \cdot 2 = 4 = 2 + 2$.}
+			\alakohta{Lause on epätosi, sillä jos $x = 1 \in \mathbb{R}$, niin täytyisi olla $1 \cdot y = 1 + y \Leftrightarrow y = 1 + y \Leftrightarrow 0 = 1$, mikä on ristiriita.}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -83,6 +134,14 @@
 	\alakohta{Ei ole olemassa matemaatikkoa.}
 	\alakohta{Kukaan ei ole matemaatikko.}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{$\neg \forall x M(x)$}
+			\alakohta{$\exists x \neg M(x)$}
+			\alakohta{$\neg \exists x M(x)$}
+			\alakohta{$\forall x \neg M(x)$}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -93,10 +152,21 @@
 	\alakohta{$\exists x\in \nn ((x^2=9) \land (x<5))$}
 	\alakohta{$\forall x\in \nn ((x=0)\lor (x\ge 1))$}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{$\exists x \in \mathbb{Z}(x \ge 12)$}
+			\alakohta{$\forall x \in \mathbb{Z}(x^2 \ne 12)$}
+			\alakohta{$\forall x \in \mathbb{N}((x^2 \ne 9) \lor (x > 5))$}
+			\alakohta{$\exists x \in \mathbb{N}((x \ne 0) \land (x < 1))$}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Osoita, että lause $\exists a, b, c \in \zz_{+} (a^2 + b^2 = c^2)$ on tosi.%
+	\begin{vastaus}
+		Koska $3, 4, 5 \in \mathbb{Z}_{+}$ ja $3^2 + 4^2 = 9 + 16 = 25 = 5^2$, niin väite on tosi.
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -108,6 +178,14 @@
 	\alakohta{Kukaan matemaatikko ei ole iloinen.}
 	\alakohta{Kaikki matemaatikot eivät ole iloisia.}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{$\forall x(M(x) \land I(x))$}
+			\alakohta{$\forall x(M(x) \Rightarrow I(x))$}
+			\alakohta{$\forall x(M(x) \Rightarrow \neg I(x))$}
+			\alakohta{$\exists x(M(x) \Rightarrow \neg I(x))$}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -118,6 +196,12 @@
 	\alakohta{Joku kampaaja tekee kampauksen niille kampaajille,
 	jotka eivät tee kampausta itselleen.}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{$\forall x(\neg T(x, x))$}
+			\alakohta{$\exists x \forall y(\neg T(y, y) \Rightarrow T(x, y))$}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 
