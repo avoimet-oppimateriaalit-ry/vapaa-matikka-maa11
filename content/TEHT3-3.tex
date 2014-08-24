@@ -222,6 +222,14 @@
 	\alakohta{$\exists x (\lnot N(x) \land \lnot L(x))$}
 	\alakohta{$\forall x \lnot N(x)$}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{On olemassa suora, joka on laskeva. Lause on tosi.}
+			\alakohta{Kaikki suorat ovat joko nousevia tai laskevia. Lause on epätosi.}
+			\alakohta{On olemassa suora, joka ei ole nouseva eikä laskeva. Lause on tosi.}
+			\alakohta{Mikään suora ei ole nouseva.}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -232,6 +240,14 @@
 	\alakohta{$\forall x\in\rr ((x-1)(x-3) \ge 0)$}
 	\alakohta{$\exists x\in\zz (-x^2 - 2 \le 0)$}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{Lause on tosi, sillä reaaliluvun neliö ei ole koskaan negatiivinen.}
+			\alakohta{Lause on epätosi, sillä $\forall x \in \mathbb{N}(x^2 \ge 0)$.}
+			\alakohta{Lause on epätosi, sillä $2 \in \mathbb{R}$ ja $(2 - 1)(2 - 3) = -1 \cdot 1 = -1 < 0$.}
+			\alakohta{Lause on tosi, sillä $0 \in \mathbb{R}$ ja $-0^2 - 2 = -2 \le 0$.}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -240,6 +256,14 @@
 	\alakohta{$\exists x\in \rr (x^2 - 3x + 3 = 0)$}
 	\alakohta{$\forall x\in \rr (x^2 - 3x + 3 \ge 0)$}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{Ratkaistaan funktion $x^2 - 3x + 3 = 0$ nollakohdat:
+			$$x = \frac{-(-3) \pm \sqrt{(-3)^2 - 4 \cdot 1 \cdot 3}}{2 \cdot 1} = \frac{3 \pm \sqrt{-3}}{2}$$
+			Koska diskriminantti $-3$ on negatiivinen, niin yhtälöllä ei ole ratkaisuja. Lisäksi koska yhtälön $x^2 - 3x + 3$ kuvaaja on ylöspäin aukeava paraabeli, niin pätee $x^2 - 3x + 3 > 0$ $\forall x \in \mathbb{R}$. Siis lause on epätosi.}
+			\alakohta{Koska $x^2 - 3x + 3 > 0$ $\forall x \in \mathbb{R}$, niin $\forall x \in \mathbb{R}(x^2 - 3x + 3 \ge 0)$. Siis lause on tosi.}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -251,6 +275,13 @@
 	\alakohta{Millä ehdolla yhtälö $\sqrt{xy} = \sqrt{x}\sqrt{y}$
 	pitää yleisesti paikkansa?}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{Jos $x = y = -1 \in \mathbb{R}$, niin $\sqrt{xy} = \sqrt{(-1) \cdot (-1)} = \sqrt{1} = 1$, mutta $\sqrt{x} \cdot \sqrt{y} = \sqrt{-1} \cdot \sqrt{-1}$, jota ei ole määritelty reaalilukujen joukossa.}
+			\alakohta{Kun $x = y = 1 \in \mathbb{R}$, niin $\sqrt{xy} = \sqrt{1 \cdot 1} = \sqrt{1} = 1 = 1 \cdot 1 = \sqrt{1} \cdot \sqrt{1} = \sqrt{x} \cdot \sqrt{y}$.}
+			\alakohta{$x \ge 0 \land y \ge 0$}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -262,6 +293,14 @@
 	\alakohta{Kukaan ei ole suorittanut kaikkia kursseja.}
 	\alakohta{On olemassa kurssi, jota kukaan ei ole suorittanut.}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{$\exists x \forall y S(x, y)$}
+			\alakohta{$\forall x \exists y S(x, y)$}
+			\alakohta{$\forall x \exists y \neg S(x, y)$}
+			\alakohta{$\exists y \forall x \neg S(x, y)$}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -270,6 +309,12 @@
 	\alakohta{$\forall x\in \zz_{+} \exists y\in \zz_{+} (x = \sqrt{y})$}
 	\alakohta{$\exists y\in \rr \forall x\in \rr (x^2 - 4 > y)$}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{Lause on tosi, sillä jos $x \in \mathbb{Z}_{+}$ ja $y = x^2 \in \mathbb{Z}_{+}$, niin $\sqrt{y} = \sqrt{x^2} = |x| = x$.}
+			\alakohta{Koska $\forall x \in \mathbb{R}(x \ge 0 > -1)$, niin $\forall x \in \mathbb{R}(x > -1) \Leftrightarrow \forall x \in \mathbb{R}(x - 4 > -5)$. Valitaan $y = -5$. Nyt pätee $\exists y \in \mathbb{R} \forall x \in \mathbb{R}(x - 4 > y)$ eli lause on tosi.}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -281,6 +326,12 @@
 	\alakohta{On olemassa opiskelija, joka saa tästä kurssista
 	arvosanan 10.}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{On olemassa ainakin yksi opiskelija, joka ei saa tästä kurssista arvosanaa 10. ($\exists x \neg K(x)$) Kaikki opiskelijat eivät saa tästä kurssista arvosanaa 10. ($\neg \forall x K(x)$)}
+			\alakohta{Ei ole olemassa opiskelijaa, joka saisi tästä kurssista arvosanan 10. ($\neg \exists x K(x)$) Kukaan opiskelija ei saa tästä kurssista arvosanaa 10. ($\forall x \neg K(x)$)}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -289,6 +340,12 @@
 	\alakohta{$\lnot \forall x \lnot P(x)$}
 	\alakohta{$\lnot \exists x (P(x) \lor Q(x))$}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{$\exists x P(x)$}
+			\alakohta{$\forall x (\neg P(x) \land \neg Q(x))$}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -299,6 +356,19 @@
 	\alakohta{$\forall n \in \zz \exists m \in \zz ((n = 2m) \lor (n =
 	2m+1))$}
 	\end{alakohdat}%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{$\exists x \in {]-1, \infty[}(\sqrt{x} \ge x)$ Negaatio on epätosi, koska
+			\begin{align*}
+			& \sqrt{x} > 1 && \parallel \cdot \sqrt{x} > 0 \\
+			\Leftrightarrow & \sqrt{x} \cdot \sqrt{x} > \sqrt{x} && \\
+			\Leftrightarrow & x > \sqrt{x} \forall x \in {]1, \infty[} &&
+			\end{align*}
+			}
+			\alakohta{$\forall x \in \mathbb{Q}(x^3 \ne 5)$ Negaatio on tosi, sillä yhtälön $x^3 = 5$ ainoa ratkaisu on $x = \sqrt[3]{5} \notin \mathbb{Q}$.}
+			\alakohta{$\forall n \in \mathbb{Z} \forall m \in \mathbb{Z} ((n \ne 2m) \land (n \ne 2m + 1))$ Valitaan $n = 2 \in \mathbb{Z}$ ja $m = 1 \in \mathbb{Z}$. Tällöin $n = 2 = 2 \cdot 1 = 2m$, joten negaatio on epätosi.}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -313,6 +383,12 @@
 	\end{itemize}
 	Tulkitse sanallisesti tai kuvaa käyttäen, mitä tämä määritelmä
 	tarkoittaa.%
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{Funktio $f : X \to Y$ saa jokaisessa pisteessä $x \in X$ jonkin arvon.}
+			\alakohta{Funktio $f : X \to Y$ ei saa kahta eri arvoa missään pisteessä $x \in X$.}
+		\end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
