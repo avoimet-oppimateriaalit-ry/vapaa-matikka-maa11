@@ -1,60 +1,58 @@
-\setcounter{tehtava}{0}
-
 \begin{tehtavasivu}
 
 \begin{tehtava}
 	Olkoon lause
 	+$T(x)$: ''opiskelija $x$ on täysi-ikäinen'' ja
 	+perusjoukko kaikki koulun opiskelijat. Suomenna lause.
-	\begin{alakohdat}
-	\alakohta{$\forall x T(x)$}
-	\alakohta{$\exists x T(x)$}
-	\alakohta{$\exists x \lnot T(x)$}
-	\alakohta{$\forall x \lnot T(x)$}
-	\end{alakohdat}%
+	\alakohdat{
+	§ $\forall x T(x)$
+	§ $\exists x T(x)$
+	§ $\exists x \lnot T(x)$
+	§ $\forall x \lnot T(x)$
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{Kaikki koulun opiskelijat ovat täysi-ikäisiä.}
-			\alakohta{Ainakin yksi koulun opiskelija on täysi-ikäinen.}
-			\alakohta{Ainakin yksi koulun opiskelija ei ole täysi-ikäinen.}
-			\alakohta{Yksikään koulun opiskelija ei ole täysi-ikäinen.}
-		\end{alakohdat}
+		\alakohdat{
+			§ Kaikki koulun opiskelijat ovat täysi-ikäisiä.
+			§ Ainakin yksi koulun opiskelija on täysi-ikäinen.
+			§ Ainakin yksi koulun opiskelija ei ole täysi-ikäinen.
+			§ Yksikään koulun opiskelija ei ole täysi-ikäinen.
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Suomenna lause. Onko lause tosi? Perustele.
-	\begin{alakohdat}
-	\alakohta{$\forall x\in\rr (|x| > 0)$}
-	\alakohta{$\forall x\in\rr (|x| \ge 0)$}
-	\alakohta{$\exists x\in\nn (x^2 < 2)$}
-	\alakohta{$\exists x\in\nn (x^2 = 2)$}
-	\end{alakohdat}%
+	\alakohdat{
+	§ $\forall x\in\rr (|x| > 0)$
+	§ $\forall x\in\rr (|x| \ge 0)$
+	§ $\exists x\in\nn (x^2 < 2)$
+	§ $\exists x\in\nn (x^2 = 2)$
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{Lause on epätosi, sillä $0 \in \mathbb{R}$ ja $|0| = 0$.}
-			\alakohta{Lause on tosi, sillä reaaliluvun itseisarvo on aina suurempaa tai yhtä suurta kuin $0$.}
-			\alakohta{Lause on tosi, sillä $1 \in \mathbb{N}$ ja $1^2 < 2$.}
-			\alakohta{Lause on epätosi, sillä yhtälön $x^2 = 2$ ratkaisut $\sqrt{2}$ ja $-\sqrt{2}$ eivät ole luonnollisia lukuja.}
-		\end{alakohdat}
+		\alakohdat{
+			§ Lause on epätosi, sillä $0 \in \mathbb{R}$ ja $|0| = 0$.
+			§ Lause on tosi, sillä reaaliluvun itseisarvo on aina suurempaa tai yhtä suurta kuin $0$.
+			§ Lause on tosi, sillä $1 \in \mathbb{N}$ ja $1^2 < 2$.
+			§ Lause on epätosi, sillä yhtälön $x^2 = 2$ ratkaisut $\sqrt{2}$ ja $-\sqrt{2}$ eivät ole luonnollisia lukuja.
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Formalisoi lause. Onko lause tosi? Perustele.
-	\begin{alakohdat}
-	\alakohta{Jokainen kokonaisluku on joko positiivinen tai
-	negatiivinen.}
-	\alakohta{On olemassa sellainen kokonaisluku, jonka neliöjuuri on
-	yhtä suuri kuin luku itse.}
-	\alakohta{Minkään kokonaisluvun neliö ei ole $7$.}
-	\end{alakohdat}%
+	\alakohdat{
+	§ Jokainen kokonaisluku on joko positiivinen tai
+	negatiivinen.
+	§ On olemassa sellainen kokonaisluku, jonka neliöjuuri on
+	yhtä suuri kuin luku itse.
+	§ Minkään kokonaisluvun neliö ei ole $7$.
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{$\forall x \in \mathbb{R}(x \ne 0)$ Lause on epätosi, sillä $0 \in \mathbb{R}$.}
-			\alakohta{$\exists x \in \mathbb{Z}(\sqrt{x} = x)$ Lause on tosi, sillä $1 \in \mathbb{Z}$ ja $\sqrt{1} = 1$.}
-			\alakohta{$\forall x \in \mathbb{Z}(x^2 \ne 7)$ Lause on tosi, sillä yhtälön $x^2 = 7$ ratkaisut $\sqrt{7}$ ja $-\sqrt{7}$ eivät ole kokonaislukuja.}
-		\end{alakohdat}
+		\alakohdat{
+			§ $\forall x \in \mathbb{R}(x \ne 0)$ Lause on epätosi, sillä $0 \in \mathbb{R}$.
+			§ $\exists x \in \mathbb{Z}(\sqrt{x} = x)$ Lause on tosi, sillä $1 \in \mathbb{Z}$ ja $\sqrt{1} = 1$.
+			§ $\forall x \in \mathbb{Z}(x^2 \ne 7)$ Lause on tosi, sillä yhtälön $x^2 = 7$ ratkaisut $\sqrt{7}$ ja $-\sqrt{7}$ eivät ole kokonaislukuja.
+		}
 	\end{vastaus}
 \end{tehtava}
 
@@ -70,95 +68,95 @@
 	Jalkapallojoukkue on lähdössä turnausmatkalle. Olkoon
 	$P(x, y)$ avoin lause ''pelaajalla $x$ on pelaajan $y$
 	puhelinnumero''. Suomenna lause.
-	\begin{alakohdat}
-	\alakohta{$\forall x \exists y P(x, y)$}
-	\alakohta{$\exists x \forall y P(x, y)$}
-	\alakohta{$\exists y \forall x P(x, y)$}
-	\end{alakohdat}%
+	\alakohdat{
+	§ $\forall x \exists y P(x, y)$
+	§ $\exists x \forall y P(x, y)$
+	§ $\exists y \forall x P(x, y)$
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{Jokaisella on jonkun puhelinnumero.}
-			\alakohta{Ainakin yhdellä pelaajalla on kaikkien puhelinnumerot.}
-			\alakohta{Ainakin yhden pelaajan puhelinnumero on kaikilla pelaajilla.}
-		\end{alakohdat}
+		\alakohdat{
+			§ Jokaisella on jonkun puhelinnumero.
+			§ Ainakin yhdellä pelaajalla on kaikkien puhelinnumerot.
+			§ Ainakin yhden pelaajan puhelinnumero on kaikilla pelaajilla.
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Formalisoi lause. Onko lause tosi?
-	\begin{alakohdat}
-	\alakohta{Positiivisten kokonaislukujen joukossa on pienin alkio.}
-	\alakohta{Negatiivisten kokonaislukujen joukossa on pienin alkio.}
-	\end{alakohdat}%
+	\alakohdat{
+	§ Positiivisten kokonaislukujen joukossa on pienin alkio.
+	§ Negatiivisten kokonaislukujen joukossa on pienin alkio.
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{$\exists x \in \mathbb{Z}_{+} \forall y \in \mathbb{Z}_{+}(x \le y)$ Lause on tosi, sillä tämä pätee, kun $x = 1$.}
-			\alakohta{$\exists x \in \mathbb{Z}_{-} \forall y \in \mathbb{Z}_{-}(x \le y)$ Lause on epätosi, sillä jos $x \in \mathbb{Z}_{-}$, niin $x - 1 \in \mathbb{Z}_{-}$ ja $x - 1 < x$ $\forall x \in \mathbb{Z}_{-}$.}
-		\end{alakohdat}
+		\alakohdat{
+			§ $\exists x \in \mathbb{Z}_{+} \forall y \in \mathbb{Z}_{+}(x \le y)$ Lause on tosi, sillä tämä pätee, kun $x = 1$.
+			§ $\exists x \in \mathbb{Z}_{-} \forall y \in \mathbb{Z}_{-}(x \le y)$ Lause on epätosi, sillä jos $x \in \mathbb{Z}_{-}$, niin $x - 1 \in \mathbb{Z}_{-}$ ja $x - 1 < x$ $\forall x \in \mathbb{Z}_{-}$.
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Onko lause tosi? Perustele.
-	\begin{alakohdat}
-	\alakohta{$\forall x\in \rr\exists y\in \rr (xy=1)$}
-	\alakohta{$\exists x\in \rr\forall y\in \rr (xy=y)$}
-	\end{alakohdat}%
+	\alakohdat{
+	§ $\forall x\in \rr\exists y\in \rr (xy=1)$
+	§ $\exists x\in \rr\forall y\in \rr (xy=y)$
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{Lause on epätosi, sillä $0 \in \mathbb{R}$ ja $\neg \exists x \in \mathbb{R}(x \cdot 0 = 1)$.}
-			\alakohta{Lause on tosi, sillä luku $1$ on tällainen luku.}
-		\end{alakohdat}
+		\alakohdat{
+			§ Lause on epätosi, sillä $0 \in \mathbb{R}$ ja $\neg \exists x \in \mathbb{R}(x \cdot 0 = 1)$.
+			§ Lause on tosi, sillä luku $1$ on tällainen luku.
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Onko lause tosi? Perustele. % NVI
-	\begin{alakohdat}
-	\alakohta{$\exists x\in \rr\exists y\in \rr (xy=x+y)$}
-	\alakohta{$\forall x\in \rr\exists y\in \rr (xy=x+y)$}
-	\end{alakohdat}%
+	\alakohdat{
+	§ $\exists x\in \rr\exists y\in \rr (xy=x+y)$
+	§ $\forall x\in \rr\exists y\in \rr (xy=x+y)$
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{Lause on tosi, sillä $2 \in \mathbb{R}$ ja $2 \cdot 2 = 4 = 2 + 2$.}
-			\alakohta{Lause on epätosi, sillä jos $x = 1 \in \mathbb{R}$, niin täytyisi olla $1 \cdot y = 1 + y \Leftrightarrow y = 1 + y \Leftrightarrow 0 = 1$, mikä on ristiriita.}
-		\end{alakohdat}
+		\alakohdat{
+			§ Lause on tosi, sillä $2 \in \mathbb{R}$ ja $2 \cdot 2 = 4 = 2 + 2$.
+			§ Lause on epätosi, sillä jos $x = 1 \in \mathbb{R}$, niin täytyisi olla $1 \cdot y = 1 + y \Leftrightarrow y = 1 + y \Leftrightarrow 0 = 1$, mikä on ristiriita.
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Olkoon $M(x)$: ''$x$ on matemaatikko''. Formalisoi lause.%
-	\begin{alakohdat}
-	\alakohta{Kaikki eivät ole matemaatikkoja.}
-	\alakohta{Joku ei ole matemaatikko.}
-	\alakohta{Ei ole olemassa matemaatikkoa.}
-	\alakohta{Kukaan ei ole matemaatikko.}
-	\end{alakohdat}%
+	\alakohdat{
+	§ Kaikki eivät ole matemaatikkoja.
+	§ Joku ei ole matemaatikko.
+	§ Ei ole olemassa matemaatikkoa.
+	§ Kukaan ei ole matemaatikko.
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{$\neg \forall x M(x)$}
-			\alakohta{$\exists x \neg M(x)$}
-			\alakohta{$\neg \exists x M(x)$}
-			\alakohta{$\forall x \neg M(x)$}
-		\end{alakohdat}
+		\alakohdat{
+			§ $\neg \forall x M(x)$
+			§ $\exists x \neg M(x)$
+			§ $\neg \exists x M(x)$
+			§ $\forall x \neg M(x)$
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Muodosta lauseen negaatio.
-	\begin{alakohdat}
-	\alakohta{$\forall x\in \zz (x < 12)$}
-	\alakohta{$\exists x\in \zz (x^2 = 12)$}
-	\alakohta{$\exists x\in \nn ((x^2=9) \land (x<5))$}
-	\alakohta{$\forall x\in \nn ((x=0)\lor (x\ge 1))$}
-	\end{alakohdat}%
+	\alakohdat{
+	§ $\forall x\in \zz (x < 12)$
+	§ $\exists x\in \zz (x^2 = 12)$
+	§ $\exists x\in \nn ((x^2=9) \land (x<5))$
+	§ $\forall x\in \nn ((x=0)\lor (x\ge 1))$
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{$\exists x \in \mathbb{Z}(x \ge 12)$}
-			\alakohta{$\forall x \in \mathbb{Z}(x^2 \ne 12)$}
-			\alakohta{$\forall x \in \mathbb{N}((x^2 \ne 9) \lor (x > 5))$}
-			\alakohta{$\exists x \in \mathbb{N}((x \ne 0) \land (x < 1))$}
-		\end{alakohdat}
+		\alakohdat{
+			§ $\exists x \in \mathbb{Z}(x \ge 12)$
+			§ $\forall x \in \mathbb{Z}(x^2 \ne 12)$
+			§ $\forall x \in \mathbb{N}((x^2 \ne 9) \lor (x > 5))$
+			§ $\exists x \in \mathbb{N}((x \ne 0) \land (x < 1))$
+		}
 	\end{vastaus}
 \end{tehtava}
 
@@ -172,35 +170,35 @@
 \begin{tehtava}
 	* Olkoot $M(x)$: ''$x$ on matemaatikko'' ja
 	$I(x)$: ''$x$ on iloinen''. Formalisoi lause.
-	\begin{alakohdat}
-	\alakohta{Kaikki ovat iloisia matemaatikkoja.}
-	\alakohta{Matemaatikot ovat iloisia.}
-	\alakohta{Kukaan matemaatikko ei ole iloinen.}
-	\alakohta{Kaikki matemaatikot eivät ole iloisia.}
-	\end{alakohdat}%
+	\alakohdat{
+	§ Kaikki ovat iloisia matemaatikkoja.
+	§ Matemaatikot ovat iloisia.
+	§ Kukaan matemaatikko ei ole iloinen.
+	§ Kaikki matemaatikot eivät ole iloisia.
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{$\forall x(M(x) \land I(x))$}
-			\alakohta{$\forall x(M(x) \Rightarrow I(x))$}
-			\alakohta{$\forall x(M(x) \Rightarrow \neg I(x))$}
-			\alakohta{$\exists x(M(x) \Rightarrow \neg I(x))$}
-		\end{alakohdat}
+		\alakohdat{
+			§ $\forall x(M(x) \land I(x))$
+			§ $\forall x(M(x) \Rightarrow I(x))$
+			§ $\forall x(M(x) \Rightarrow \neg I(x))$
+			§ $\exists x(M(x) \Rightarrow \neg I(x))$
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	* Olkoot $K(x)$: ''$x$ on kampaaja'' ja
 	$T(x, y)$: ''$x$ tekee $y$:lle kampauksen''. Formalisoi lause.
-	\begin{alakohdat}
-	\alakohta{Kukaan kampaaja ei tee kampausta itselleen.}
-	\alakohta{Joku kampaaja tekee kampauksen niille kampaajille,
-	jotka eivät tee kampausta itselleen.}
-	\end{alakohdat}%
+	\alakohdat{
+	§ Kukaan kampaaja ei tee kampausta itselleen.
+	§ Joku kampaaja tekee kampauksen niille kampaajille,
+	jotka eivät tee kampausta itselleen.
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{$\forall x(\neg T(x, x))$}
-			\alakohta{$\exists x \forall y(\neg T(y, y) \Rightarrow T(x, y))$}
-		\end{alakohdat}
+		\alakohdat{
+			§ $\forall x(\neg T(x, x))$
+			§ $\exists x \forall y(\neg T(y, y) \Rightarrow T(x, y))$
+		}
 	\end{vastaus}
 \end{tehtava}
 
@@ -208,7 +206,7 @@
 \end{tehtavasivu}
 
 % -----
-\setcounter{tehtava}{0}
+
 
 \begin{kotitehtavasivu}
 
@@ -216,104 +214,104 @@
 	Olkoon perusjoukko $xy$-tason suorien joukko. Olkoot
 	lauseet $N(x)$: ''suora on nouseva'' ja $L(x)$: ''suora on laskeva''.
 	Suomenna lause. Onko lause tosi?
-	\begin{alakohdat}
-	\alakohta{$\exists x L(x)$}
-	\alakohta{$\forall x (N(x) \lor L(x))$}
-	\alakohta{$\exists x (\lnot N(x) \land \lnot L(x))$}
-	\alakohta{$\forall x \lnot N(x)$}
-	\end{alakohdat}%
+	\alakohdat{
+	§ $\exists x L(x)$
+	§ $\forall x (N(x) \lor L(x))$
+	§ $\exists x (\lnot N(x) \land \lnot L(x))$
+	§ $\forall x \lnot N(x)$
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{On olemassa suora, joka on laskeva. Lause on tosi.}
-			\alakohta{Kaikki suorat ovat joko nousevia tai laskevia. Lause on epätosi.}
-			\alakohta{On olemassa suora, joka ei ole nouseva eikä laskeva. Lause on tosi.}
-			\alakohta{Mikään suora ei ole nouseva.}
-		\end{alakohdat}
+		\alakohdat{
+			§ On olemassa suora, joka on laskeva. Lause on tosi.
+			§ Kaikki suorat ovat joko nousevia tai laskevia. Lause on epätosi.
+			§ On olemassa suora, joka ei ole nouseva eikä laskeva. Lause on tosi.
+			§ Mikään suora ei ole nouseva.
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Onko lause tosi? Perustele.
-	\begin{alakohdat}
-	\alakohta{$\forall x\in\rr (x^2 \ge 0)$}
-	\alakohta{$\exists x\in\nn (x^2 = -9)$}
-	\alakohta{$\forall x\in\rr ((x-1)(x-3) \ge 0)$}
-	\alakohta{$\exists x\in\zz (-x^2 - 2 \le 0)$}
-	\end{alakohdat}%
+	\alakohdat{
+	§ $\forall x\in\rr (x^2 \ge 0)$
+	§ $\exists x\in\nn (x^2 = -9)$
+	§ $\forall x\in\rr ((x-1)(x-3) \ge 0)$
+	§ $\exists x\in\zz (-x^2 - 2 \le 0)$
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{Lause on tosi, sillä reaaliluvun neliö ei ole koskaan negatiivinen.}
-			\alakohta{Lause on epätosi, sillä $\forall x \in \mathbb{N}(x^2 \ge 0)$.}
-			\alakohta{Lause on epätosi, sillä $2 \in \mathbb{R}$ ja $(2 - 1)(2 - 3) = -1 \cdot 1 = -1 < 0$.}
-			\alakohta{Lause on tosi, sillä $0 \in \mathbb{R}$ ja $-0^2 - 2 = -2 \le 0$.}
-		\end{alakohdat}
+		\alakohdat{
+			§ Lause on tosi, sillä reaaliluvun neliö ei ole koskaan negatiivinen.
+			§ Lause on epätosi, sillä $\forall x \in \mathbb{N}(x^2 \ge 0)$.
+			§ Lause on epätosi, sillä $2 \in \mathbb{R}$ ja $(2 - 1)(2 - 3) = -1 \cdot 1 = -1 < 0$.
+			§ Lause on tosi, sillä $0 \in \mathbb{R}$ ja $-0^2 - 2 = -2 \le 0$.
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Onko lause tosi? Perustele.
-	\begin{alakohdat}
-	\alakohta{$\exists x\in \rr (x^2 - 3x + 3 = 0)$}
-	\alakohta{$\forall x\in \rr (x^2 - 3x + 3 \ge 0)$}
-	\end{alakohdat}%
+	\alakohdat{
+	§ $\exists x\in \rr (x^2 - 3x + 3 = 0)$
+	§ $\forall x\in \rr (x^2 - 3x + 3 \ge 0)$
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{Ratkaistaan funktion $x^2 - 3x + 3 = 0$ nollakohdat:
-			$$x = \frac{-(-3) \pm \sqrt{(-3)^2 - 4 \cdot 1 \cdot 3}}{2 \cdot 1} = \frac{3 \pm \sqrt{-3}}{2}$$
-			Koska diskriminantti $-3$ on negatiivinen, niin yhtälöllä ei ole ratkaisuja. Lisäksi koska yhtälön $x^2 - 3x + 3$ kuvaaja on ylöspäin aukeava paraabeli, niin pätee $x^2 - 3x + 3 > 0$ $\forall x \in \mathbb{R}$. Siis lause on epätosi.}
-			\alakohta{Koska $x^2 - 3x + 3 > 0$ $\forall x \in \mathbb{R}$, niin $\forall x \in \mathbb{R}(x^2 - 3x + 3 \ge 0)$. Siis lause on tosi.}
-		\end{alakohdat}
+		\alakohdat{
+			§ Ratkaistaan funktion $x^2 - 3x + 3 = 0$ nollakohdat:
+			\[x = \frac{-(-3) \pm \sqrt{(-3)^2 - 4 \cdot 1 \cdot 3}}{2 \cdot 1} = \frac{3 \pm \sqrt{-3}}{2}\]
+			Koska diskriminantti $-3$ on negatiivinen, niin yhtälöllä ei ole ratkaisuja. Lisäksi koska yhtälön $x^2 - 3x + 3$ kuvaaja on ylöspäin aukeava paraabeli, niin pätee $x^2 - 3x + 3 > 0$ $\forall x \in \mathbb{R}$. Siis lause on epätosi.
+			§ Koska $x^2 - 3x + 3 > 0$ $\forall x \in \mathbb{R}$, niin $\forall x \in \mathbb{R}(x^2 - 3x + 3 \ge 0)$. Siis lause on tosi.
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
-	\begin{alakohdat}
-	\alakohta{Osoita, että yhtälö $\sqrt{xy} = \sqrt{x}\sqrt{y}$ ei
-	pidä paikkaansa kaikilla reaaliluvuilla $x$ ja $y$.}
-	\alakohta{Osoita, että on olemassa sellaiset reaaliluvut $x$ ja
-	$y$, että yhtälö $\sqrt{xy} = \sqrt{x}\sqrt{y}$ pitää paikkansa.}
-	\alakohta{Millä ehdolla yhtälö $\sqrt{xy} = \sqrt{x}\sqrt{y}$
-	pitää yleisesti paikkansa?}
-	\end{alakohdat}%
+	\alakohdat{
+	§ Osoita, että yhtälö $\sqrt{xy} = \sqrt{x}\sqrt{y}$ ei
+	pidä paikkaansa kaikilla reaaliluvuilla $x$ ja $y$.
+	§ Osoita, että on olemassa sellaiset reaaliluvut $x$ ja
+	$y$, että yhtälö $\sqrt{xy} = \sqrt{x}\sqrt{y}$ pitää paikkansa.
+	§ Millä ehdolla yhtälö $\sqrt{xy} = \sqrt{x}\sqrt{y}$
+	pitää yleisesti paikkansa?
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{Jos $x = y = -1 \in \mathbb{R}$, niin $\sqrt{xy} = \sqrt{(-1) \cdot (-1)} = \sqrt{1} = 1$, mutta $\sqrt{x} \cdot \sqrt{y} = \sqrt{-1} \cdot \sqrt{-1}$, jota ei ole määritelty reaalilukujen joukossa.}
-			\alakohta{Kun $x = y = 1 \in \mathbb{R}$, niin $\sqrt{xy} = \sqrt{1 \cdot 1} = \sqrt{1} = 1 = 1 \cdot 1 = \sqrt{1} \cdot \sqrt{1} = \sqrt{x} \cdot \sqrt{y}$.}
-			\alakohta{$x \ge 0 \land y \ge 0$}
-		\end{alakohdat}
+		\alakohdat{
+			§ Jos $x = y = -1 \in \mathbb{R}$, niin $\sqrt{xy} = \sqrt{(-1) \cdot (-1)} = \sqrt{1} = 1$, mutta $\sqrt{x} \cdot \sqrt{y} = \sqrt{-1} \cdot \sqrt{-1}$, jota ei ole määritelty reaalilukujen joukossa.
+			§ Kun $x = y = 1 \in \mathbb{R}$, niin $\sqrt{xy} = \sqrt{1 \cdot 1} = \sqrt{1} = 1 = 1 \cdot 1 = \sqrt{1} \cdot \sqrt{1} = \sqrt{x} \cdot \sqrt{y}$.
+			§ $x \ge 0 \land y \ge 0$
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Olkoon $S(x, y)$: ''$x$ on suorittanut kurssin $y$''.
 	Formalisoi lause.
-	\begin{alakohdat}
-	\alakohta{Joku on suorittanut kaikki kurssit.}
-	\alakohta{Jokainen on suorittanut ainakin yhden kurssin.}
-	\alakohta{Kukaan ei ole suorittanut kaikkia kursseja.}
-	\alakohta{On olemassa kurssi, jota kukaan ei ole suorittanut.}
-	\end{alakohdat}%
+	\alakohdat{
+	§ Joku on suorittanut kaikki kurssit.
+	§ Jokainen on suorittanut ainakin yhden kurssin.
+	§ Kukaan ei ole suorittanut kaikkia kursseja.
+	§ On olemassa kurssi, jota kukaan ei ole suorittanut.
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{$\exists x \forall y S(x, y)$}
-			\alakohta{$\forall x \exists y S(x, y)$}
-			\alakohta{$\forall x \exists y \neg S(x, y)$}
-			\alakohta{$\exists y \forall x \neg S(x, y)$}
-		\end{alakohdat}
+		\alakohdat{
+			§ $\exists x \forall y S(x, y)$
+			§ $\forall x \exists y S(x, y)$
+			§ $\forall x \exists y \neg S(x, y)$
+			§ $\exists y \forall x \neg S(x, y)$
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Onko lause tosi? Perustele.
-	\begin{alakohdat}
-	\alakohta{$\forall x\in \zz_{+} \exists y\in \zz_{+} (x = \sqrt{y})$}
-	\alakohta{$\exists y\in \rr \forall x\in \rr (x^2 - 4 > y)$}
-	\end{alakohdat}%
+	\alakohdat{
+	§ $\forall x\in \zz_{+} \exists y\in \zz_{+} (x = \sqrt{y})$
+	§ $\exists y\in \rr \forall x\in \rr (x^2 - 4 > y)$
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{Lause on tosi, sillä jos $x \in \mathbb{Z}_{+}$ ja $y = x^2 \in \mathbb{Z}_{+}$, niin $\sqrt{y} = \sqrt{x^2} = |x| = x$.}
-			\alakohta{Koska $\forall x \in \mathbb{R}(x \ge 0 > -1)$, niin $\forall x \in \mathbb{R}(x > -1) \Leftrightarrow \forall x \in \mathbb{R}(x - 4 > -5)$. Valitaan $y = -5$. Nyt pätee $\exists y \in \mathbb{R} \forall x \in \mathbb{R}(x - 4 > y)$ eli lause on tosi.}
-		\end{alakohdat}
+		\alakohdat{
+			§ Lause on tosi, sillä jos $x \in \mathbb{Z}_{+}$ ja $y = x^2 \in \mathbb{Z}_{+}$, niin $\sqrt{y} = \sqrt{x^2} = |x| = x$.
+			§ Koska $\forall x \in \mathbb{R}(x \ge 0 > -1)$, niin $\forall x \in \mathbb{R}(x > -1) \Leftrightarrow \forall x \in \mathbb{R}(x - 4 > -5)$. Valitaan $y = -5$. Nyt pätee $\exists y \in \mathbb{R} \forall x \in \mathbb{R}(x - 4 > y)$ eli lause on tosi.
+		}
 	\end{vastaus}
 \end{tehtava}
 
@@ -321,53 +319,52 @@
 	Ilmaise suomen kielellä lauseen negaatio kahdella eri
 	tavalla soveltamalla kvanttorien negaatioiden loogisesti
 	ekvivalentteja muotoja.
-	\begin{alakohdat}
-	\alakohta{Jokainen opiskelija saa tästä kurssista arvosanan 10.}
-	\alakohta{On olemassa opiskelija, joka saa tästä kurssista
-	arvosanan 10.}
-	\end{alakohdat}%
+	\alakohdat{
+	§ Jokainen opiskelija saa tästä kurssista arvosanan 10.
+	§ On olemassa opiskelija, joka saa tästä kurssista
+	arvosanan 10.
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{On olemassa ainakin yksi opiskelija, joka ei saa tästä kurssista arvosanaa 10. ($\exists x \neg K(x)$) Kaikki opiskelijat eivät saa tästä kurssista arvosanaa 10. ($\neg \forall x K(x)$)}
-			\alakohta{Ei ole olemassa opiskelijaa, joka saisi tästä kurssista arvosanan 10. ($\neg \exists x K(x)$) Kukaan opiskelija ei saa tästä kurssista arvosanaa 10. ($\forall x \neg K(x)$)}
-		\end{alakohdat}
+		\alakohdat{
+			§ On olemassa ainakin yksi opiskelija, joka ei saa tästä kurssista arvosanaa 10. ($\exists x \neg K(x)$) Kaikki opiskelijat eivät saa tästä kurssista arvosanaa 10. ($\neg \forall x K(x)$)
+			§ Ei ole olemassa opiskelijaa, joka saisi tästä kurssista arvosanan 10. ($\neg \exists x K(x)$) Kukaan opiskelija ei saa tästä kurssista arvosanaa 10. ($\forall x \neg K(x)$)
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Kirjoita lause toisin.
-	\begin{alakohdat}
-	\alakohta{$\lnot \forall x \lnot P(x)$}
-	\alakohta{$\lnot \exists x (P(x) \lor Q(x))$}
-	\end{alakohdat}%
+	\alakohdat{
+	§ $\lnot \forall x \lnot P(x)$
+	§ $\lnot \exists x (P(x) \lor Q(x))$
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{$\exists x P(x)$}
-			\alakohta{$\forall x (\neg P(x) \land \neg Q(x))$}
-		\end{alakohdat}
+		\alakohdat{
+			§ $\exists x P(x)$
+			§ $\forall x (\neg P(x) \land \neg Q(x))$
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Muodosta lauseen negaatio. Onko negaatio tosi?
-	\begin{alakohdat}
-	\alakohta{$\forall x\in ]1, \infty [ (\sqrt{x} < x)$}
-	\alakohta{$\exists x\in \qq (x^3 = 5)$}
-	\alakohta{$\forall n \in \zz \exists m \in \zz ((n = 2m) \lor (n =
-	2m+1))$}
-	\end{alakohdat}%
+	\alakohdat{
+	§ $\forall x\in ]1, \infty [ (\sqrt{x < x})$
+	§ $\exists x\in \qq (x^3 = 5)$
+	§ $\forall n \in \zz \exists m \in \zz ((n = 2m) \lor (n =
+	2m+1))$
+	}%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{$\exists x \in {]-1, \infty[}(\sqrt{x} \ge x)$ Negaatio on epätosi, koska
+		\alakohdat{
+			§ $\exists x \in {]-1, \infty[}(\sqrt{x} \ge x)$ Negaatio on epätosi, koska
 			\begin{align*}
 			& \sqrt{x} > 1 && \parallel \cdot \sqrt{x} > 0 \\
 			\Leftrightarrow & \sqrt{x} \cdot \sqrt{x} > \sqrt{x} && \\
 			\Leftrightarrow & x > \sqrt{x} \forall x \in {]1, \infty[} &&
 			\end{align*}
-			}
-			\alakohta{$\forall x \in \mathbb{Q}(x^3 \ne 5)$ Negaatio on tosi, sillä yhtälön $x^3 = 5$ ainoa ratkaisu on $x = \sqrt[3]{5} \notin \mathbb{Q}$.}
-			\alakohta{$\forall n \in \mathbb{Z} \forall m \in \mathbb{Z} ((n \ne 2m) \land (n \ne 2m + 1))$ Valitaan $n = 2 \in \mathbb{Z}$ ja $m = 1 \in \mathbb{Z}$. Tällöin $n = 2 = 2 \cdot 1 = 2m$, joten negaatio on epätosi.}
-		\end{alakohdat}
+			§ $\forall x \in \mathbb{Q}(x^3 \ne 5)$ Negaatio on tosi, sillä yhtälön $x^3 = 5$ ainoa ratkaisu on $x = \sqrt[3]{5} \notin \mathbb{Q}$.
+			§ $\forall n \in \mathbb{Z} \forall m \in \mathbb{Z} ((n \ne 2m) \land (n \ne 2m + 1))$ Valitaan $n = 2 \in \mathbb{Z}$ ja $m = 1 \in \mathbb{Z}$. Tällöin $n = 2 = 2 \cdot 1 = 2m$, joten negaatio on epätosi.
+		}
 	\end{vastaus}
 \end{tehtava}
 
@@ -376,44 +373,44 @@
 	muuttujan avoimena lauseena $P(x, y)$: ''$f(x) = y$'', missä
 	$x$ kuuluu määrittelyjoukkoon $X$ ja $y$ maalijoukkoon $Y$.
 	Funktiolta edellytetään lisäksi, että
-	\begin{itemize}
-	\item $\forall x \exists y P(x, y)$, ja
-	\item $\lnot (\exists x \exists y \exists z (P(x, y) \land P(x, z)
+	\luettelo{
+	§ $\forall x \exists y P(x, y)$, ja
+	§ $\lnot (\exists x \exists y \exists z (P(x, y) \land P(x, z)
 	\land (y \neq z)))$.
-	\end{itemize}
+	}
 	Tulkitse sanallisesti tai kuvaa käyttäen, mitä tämä määritelmä
 	tarkoittaa.%
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{Funktio $f : X \to Y$ saa jokaisessa pisteessä $x \in X$ jonkin arvon.}
-			\alakohta{Funktio $f : X \to Y$ ei saa kahta eri arvoa missään pisteessä $x \in X$.}
-		\end{alakohdat}
+		\alakohdat{
+			§ Funktio $f : X \to Y$ saa jokaisessa pisteessä $x \in X$ jonkin arvon.
+			§ Funktio $f : X \to Y$ ei saa kahta eri arvoa missään pisteessä $x \in X$.
+		}
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	* Olkoot $S(x, y)$: ''$x$ on suorittanut
 	kurssin $y$'' ja $L(x)$: ''$x$ on lukiolainen''. Formalisoi lause.
-	\begin{alakohdat}
-	\alakohta{Joku lukiolainen on suorittanut kaikki kurssit.}
-	\alakohta{Kukaan lukiolainen ei ole suorittanut kaikkia kursseja.}
-	\end{alakohdat}%
+	\alakohdat{
+	§ Joku lukiolainen on suorittanut kaikki kurssit.
+	§ Kukaan lukiolainen ei ole suorittanut kaikkia kursseja.
+	}%
 \end{tehtava}
 
 \begin{tehtava}
 	* Olkoot $S(x, y)$: ''$x$ on suorittanut
 	kurssin $y$'', $L(x)$: ''$x$ on lukiolainen'' ja $M(y)$: ''$y$ on
 	pitkän matematiikan kurssi''. Formalisoi lause.
-	\begin{alakohdat}
-	\alakohta{Joku lukiolainen ei ole suorittanut yhtään pitkän
-	matematiikan kurssia.}
-	\alakohta{Joku lukiolainen on suorittanut pitkän matematiikan
-	kurssin.}
-	\alakohta{Jokaisella lukiolaisella on pitkän matematiikan kurssi
-	suoritettuna.}
-	\alakohta{On olemassa pitkän matematiikan kurssi, jota kukaan
-	lukiolainen ei ole suorittanut.}
-	\end{alakohdat}%
+	\alakohdat{
+	§ Joku lukiolainen ei ole suorittanut yhtään pitkän
+	matematiikan kurssia.
+	§ Joku lukiolainen on suorittanut pitkän matematiikan
+	kurssin.
+	§ Jokaisella lukiolaisella on pitkän matematiikan kurssi
+	suoritettuna.
+	§ On olemassa pitkän matematiikan kurssi, jota kukaan
+	lukiolainen ei ole suorittanut.
+	}%
 \end{tehtava}
 
 \begin{tehtava}

@@ -16,11 +16,11 @@ Jussi (18 v.) on opiskellut yhden vuoden lukiossa ja on juuri palannut Uudesta-S
 
 Saara (19 v.) on suorittanut ylioppilastutkinnon. Hän kirjoitti mm. pitkän englannin ja lyhyen ranskan. Saara on ollut vuoden vaihto-opiskelijana Englannissa, ja hänellä on ajokortti.
 
-\begin{enumerate}
-\item Jarrumieheksi vuoristoradalle voidaan valita henkilö, joka ei pelkää korkeita paikkoja. Sopiiko a) Hanna b) Heikki tehtävään?
-\item Oppaalta vaaditaan lukion pitkän englannin oppimäärä tai yli puolen vuoden oleskelu englanninkielisessä maassa. Sopiiko a) Jussi b) Saara c) Hanna tehtävään?
-\item Jäätelökärryn kuljettajalta vaaditaan täysi-ikäisyyttä ja hygieniapassia. Sopiiko a) Saara b) Hanna c) Heikki tehtävään?
-\end{enumerate}
+\numerointi{
+§ Jarrumieheksi vuoristoradalle voidaan valita henkilö, joka ei pelkää korkeita paikkoja. Sopiiko a) Hanna b) Heikki tehtävään?
+§ Oppaalta vaaditaan lukion pitkän englannin oppimäärä tai yli puolen vuoden oleskelu englanninkielisessä maassa. Sopiiko a) Jussi b) Saara c) Hanna tehtävään?
+§ Jäätelökärryn kuljettajalta vaaditaan täysi-ikäisyyttä ja hygieniapassia. Sopiiko a) Saara b) Hanna c) Heikki tehtävään?
+}
 
 \bigskip
 
@@ -31,12 +31,12 @@ Saara (19 v.) on suorittanut ylioppilastutkinnon. Hän kirjoitti mm. pitkän eng
 \bigskip
 
 Logiikassa väitteitä, jotka ilmaisevat asioiden tilaa, kutsutaan \termi{propositio}{propositioiksi}. Propositioille on aina määritettävissä oleva totuusarvo – toisin kuin esimerkiksi huudahduksilla (`'Varo!'') tai kysymyksillä (``Paljonko kello on?''). Propositioista yksinkertaisimmat ovat \termi{atomilause}{atomilauseita}. Esimerkiksi seuraavat lauseet ovat propositioita ja atomilauseita:
-\begin{enumerate}[$A:$]
-\item On yö.
-\item Aurinko paistaa.
-\item Pariisi on Italiassa.
-\item Oulu on Suomessa.
-\end{enumerate}
+\numerointi{[$A:$]
+§ On yö.
+§ Aurinko paistaa.
+§ Pariisi on Italiassa.
+§ Oulu on Suomessa.
+}
 
 Atomilauseita ajatellaan eräänlaisina totuusmuuttujina, jotka voivat saada kaksi arvoa: tosi tai epätosi. Yllä olevista lauseista $C$ on epätosi, $D$ on tosi ja kaksi ensimmäistä voivat olla tosia tai epätosia ajankohdasta riippuen. Tässä kurssissa atomilauseita merkitään isoilla kirjaimilla $A$, $B$, $C$ jne. Todelle ja epätodelle käytetään tietotekniikasta tuttuja merkintöjä $1$ ja $0$.
 
@@ -125,20 +125,20 @@ Esimerkiksi hampurilaisateriaan voi valita ranskalaiset perunat tai minisalaatin
 %{\bf Esimerkki 1.}
 \begin{esimerkki}
 Olkoot lauseet $A$: ''on kesä'', $B$: ''käyn töissä'' ja $C$: ''pelaan jalkapalloliigassa''. Suomenna lauseet
-\begin{enumerate}[a)]
-\item $\lnot A$, 
-\item $B\lor C$,
-\item $\lnot A\land B$,
-\item $B\lor (A\land C)$.
-\end{enumerate}
+\alakohdat{
+§ $\lnot A$, 
+§ $B\lor C$,
+§ $\lnot A\land B$,
+§ $B\lor (A\land C)$.
+}
 
 {\bf Ratkaisu:}
-\begin{enumerate}[a)]
-\item Ei ole kesä.
-\item Käyn töissä tai pelaan jalkapalloliigassa.
-\item Ei ole kesä ja käyn töissä.
-\item Käyn töissä, tai sitten on kesä ja pelaan jalkapalloliigassa.
-\end{enumerate}
+\alakohdat{
+§ Ei ole kesä.
+§ Käyn töissä tai pelaan jalkapalloliigassa.
+§ Ei ole kesä ja käyn töissä.
+§ Käyn töissä, tai sitten on kesä ja pelaan jalkapalloliigassa.
+}
 \end{esimerkki}
 
 
@@ -150,22 +150,22 @@ Arkikielen lauseiden kääntäminen logiikan kielelle ei ole aina helppoa ja tul
 \begin{esimerkki}
 %{\bf Esimerkki 2.}  
 Formalisoi lauseet
-\begin{enumerate}[a)]
-\item Liisalla ei ole alibia. 
-\item Liisalla on alibi tai hänellä ei ole motiivia.
-\item Liisalla on motiivi, mutta hänellä on myös alibi.
-\item Jos Liisalla ei ole alibia, hänellä ei ole motiivia. 
-\end{enumerate}
+\alakohdat{
+§ Liisalla ei ole alibia. 
+§ Liisalla on alibi tai hänellä ei ole motiivia.
+§ Liisalla on motiivi, mutta hänellä on myös alibi.
+§ Jos Liisalla ei ole alibia, hänellä ei ole motiivia. 
+}
 
 {\bf Ratkaisu:}
 Käytetään atomilauseita $A$: ''Liisalla on alibi'' ja $M$: ''Liisalla on motiivi''.	
 Formalisoidut lauseet ovat:
-\begin{enumerate}[a)]
-\item $\lnot A$.
-\item $A \lor \lnot M$.
-\item $M\land A$.
-\item $A \lor (\lnot A \land \lnot M)$ (Lause lyhenee käyttäen seuraavassa kappaleessa esiteltävää implikaatiota.)
-\end{enumerate}
+\alakohdat{
+§ $\lnot A$.
+§ $A \lor \lnot M$.
+§ $M\land A$.
+§ $A \lor (\lnot A \land \lnot M)$ (Lause lyhenee käyttäen seuraavassa kappaleessa esiteltävää implikaatiota.)
+}
 
 {\bf Vastaus:}
 a) $\lnot A$, b) $A \lor \lnot M$, c) $M\land A$, d) $A \lor (\lnot A \land \lnot M)$.
@@ -189,8 +189,8 @@ Formalisoinnin jälkeen lauseen totuusarvoa voidaan tutkia esimerkiksi totuustau
 Laadi totuustaulu lauseelle a) $\lnot(A\land \lnot B)$, b) $(A\land B)\lor \lnot C$.
 
 {\bf Ratkaisu:}
-\begin{enumerate}[a)]
-\item Lauseessa $\lnot(A\land \lnot B)$ on kaksi atomilausetta. Totuustauluun merkitään kaikki lauseiden $A$ ja $B$ eri totuusarvojen yhdistelmät. Sen jälkeen kirjoitetaan sarakkeet lauseiden $\lnot B$, $A\land \lnot B$ sekä $\lnot(A\land \lnot B)$  totuusarvoille.
+\alakohdat{
+§ Lauseessa $\lnot(A\land \lnot B)$ on kaksi atomilausetta. Totuustauluun merkitään kaikki lauseiden $A$ ja $B$ eri totuusarvojen yhdistelmät. Sen jälkeen kirjoitetaan sarakkeet lauseiden $\lnot B$, $A\land \lnot B$ sekä $\lnot(A\land \lnot B)$  totuusarvoille.
 \bigskip
 
 \begin{center}
@@ -205,7 +205,7 @@ $0$ & $0$ & $1$       & $0$ & $1$ \\ \hline
 
 \bigskip
 
-\item Lauseessa $(A\land B)\lor \lnot C$ on kolme atomilausetta. Kaikkia lauseiden $A$, $B$ ja $C$ totuusarvojen yhdistelmiä varten tarvitaan kahdeksan riviä.
+§ Lauseessa $(A\land B)\lor \lnot C$ on kolme atomilausetta. Kaikkia lauseiden $A$, $B$ ja $C$ totuusarvojen yhdistelmiä varten tarvitaan kahdeksan riviä.
 
 \bigskip
 
@@ -223,7 +223,7 @@ $0$ & $0$ & $0$ & $1$ & $0$ & $1$ \\ \hline
 \end{tabular}
 \end{center}
 
-\end{enumerate}
+}
 \end{esimerkki}
 
 \input{content/TEHT2-1} % TEHTÄVÄT
@@ -305,8 +305,8 @@ Formalisoi lause. Missä tilanteissa lause on tosi? a) On kesä, ja jos on kesä
 {\bf Ratkaisu:}
 Käytetään atomilauseita $A$: ''on kesä'',
 $B$: ''järvivesi on lämmintä'' ja $C$: ''uin''.
-\begin{enumerate}[a)]
-\item Lause on $A \land (A \to B)$. Muodostetaan
+\alakohdat{
+§ Lause on $A \land (A \to B)$. Muodostetaan
 lauseen totuustaulu.
 
 \bigskip
@@ -325,7 +325,7 @@ $0$ & $0$ & $1$ & $0$\\ \hline
 
 Lause on tosi täsmälleen silloin, kun $A$ ja $B$ ovat
 molemmat tosia eli kun on kesä ja järvivesi on lämmintä.
-\item Lause on $C \lequiv (A \land B)$. Muodostetaan
+§ Lause on $C \lequiv (A \land B)$. Muodostetaan
 lauseen totuustaulu.
 
 \bigskip
@@ -355,7 +355,7 @@ seuraavia tilanteita: on kesä, järvivesi on lämmintä ja
 uin; on kesä, järvivesi ei ole lämmintä enkä ui; ei ole
 kesä, järvivesi on lämmintä, mutta en ui; ei ole kesä,
 järvivesi ei ole lämmintä enkä ui.
-\end{enumerate}
+}
 
 {\bf Vastaus: } a) Lause on tosi, kun on kesä ja järvivesi on lämmintä.
 
@@ -418,8 +418,8 @@ Mikä on lauseiden a) $B \lequiv \lnot A\lor B \land A \to B$, ja  b)  $(B\lequi
 
 {\bf Ratkaisu:}
 
-%\begin{enumerate}[a)]
-%\item
+%\alakohdat{
+%§
 
 a) Muodostetaan totuustaulu:
 
@@ -434,7 +434,7 @@ $1$ & $0$ & $0$ & $0$ & $0$ & $1$ & $0$\\ \hline
 
 Ensin suoritetaan negaatio. Sen jälkeen tulevat konjunktio ja disjunktio. Implikaatio 	suoritetaan ennen ekvivalenssia. 	Kun $A$ on tosi ja $B$ epätosi, lause on epätosi.
 
-%\item
+%§
 
 b) Muodostetaan totuustaulu:
 
@@ -481,10 +481,10 @@ Seuraavaksi tarkastellaan eräitä usein esiintyviä loogisia rakenteita. Tälla
 
 \subsection*{Tutkimustehtävä}
 Turisti tapasi kaksi saarelaista, Hipsun ja Vipsun. Hän kyseli heiltä, kuinka hyvin kala syö, ja sai seuraavat vastaukset.
-\begin{enumerate}
-\item On pilvistä, tai sitten jos kala ei syö, niin ei ole pilvistä.
-\item On pilvistä tai kala syö, mutta ei ole pilvistä eikä kala syö.
-\end{enumerate}
+\numerointi{
+§ On pilvistä, tai sitten jos kala ei syö, niin ei ole pilvistä.
+§ On pilvistä tai kala syö, mutta ei ole pilvistä eikä kala syö.
+}
 Formalisoi lauseet käyttäen atomilauseita $P$: ''on pilvistä'' ja $K$: ''kala syö''. Tutki totuustaulun avulla, milloin väitteet ovat tosia. Mitä huomaat?
 
 \subsection*{Tautologia}

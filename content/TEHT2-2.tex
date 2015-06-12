@@ -1,84 +1,82 @@
-\setcounter{tehtava}{0}
-
 %Luku 2.2 Harjoitustehtäviä, vastauksien tekijä Valtteri Vistiaho 10.11.2013
 \begin{tehtavasivu}
 
 \begin{tehtava}
     Olkoot $A$: ''Matti on insinööri'' ja $B$: ''Matilla on hyvä työpaikka''.
 Suomenna lause.
-    \begin{alakohdat}
-        \alakohta{$A\land B$,}
-        \alakohta{$\lnot A \lor B$,}
-        \alakohta{$A\to B$,}
-        \alakohta{$\lnot B\to A$,}
-        \alakohta{$\lnot( B \to A )$ ja}
-        \alakohta{$ B \lequiv A$.}
-    \end{alakohdat}
+    \alakohdat{
+        § $A\land B$,
+        § $\lnot A \lor B$,
+        § $A\to B$,
+        § $\lnot B\to A$,
+        § $\lnot( B \to A )$ ja
+        § $ B \lequiv A$.
+    }
 
     \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{Matti on insinööri, jolla on hyvä työpaikka.}
-            \alakohta{Matti ei ole insinööri tai hänellä on hyvä työpaikka.}
-            \alakohta{Jos Matti on insinööri, hänellä on hyvä työpaikka.}
-            \alakohta{Jos Matilla ei ole hyvää työpaikkaa, hän on insinööri.}
-            \alakohta{Ei ole totta, että jos Matilla on hyvä työpaikka, hän olisi insinööri.}
-            \alakohta{Matilla on hyvä työpaikka, jos ja vain jos hän on insinööri.}
-        \end{alakohdat}
+        \alakohdat{
+            § Matti on insinööri, jolla on hyvä työpaikka.
+            § Matti ei ole insinööri tai hänellä on hyvä työpaikka.
+            § Jos Matti on insinööri, hänellä on hyvä työpaikka.
+            § Jos Matilla ei ole hyvää työpaikkaa, hän on insinööri.
+            § Ei ole totta, että jos Matilla on hyvä työpaikka, hän olisi insinööri.
+            § Matilla on hyvä työpaikka, jos ja vain jos hän on insinööri.
+        }
     \end{vastaus}
     
 \end{tehtava}
 
 \begin{tehtava}
     Olkoot $A$: ''Liisa on lomalla'' ja $B$: ''Liisa on iloinen''. Formalisoi lauseet:
-    \begin{alakohdat}
-        \alakohta{Jos Liisa on lomalla, hän on iloinen.}
-        \alakohta{Liisa on lomalla, mutta hän ei ole iloinen.}
-        \alakohta{Liisa on iloinen silloin ja vain silloin, kun hän on lomalla.}
-        \alakohta{Jos Liisa ei ole iloinen, hän ei ole lomalla.}
-    \end{alakohdat}
+    \alakohdat{
+        § Jos Liisa on lomalla, hän on iloinen.
+        § Liisa on lomalla, mutta hän ei ole iloinen.
+        § Liisa on iloinen silloin ja vain silloin, kun hän on lomalla.
+        § Jos Liisa ei ole iloinen, hän ei ole lomalla.
+    }
 
     \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{$A\to B$}
-            \alakohta{$A\land B$}
-            \alakohta{$B\lequiv A$}
-            \alakohta{$\lnot B\to \lnot A$}
-        \end{alakohdat}
+        \alakohdat{
+            § $A\to B$
+            § $A\land B$
+            § $B\lequiv A$
+            § $\lnot B\to \lnot A$
+        }
     \end{vastaus}
     
 \end{tehtava}
 
 \begin{tehtava}
     Onko lause tosi?
-    \begin{alakohdat}
-        \alakohta{Jos Tallinna on Norjan pääkaupunki, niin Tukholma on Ruotsin pääkaupunki.}
-        \alakohta{Jos Tallinna on Norjan pääkaupunki, niin Budapest on Ruotsin pääkaupunki.}
-        \alakohta{Jos Leonardo da Vinci on kuollut, niin Aleksis Kivi on saksalainen ralliautoilija.}
-        \alakohta{Jos Leonardo da Vinci on kuollut, niin Leo Tolstoi on venäläinen kirjailija.}
-    \end{alakohdat}
+    \alakohdat{
+        § Jos Tallinna on Norjan pääkaupunki, niin Tukholma on Ruotsin pääkaupunki.
+        § Jos Tallinna on Norjan pääkaupunki, niin Budapest on Ruotsin pääkaupunki.
+        § Jos Leonardo da Vinci on kuollut, niin Aleksis Kivi on saksalainen ralliautoilija.
+        § Jos Leonardo da Vinci on kuollut, niin Leo Tolstoi on venäläinen kirjailija.
+    }
 
     \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{Epätosi}
-            \alakohta{Tosi}
-            \alakohta{Epätosi}
-            \alakohta{Tosi}
-        \end{alakohdat}
+        \alakohdat{
+            § Epätosi
+            § Tosi
+            § Epätosi
+            § Tosi
+        }
     \end{vastaus}
     
 \end{tehtava}
 
 \begin{tehtava}
     Laadi lauseen totuustaulu.
-    \begin{alakohdat}
-        \alakohta{$\lnot A \to B$}
-        \alakohta{$A\lequiv \lnot B$}
-        \alakohta{$\lnot( A\land B )\to A$}
-    \end{alakohdat}
+    \alakohdat{
+        § $\lnot A \to B$
+        § $A\lequiv \lnot B$
+        § $\lnot( A\land B )\to A$
+    }
 
     \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{\begin{center}
+        \alakohdat{
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|}\hline
 		    $A$ & $B$ & $\lnot A$ & $\lnot A \to B$ \\ \hline
 		    $1$ & $1$ & $0$ & $1$ \\ %\hline
@@ -86,8 +84,8 @@ Suomenna lause.
 		    $0$ & $1$ & $1$ & $1$ \\
 		    $0$ & $0$ & $1$ & $0$ \\ \hline
 \end{tabular}
-\end{center}}
-            \alakohta{\begin{center}
+\end{center}
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|}\hline
 		    $A$ & $B$ & $\lnot B$ & $A\lequiv \lnot B$ \\ \hline
 		    $1$ & $1$ & $0$ & $0$ \\ %\hline
@@ -95,8 +93,8 @@ Suomenna lause.
 		    $0$ & $1$ & $0$ & $1$ \\
 		    $0$ & $0$ & $1$ & $0$ \\ \hline
 \end{tabular}
-\end{center}}
-            \alakohta{\begin{center}
+\end{center}
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $A\land B$ & $\lnot(A\land B)$ & $\lnot(A\land B)\to A$ \\ \hline
 		    $1$ & $1$ & $1$ & $0$ & $1$ \\ %\hline
@@ -104,22 +102,22 @@ Suomenna lause.
 		    $0$ & $1$ & $0$ & $1$ & $0$ \\
 		    $0$ & $0$ & $0$ & $1$ & $0$ \\ \hline
 \end{tabular}
-\end{center}}
-        \end{alakohdat}
+\end{center}
+        }
     \end{vastaus}
     
 \end{tehtava}
 
 \begin{tehtava}
     Laadi lauseen totuustaulu.
-    \begin{alakohdat}
-        \alakohta{$\lnot A \lor B \to C \land A$}
-        \alakohta{$( A\to B ) \lequiv (C\to B)$}
-    \end{alakohdat}
+    \alakohdat{
+        § $\lnot A \lor B \to C \land A$
+        § $( A\to B ) \lequiv (C\to B)$
+    }
 
     \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{
+        \alakohdat{
+            § 
             \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $C$ & $\lnot A$ & $\lnot A \lor B$ & $C\land A$ & $\lnot A \lor B \to C \land A$\\ \hline
@@ -132,8 +130,8 @@ Suomenna lause.
 		    $0$ & $1$ & $0$ & $1$ & $1$ & $0$ & $0$ \\
 		    $0$ & $0$ & $0$ & $1$ & $1$ & $0$ & $0$ \\ \hline
 \end{tabular}
-\end{center}}
-            \alakohta{
+\end{center}
+            § 
             \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $C$ & $A\to B$ & $C\to B$ & $(A\to B)\lequiv(C\to B)$ \\ \hline
@@ -146,50 +144,50 @@ Suomenna lause.
 		    $0$ & $1$ & $0$ & $1$ & $1$ & $1$ \\
 		    $0$ & $0$ & $0$ & $1$ & $1$ & $1$ \\ \hline
 \end{tabular}
-\end{center}}
-        \end{alakohdat}
+\end{center}
+        }
     \end{vastaus}
     
 \end{tehtava}
 
 \begin{tehtava}
     Formalisoi lause. Missä tilanteissa lause on tosi?
-    \begin{alakohdat}
-        \alakohta{Jos mustikat polun varrella eivät ole kypsiä, niin polulla vaeltaminen on turvallista.}
-        \alakohta{Jos mustikat polun varrella ovat kypsiä, niin silloin polulla vaeltaminen on turvallista, jos ja vain jos karhuja ei ole nähty alueella. }
-        \alakohta{Polulla vaeltaminen on turvallista silloin ja vain silloin, kun mustikat eivät ole kypsiä tai alueella ei ole nähty karhuja.}
-    \end{alakohdat}
+    \alakohdat{
+        § Jos mustikat polun varrella eivät ole kypsiä, niin polulla vaeltaminen on turvallista.
+        § Jos mustikat polun varrella ovat kypsiä, niin silloin polulla vaeltaminen on turvallista, jos ja vain jos karhuja ei ole nähty alueella. 
+        § Polulla vaeltaminen on turvallista silloin ja vain silloin, kun mustikat eivät ole kypsiä tai alueella ei ole nähty karhuja.
+    }
 
     \begin{vastaus}
     Olkoot $A$: ''Mustikat polun varrella ovat kypsiä.'', $B$: ''Polulla vaeltaminen on turvallista.'' ja $C$: ''Karhuja on nähty alueella.''
-        \begin{alakohdat}
-            \alakohta{$\lnot A\to B$. Lause on tosi, kun mustikat ovat kypsiä tai polulla vaeltaminen on turvallista.} % /Niko
-            \alakohta{$A\to (B\lequiv \lnot C)$. Lause on tosi, kun joko \begin{itemize}
-            \item mustikat ovat kypsiä, polulla vaeltaminen ei ole turvallista ja karhuja on nähty alueella,
-            \item mustikat ovat kypsiä, polulla vaeltaminen on turvallista ja karhuja ei ole nähty alueella tai
-            \item mustikat eivät ole kypsiä.
-            \end{itemize}} % /Niko % tässä oli aiemmin $(A\to B)\lequiv \lnot C$
-            \alakohta{$B\lequiv(\lnot A\lor \lnot C)$. Lause on tosi, kun joko \begin{itemize}
-            \item polulla vaeltaminen ei ole turvallista, mustikat ovat kypsiä ja karhuja on nähty alueella,
-            \item polulla vaeltaminen on turvallista ja mustikat eivät ole kypsiä tai
-            \item polulla vaeltaminen on turvallista ja karhuja ei ole nähty alueella.
-            \end{itemize}} % /Niko
-        \end{alakohdat}
+        \alakohdat{
+            § $\lnot A\to B$. Lause on tosi, kun mustikat ovat kypsiä tai polulla vaeltaminen on turvallista. % /Niko
+            § $A\to (B\lequiv \lnot C)$. Lause on tosi, kun joko \luettelo{
+            § mustikat ovat kypsiä, polulla vaeltaminen ei ole turvallista ja karhuja on nähty alueella,
+            § mustikat ovat kypsiä, polulla vaeltaminen on turvallista ja karhuja ei ole nähty alueella tai
+            § mustikat eivät ole kypsiä.
+            } % /Niko % tässä oli aiemmin $(A\to B)\lequiv \lnot C$
+            § $B\lequiv(\lnot A\lor \lnot C)$. Lause on tosi, kun joko \luettelo{
+            § polulla vaeltaminen ei ole turvallista, mustikat ovat kypsiä ja karhuja on nähty alueella,
+            § polulla vaeltaminen on turvallista ja mustikat eivät ole kypsiä tai
+            § polulla vaeltaminen on turvallista ja karhuja ei ole nähty alueella.
+            } % /Niko
+        }
     \end{vastaus}
     
 \end{tehtava}
 
 \begin{tehtava}
     Formalisoi lause ja laadi lauseen totuustaulu. Mitä huomaat? Kertooko lause mitään siitä, onko logiikan opiskelu oikeasti hauskaa juuri tällä hetkellä? 
-    \begin{alakohdat}
-        \alakohta{Jos sataa ja ei sada, niin logiikan opiskelu on hauskaa.}
-        \alakohta{Jos sataa ja ei sada, niin logiikan opiskelu ei ole hauskaa.}
-    \end{alakohdat}
+    \alakohdat{
+        § Jos sataa ja ei sada, niin logiikan opiskelu on hauskaa.
+        § Jos sataa ja ei sada, niin logiikan opiskelu ei ole hauskaa.
+    }
 
     \begin{vastaus}
     Olkoot $A$: ''Sataa.'' ja $B$: ''Logiikan opiskelu on hauskaa.''
-        \begin{alakohdat}
-            \alakohta{\begin{center}
+        \alakohdat{
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $\lnot A$ & $A\land \lnot A$ & $(A\land \lnot A)\to B$ \\ \hline
 		    $1$ & $1$ & $0$ & $0$ & $1$ \\ %\hline
@@ -198,8 +196,8 @@ Suomenna lause.
 		    $0$ & $0$ & $1$ & $0$ & $1$ \\ \hline
 \end{tabular}
 \end{center}
-	Ei kerro.}
-            \alakohta{\begin{center}
+	Ei kerro.
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $\lnot A$ & $A\land \lnot A$ & $(A\land \lnot A)\to \lnot B$ \\ \hline
 		    $1$ & $1$ & $0$ & $0$ & $1$ \\ %\hline
@@ -208,8 +206,8 @@ Suomenna lause.
 		    $0$ & $0$ & $1$ & $0$ & $1$ \\ \hline
 \end{tabular}
 \end{center}
-	Ei kerro.}
-        \end{alakohdat}
+	Ei kerro.
+        }
     \end{vastaus}
     
 \end{tehtava}
@@ -292,15 +290,15 @@ Kumpi lapsista on käynyt suklaavarkaissa?
 
 \begin{tehtava}
      Vertaa lauseiden totuusarvoja atomilauseiden $A$, $B$ ja $C$ eri totuusarvoilla. Onko sulkeiden muuttamisella vaikutusta lauseen totuusarvoon?
-    \begin{alakohdat}
-        \alakohta{$(A\to B)\to C$ ja $A\to (B\to C)$.}
-        \alakohta{$(A\land B)\land C$ ja $A\land (B\land C)$.}
-    \end{alakohdat}
+    \alakohdat{
+        § $(A\to B)\to C$ ja $A\to (B\to C)$.
+        § $(A\land B)\land C$ ja $A\land (B\land C)$.
+    }
 
     \begin{vastaus}
     
-        \begin{alakohdat}
-            \alakohta{\begin{center}
+        \alakohdat{
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $C$ & $A\to B$ & $B\to C$ & $(A\to B)\to C$ & $A\to(B\to C)$ \\ \hline
 		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
@@ -313,8 +311,8 @@ Kumpi lapsista on käynyt suklaavarkaissa?
 		    $0$ & $0$ & $0$ & $1$ & $1$ & $0$ & $1$ \\ \hline
 \end{tabular}
 \end{center}
-Sulkeiden muuttamisella on vaikutusta.}
-            \alakohta{\begin{center}
+Sulkeiden muuttamisella on vaikutusta.
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $C$ & $A\land B$ & $B\land C$ & $(A\land B)\land C$ & $A\land(B\land C)$ \\ \hline
 		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
@@ -327,8 +325,8 @@ Sulkeiden muuttamisella on vaikutusta.}
 		    $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ \hline
 \end{tabular}
 \end{center}
-Sulkeiden muuttamisella ei ole vaikutusta.}
-        \end{alakohdat}
+Sulkeiden muuttamisella ei ole vaikutusta.
+        }
     \end{vastaus}
     
 \end{tehtava}
@@ -336,36 +334,36 @@ Sulkeiden muuttamisella ei ole vaikutusta.}
 \begin{tehtava}
      * Tietokoneet käsittelevät tietoa käyttäen bittejä. Bitillä on kaksi mahdollista arvoa, $0$ ja $1$.
 Bittijono on jono, jossa on yksi tai useampia bittejä. Esimerkiksi $1001\, 0010$ on bittijono, jonka pituus on $8$ bittiä. Samanpituisille bittijonoille määritellään bittikohtaiset tai (or), ja (and) sekä poissulkeva tai (xor). Esimerkiksi bittijonojen $1100$ ja $1010$ bittikohtainen tai on jono $1110$, bittikohtainen ja on jono $1000$ sekä bittikohtainen poissulkeva tai on jono $0110$. Muodosta a) bittikohtainen tai  b) bittikohtainen ja c) bittikohtainen poissulkeva tai jonoille $1111\, 0000$ ja $1010\, 1010$.
-    \begin{alakohdat}
-        \alakohta{bittikohtainen tai}
-        \alakohta{bittikohtainen ja}
-        \alakohta{bittikohtainen poissulkeva tai jonoille $1111\, 0000$ ja $1010\, 1010$.}
-    \end{alakohdat}
+    \alakohdat{
+        § bittikohtainen tai
+        § bittikohtainen ja
+        § bittikohtainen poissulkeva tai jonoille $1111\, 0000$ ja $1010\, 1010$.
+    }
 
     \begin{vastaus}
     
-        \begin{alakohdat}
-            \alakohta{$1111\, 1010$}
-            \alakohta{$1010\, 0000$}
-            \alakohta{$0101\, 1010$}
-        \end{alakohdat}
+        \alakohdat{
+            § $1111\, 1010$
+            § $1010\, 0000$
+            § $0101\, 1010$
+        }
     \end{vastaus}
     
 \end{tehtava}
 
 \begin{tehtava}
      * Muodosta bittijono 
-    \begin{alakohdat}
-        \alakohta{$(0\, 1111 \land 1\, 0101) \lor 0\, 1000$}
-        \alakohta{$(0\, 1010 \xor 1\, 1011) \xor 0\, 1001$. }
-    \end{alakohdat}
+    \alakohdat{
+        § $(0\, 1111 \land 1\, 0101) \lor 0\, 1000$
+        § $(0\, 1010 \xor 1\, 1011) \xor 0\, 1001$. 
+    }
 
     \begin{vastaus}
     
-        \begin{alakohdat}
-            \alakohta{$0\, 1101$}
-            \alakohta{$1\, 1000$}
-        \end{alakohdat}
+        \alakohdat{
+            § $0\, 1101$
+            § $1\, 1000$
+        }
     \end{vastaus}
     
 \end{tehtava}
@@ -373,90 +371,90 @@ Bittijono on jono, jossa on yksi tai useampia bittejä. Esimerkiksi $1001\, 0010
 \end{tehtavasivu}
 
 % -----
-\setcounter{tehtava}{0}
+
 
 \begin{kotitehtavasivu}
 
 %Luku 2.2 kotitehtävät, vastauksien tekijä Valtteri Vistiaho 10.11.2013
 \begin{tehtava}
      Olkoot $A$: ''Timo opiskelee matematiikkaa'', $B$: ''Timo osallistuu logiikan kurssille'' ja $C$: ''Timo opiskelee filosofiaa''. Suomenna lause.
-    \begin{alakohdat}
-        \alakohta{$\lnot A \to \lnot B$.}
-        \alakohta{$A\lequiv B$.}
-        \alakohta{$A\lor C \to B$.}
-        \alakohta{$C\lequiv (B\to \lnot A)$.}
-    \end{alakohdat}
+    \alakohdat{
+        § $\lnot A \to \lnot B$.
+        § $A\lequiv B$.
+        § $A\lor C \to B$.
+        § $C\lequiv (B\to \lnot A)$.
+    }
 
     \begin{vastaus}
     
-        \begin{alakohdat}
-            \alakohta{Jos Timo ei opiskele matematiikkaa, Timo ei osallistu logiikan kurssille.}
-            \alakohta{Timo opiskelee matematiikkaa, jos ja vain jos Timo osallistuu logiikan kurssille.}
-            \alakohta{Jos Timo opiskelee matematiikkaa tai filosofiaa, Timo osallistuu logiikan kurssille.}
-            \alakohta{Jos Timo opiskelee matematiikkaa ja osallistuu logiikan kurssille, hän ei opiskele filosofiaa. Muussa tapauksessa hän opiskelee filosofiaa.}
-        \end{alakohdat}
+        \alakohdat{
+            § Jos Timo ei opiskele matematiikkaa, Timo ei osallistu logiikan kurssille.
+            § Timo opiskelee matematiikkaa, jos ja vain jos Timo osallistuu logiikan kurssille.
+            § Jos Timo opiskelee matematiikkaa tai filosofiaa, Timo osallistuu logiikan kurssille.
+            § Jos Timo opiskelee matematiikkaa ja osallistuu logiikan kurssille, hän ei opiskele filosofiaa. Muussa tapauksessa hän opiskelee filosofiaa.
+        }
     \end{vastaus}
     
 \end{tehtava}
 
 \begin{tehtava}
      Onko lause tosi?
-    \begin{alakohdat}
-        \alakohta{Jos $(-2)^3= -8$, niin $(-2)^3= -8$.}
-        \alakohta{Jos $(-2)^3= -8$, niin $(-2)^3=  8$.}
-        \alakohta{Jos luku $8$ on pariton, niin luku $8$ on pariton.}
-        \alakohta{Jos luku $8$ on pariton, niin luku $8$ on parillinen.}
-    \end{alakohdat}
+    \alakohdat{
+        § Jos $(-2)^3= -8$, niin $(-2)^3= -8$.
+        § Jos $(-2)^3= -8$, niin $(-2)^3=  8$.
+        § Jos luku $8$ on pariton, niin luku $8$ on pariton.
+        § Jos luku $8$ on pariton, niin luku $8$ on parillinen.
+    }
 
     \begin{vastaus}
     
-        \begin{alakohdat}
-            \alakohta{On.}
-            \alakohta{Ei.}
-            \alakohta{On.}
-            \alakohta{On. (Luku $8$ ei ole pariton.)} % /Niko
-        \end{alakohdat}
+        \alakohdat{
+            § On.
+            § Ei.
+            § On.
+            § On. (Luku $8$ ei ole pariton.) % /Niko
+        }
     \end{vastaus}
     
 \end{tehtava}
 
 \begin{tehtava}
      Formalisoi lause.
-    \begin{alakohdat}
-        \alakohta{Jos opettaja on pirteä, niin televisiosta ei ole tullut illalla jalkapalloa.}
-        \alakohta{Suomi voittaa jalkapallon maailmanmestaruuden silloin ja vain silloin, kun lehmät lentävät ja vaaleanpunaiset norsut kävelevät kadulla.}
-        \alakohta{En seuraa jalkapalloa eikä Suomen maajoukkue menesty.}
-        \alakohta{Jos ottelu ei pääty tasapeliin, niin joko kotijoukkue tai vierasjoukkue voittaa pelin.}
-    \end{alakohdat}
+    \alakohdat{
+        § Jos opettaja on pirteä, niin televisiosta ei ole tullut illalla jalkapalloa.
+        § Suomi voittaa jalkapallon maailmanmestaruuden silloin ja vain silloin, kun lehmät lentävät ja vaaleanpunaiset norsut kävelevät kadulla.
+        § En seuraa jalkapalloa eikä Suomen maajoukkue menesty.
+        § Jos ottelu ei pääty tasapeliin, niin joko kotijoukkue tai vierasjoukkue voittaa pelin.
+    }
 
     \begin{vastaus}
     
-        \begin{alakohdat}
-            \alakohta{Olkoot $A$: ''Opettaja on pirteä.'' ja $B$: ''Televisiosta on tullut illalla jalkapalloa.'' \newline
-            $A\to \lnot B$}
-            \alakohta{Olkoot $A$: ''Suomi voittaa jalkapallon maailmanmestaruuden.'', $B$: ''Lehmät lentävät.'' ja $C$: ''Vaaleanpunaiset norsut kävelevät kadulla.'' \newline
-            $A\lequiv (B\land C)$}
-            \alakohta{Olkoot $A$: ''Seuraan jalkapalloa.'' ja $B$: ''Suomen maajoukkue menestyy.'' \newline
-            $\lnot A\land \lnot B$}
-            \alakohta{Olkoot $A$: ''Ottelu päättyy tasapeliin.'', $B$: ''Kotijoukkue voittaa pelin.'' ja $C$: ''Vierasjoukkue voittaa pelin.'' \newline
-            $\lnot A\to (B\lor C)$}
-        \end{alakohdat}
+        \alakohdat{
+            § Olkoot $A$: ''Opettaja on pirteä.'' ja $B$: ''Televisiosta on tullut illalla jalkapalloa.'' \newline
+            $A\to \lnot B$
+            § Olkoot $A$: ''Suomi voittaa jalkapallon maailmanmestaruuden.'', $B$: ''Lehmät lentävät.'' ja $C$: ''Vaaleanpunaiset norsut kävelevät kadulla.'' \newline
+            $A\lequiv (B\land C)$
+            § Olkoot $A$: ''Seuraan jalkapalloa.'' ja $B$: ''Suomen maajoukkue menestyy.'' \newline
+            $\lnot A\land \lnot B$
+            § Olkoot $A$: ''Ottelu päättyy tasapeliin.'', $B$: ''Kotijoukkue voittaa pelin.'' ja $C$: ''Vierasjoukkue voittaa pelin.'' \newline
+            $\lnot A\to (B\lor C)$
+        }
     \end{vastaus}
     
 \end{tehtava}
 
 \begin{tehtava}
      Laadi lauseen totuustaulu.
-    \begin{alakohdat}
-        \alakohta{$A\land B\to \lnot B$}
-        \alakohta{$(A\lequiv B)\land B\to C\lor A$}
-        \alakohta{$(\lnot A\to B)\lequiv (C\to B\land A)$}
-    \end{alakohdat}
+    \alakohdat{
+        § $A\land B\to \lnot B$
+        § $(A\lequiv B)\land B\to C\lor A$
+        § $(\lnot A\to B)\lequiv (C\to B\land A)$
+    }
 
     \begin{vastaus}
     
-        \begin{alakohdat}
-            \alakohta{\begin{center}
+        \alakohdat{
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $\lnot B$ & $A\land B$ & $A\land B\to \lnot B$ \\ \hline
 		    $1$ & $1$ & $0$ & $1$ & $0$ \\ %\hline
@@ -464,8 +462,8 @@ Bittijono on jono, jossa on yksi tai useampia bittejä. Esimerkiksi $1001\, 0010
 		    $0$ & $1$ & $0$ & $0$ & $1$ \\
 		    $0$ & $0$ & $1$ & $0$ & $1$ \\ \hline
 \end{tabular}
-\end{center}}
-            \alakohta{\begin{center}
+\end{center}
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $C$ & $A\lequiv B$ & $(A\lequiv B)\land B$ & $C\lor A$ & $(A\lequiv B)\land B\to C\lor A$ \\ \hline
 		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
@@ -477,8 +475,8 @@ Bittijono on jono, jossa on yksi tai useampia bittejä. Esimerkiksi $1001\, 0010
 		    $0$ & $1$ & $0$ & $0$ & $0$ & $0$ & $1$ \\
 		    $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$ \\ \hline
 \end{tabular}
-\end{center}}
-            \alakohta{\begin{center}
+\end{center}
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $C$ & $\lnot A$ & $\lnot A\to B$ & $C\to B\land A$ & $(\lnot A\to B)\lequiv (C\to B\land A)$ \\ \hline
 		    $1$ & $1$ & $1$ & $0$ & $1$ & $1$ & $1$ \\ %\hline
@@ -490,29 +488,29 @@ Bittijono on jono, jossa on yksi tai useampia bittejä. Esimerkiksi $1001\, 0010
 		    $0$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ \\
 		    $0$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ \\ \hline
 \end{tabular}
-\end{center}}
-        \end{alakohdat}
+\end{center}
+        }
     \end{vastaus}
     
 \end{tehtava}
 
 \begin{tehtava}
      Olkoot $A$: ''Timo opiskelee matematiikkaa'', $B$: ''Timo osallistuu logiikan kurssille'' ja $C$: ''Timo opiskelee filosofiaa''. Formalisoi lause. Missä tilanteissa lause on tosi?
-    \begin{alakohdat}
-        \alakohta{Timo opiskelee matematiikkaa ja filosofiaa.}
-        \alakohta{Jos Timo opiskelee matematiikkaa, hän osallistuu logiikan kurssille.}
-        \alakohta{Timo osallistuu logiikan kurssille silloin ja vain silloin, kun hän opiskelee filosofiaa tai matematiikkaa.}
-        \alakohta{Jos Timo osallistuu logiikan kurssille, opiskelee hän joko matematiikka tai filosofiaa, muttei molempia.}
-    \end{alakohdat}
+    \alakohdat{
+        § Timo opiskelee matematiikkaa ja filosofiaa.
+        § Jos Timo opiskelee matematiikkaa, hän osallistuu logiikan kurssille.
+        § Timo osallistuu logiikan kurssille silloin ja vain silloin, kun hän opiskelee filosofiaa tai matematiikkaa.
+        § Jos Timo osallistuu logiikan kurssille, opiskelee hän joko matematiikka tai filosofiaa, muttei molempia.
+    }
 
     \begin{vastaus}
     
-        \begin{alakohdat}
-            \alakohta{$A\land C$}
-            \alakohta{$A\to B$}
-            \alakohta{$B\lequiv (A\lor C)$}
-            \alakohta{$B\to A\xor C$ tai $B\to((A\lor C)\land \lnot(A\land C))$}
-        \end{alakohdat}
+        \alakohdat{
+            § $A\land C$
+            § $A\to B$
+            § $B\lequiv (A\lor C)$
+            § $B\to A\xor C$ tai $B\to((A\lor C)\land \lnot(A\land C))$
+        }
     \end{vastaus}
     
 \end{tehtava}
@@ -598,11 +596,11 @@ Helinä on voittaja.
 
 \begin{tehtava}
      Mitä eroa on seuraavissa ehdoissa?
-    \begin{alakohdat}
-        \alakohta{Henkilö saa työpaikan matkamuistomyymälässä, jos hänellä on kokemusta kassakoneen käytöstä.}
-        \alakohta{Matkamuistomyymälässä työskentelevältä edellytetään kokemusta kassakoneen käytöstä.}
-        \alakohta{Henkilö saa työpaikan matkamuistomyymälässä silloin ja vain silloin, kun hänellä on kokemusta kassakoneen käytöstä.}
-    \end{alakohdat}
+    \alakohdat{
+        § Henkilö saa työpaikan matkamuistomyymälässä, jos hänellä on kokemusta kassakoneen käytöstä.
+        § Matkamuistomyymälässä työskentelevältä edellytetään kokemusta kassakoneen käytöstä.
+        § Henkilö saa työpaikan matkamuistomyymälässä silloin ja vain silloin, kun hänellä on kokemusta kassakoneen käytöstä.
+    }
 
     \begin{vastaus}
         a) on riittävä on ehto, b) on välttämätön ehto ja c) riittävä sekä välttämätön ehto. % /Niko
@@ -612,16 +610,16 @@ Helinä on voittaja.
 
 \begin{tehtava}
      Vertaa lauseiden totuusarvoja atomilauseiden $A$, $B$ ja $C$ eri totuusarvoilla. Onko sulkeiden muuttamisella vaikutusta lauseen totuusarvoon?
-    \begin{alakohdat}
-        \alakohta{$(A\lor B)\lor C$ ja $A\lor (B\lor C)$.}
-        \alakohta{$(A\lequiv B)\lequiv C$ ja $A\lequiv (B\lequiv C)$.}
-        \alakohta{$\lnot A \lequiv (B \land C)$ ja $\lnot (A \lequiv B) \land C$.}
-    \end{alakohdat}
+    \alakohdat{
+        § $(A\lor B)\lor C$ ja $A\lor (B\lor C)$.
+        § $(A\lequiv B)\lequiv C$ ja $A\lequiv (B\lequiv C)$.
+        § $\lnot A \lequiv (B \land C)$ ja $\lnot (A \lequiv B) \land C$.
+    }
 
     \begin{vastaus}
     
-        \begin{alakohdat}
-            \alakohta{\begin{center}
+        \alakohdat{
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $C$ & $A\lor B$ & $B\lor C$ & $(A\lor B)\lor C$ & $A\lor(B\lor C)$ \\ \hline
 		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
@@ -633,9 +631,9 @@ Helinä on voittaja.
 		    $0$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ \\
 		    $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ \hline
 \end{tabular}
-\end{center}}
+\end{center}
 Ei vaikutusta.
-            \alakohta{\begin{center}
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $C$ & $A\lequiv B$ & $B\lequiv C$ & $(A\lequiv B)\lequiv C$ & $A\lequiv (B\lequiv C)$ \\ \hline
 		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
@@ -647,9 +645,9 @@ Ei vaikutusta.
 		    $0$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ \\
 		    $0$ & $0$ & $0$ & $1$ & $1$ & $0$ & $1$ \\ \hline
 \end{tabular}
-\end{center}}
+\end{center}
 Vaikuttaa.
-            \alakohta{\begin{center}
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $C$ & $\lnot A$ & $B\land C$ & $\lnot A \lequiv (B \land C)$ & $A\lequiv B$ & $\lnot (A\lequiv B)$ & $\lnot (A \lequiv B) \land C$ \\ \hline
 		    $1$ & $1$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $0$ \\ %\hline
@@ -662,25 +660,25 @@ Vaikuttaa.
 		    $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$ & $0$ & $0$ \\ \hline
 \end{tabular}
 \end{center}
-Vaikuttaa.}
+Vaikuttaa.
 
-        \end{alakohdat}
+        }
     \end{vastaus}
     
 \end{tehtava}
 
 \begin{tehtava}
      Olkoon $v$ sellainen funktio, että $v(A) = 1$, jos lause $A$ on tosi, ja $v(A) = 0$, jos lause $A$ on epätosi. Osoita, että yhtälö pätee kaikilla lauseiden $A$ ja $B$ totuusarvojen yhdistelmillä.
-    \begin{alakohdat}
-        \alakohta{$v(A\land B)=v(A)v(B)$,}
-        \alakohta{$v(A\lor B)=v(A)+v(B)- v(A)v(B)$,}
-        \alakohta{$v(A\to B)=1-v(A)(1-v(B))$.}
-    \end{alakohdat}
+    \alakohdat{
+        § $v(A\land B)=v(A)v(B)$,
+        § $v(A\lor B)=v(A)+v(B)- v(A)v(B)$,
+        § $v(A\to B)=1-v(A)(1-v(B))$.
+    }
 
     \begin{vastaus}
     
-        \begin{alakohdat}
-            \alakohta{\begin{center}
+        \alakohdat{
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $A\land B$ & $v(A\land B)$ & $v(A)$ & $v(B)$ & $v(A)v(B)$ \\ \hline
 		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
@@ -688,8 +686,8 @@ Vaikuttaa.}
 		    $0$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ \\
 		    $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ \hline
 \end{tabular}
-\end{center}}
-            \alakohta{\begin{center}
+\end{center}
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $A\lor B$ & $v(A\lor B)$ & $v(A)$ & $v(B)$ & $v(A)v(B)$ & $v(A)+v(B)- v(A)v(B)$\\ \hline
 		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\ %\hline
@@ -697,8 +695,8 @@ Vaikuttaa.}
 		    $0$ & $1$ & $1$ & $1$ & $0$ & $1$ & $0$ & $1$ \\
 		    $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ \hline
 \end{tabular}
-\end{center}}
-            \alakohta{\begin{center}
+\end{center}
+            § \begin{center}
 		    \begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
 		    $A$ & $B$ & $A\to B$ & $v(A\to B)$ & $v(A)$ & $v(B)$ & $1-v(B)$ & $1-v(A)(1-v(B))$\\ \hline
 		    $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $0$ & $1$ \\ %\hline
@@ -706,8 +704,8 @@ Vaikuttaa.}
 		    $0$ & $1$ & $1$ & $1$ & $0$ & $1$ & $0$ & $1$ \\
 		    $0$ & $0$ & $1$ & $1$ & $0$ & $0$ & $1$ & $1$ \\ \hline
 \end{tabular}
-\end{center}}
-        \end{alakohdat}
+\end{center}
+        }
     \end{vastaus}
     
 \end{tehtava}

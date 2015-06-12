@@ -1,39 +1,37 @@
-\setcounter{tehtava}{0}
-
 \begin{tehtavasivu}
 
 \begin{tehtava}
   Määritä jakojäännös, kun
-  \begin{alakohdat}
-  \alakohta{luku $80 \cdot 30 - 352$ jaetaan luvulla $7$}
-  \alakohta{luku $2^{140}$ jaetaan luvulla $3$}
-  \alakohta{luku $0+1+2+3+ \ldots + 79 + 80$ jaetaan luvulla $4$.}
-  \end{alakohdat}
+  \alakohdat{
+  § luku $80 \cdot 30 - 352$ jaetaan luvulla $7$
+  § luku $2^{140}$ jaetaan luvulla $3$
+  § luku $0+1+2+3+ \ldots + 79 + 80$ jaetaan luvulla $4$.
+  }
   \begin{vastaus}
-  \begin{alakohdat}
-  \alakohta{$4$}
-  \alakohta{$1$}
-  \alakohta{$0$}
-  \end{alakohdat}
+  \alakohdat{
+  § $4$
+  § $1$
+  § $0$
+  }
   \end{vastaus}
 \end{tehtava}
 
 
 \begin{tehtava}
   Määritä jakojäännös, kun
-  \begin{alakohdat}
-  \alakohta{luku $5 \cdot 11^{99} + 20$ jaetaan luvulla $6$}
-  \alakohta{luku $6^{120} \cdot 4^{301}$ jaetaan luvulla $5$}
-  \alakohta{luku $3^{60} + 55$ jaetaan luvulla $8$}
-  \alakohta{luku $2^{151}$ jaetaan luvulla $14$.}
-  \end{alakohdat}
+  \alakohdat{
+  § luku $5 \cdot 11^{99 + 20}$ jaetaan luvulla $6$
+  § luku $6^{120 \cdot 4^{301}}$ jaetaan luvulla $5$
+  § luku $3^{60 + 55}$ jaetaan luvulla $8$
+  § luku $2^{151}$ jaetaan luvulla $14$.
+  }
   \begin{vastaus}
-  \begin{alakohdat}
-  \alakohta{3}
-  \alakohta{4}
-  \alakohta{0}
-  \alakohta{2}
-  \end{alakohdat}
+  \alakohdat{
+  § 3
+  § 4
+  § 0
+  § 2
+  }
   \end{vastaus}
 \end{tehtava}
 
@@ -54,10 +52,10 @@
 \begin{tehtava}
   Mikä on luvun a) $2^{77}$ b) $3^{33}$ viimeinen numero?
   \begin{vastaus}
-  \begin{alakohdat}
-  \alakohta{2}
-  \alakohta{3}
-  \end{alakohdat}
+  \alakohdat{
+  § 2
+  § 3
+  }
   \end{vastaus}
 \end{tehtava}
 
@@ -77,29 +75,29 @@
 
 \begin{tehtava}
   Tutki, onko luku jaollinen luvulla $3$.
-  \begin{alakohdat}
-  \alakohta{$123\, 456\, 789$}
-  \alakohta{$987\, 654\, 321\, 233$}
-  \end{alakohdat}
+  \alakohdat{
+  § $123\, 456\, 789$
+  § $987\, 654\, 321\, 233$
+  }
   \begin{vastaus}
-  \begin{alakohdat}
-  \alakohta{On.}
-  \alakohta{Ei.}
-  \end{alakohdat}
+  \alakohdat{
+  § On.
+  § Ei.
+  }
   \end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
   Määritä jakojäännös, kun luku jaetaan luvulla $9$.
-  \begin{alakohdat}
-  \alakohta{$999\, 000\, 000\, 800$}
-  \alakohta{$111\, 111\, 111\, 111$}
-  \end{alakohdat}
+  \alakohdat{
+  § $999\, 000\, 000\, 800$
+  § $111\, 111\, 111\, 111$
+  }
   \begin{vastaus}
-  \begin{alakohdat}
-  \alakohta{8}
-  \alakohta{3}
-  \end{alakohdat}
+  \alakohdat{
+  § 8
+  § 3
+  }
   \end{vastaus}  
 \end{tehtava}
 
@@ -115,55 +113,55 @@
 \end{tehtava}
 
 \begin{tehtava}
-  \begin{alakohdat}
-  \alakohta{Ajattele jotakin kolminumeroista lukua ja kirjoita se paperille. Vaihda lukusi numeroiden järjestystä ja kirjoita uusi luku paperille. Laske lukujen erotus, jaa erotus luvulla $3$ ja kirjoita jakojäännös paperille. Lisää jakojäännökseen luku $7$, kerro näin saatu luku luvulla $2$ ja vähennä tuloksesta luku $4$. Tulos on $10$, eikö vain? Miten se voidaan tietää?}
-  \alakohta{Keksi oma algoritmisi, jonka tulos tiedetään etukäteen.}
-  \end{alakohdat}
+  \alakohdat{
+  § Ajattele jotakin kolminumeroista lukua ja kirjoita se paperille. Vaihda lukusi numeroiden järjestystä ja kirjoita uusi luku paperille. Laske lukujen erotus, jaa erotus luvulla $3$ ja kirjoita jakojäännös paperille. Lisää jakojäännökseen luku $7$, kerro näin saatu luku luvulla $2$ ja vähennä tuloksesta luku $4$. Tulos on $10$, eikö vain? Miten se voidaan tietää?
+  § Keksi oma algoritmisi, jonka tulos tiedetään etukäteen.
+  }
   \begin{vastaus}
-    \begin{alakohdat}
-      \alakohta{Merkitään alkuperäistä lukua kymmenjärjestelmässä $ABC$. Kun järjestys käännetään, saadaan $CBA$. Näiden erotus on $100(A-C)+(C-A)=100(A-C)-(A-C)=99(A-C)$, joka on aina jaollinen kolmella. Näin jakojäännökseksi saadaan aina $0$. Algoritmin loppuosa on obfuskaatiota, sillä se ei riipu alkuperäisestä luvusta.}
-    \end{alakohdat}
+    \alakohdat{
+      § Merkitään alkuperäistä lukua kymmenjärjestelmässä $ABC$. Kun järjestys käännetään, saadaan $CBA$. Näiden erotus on $100(A-C)+(C-A)=100(A-C)-(A-C)=99(A-C)$, joka on aina jaollinen kolmella. Näin jakojäännökseksi saadaan aina $0$. Algoritmin loppuosa on obfuskaatiota, sillä se ei riipu alkuperäisestä luvusta.
+    }
   \end{vastaus}
 \end{tehtava}
 
 \end{tehtavasivu}
 
 % -----
-\setcounter{tehtava}{0}
+
 
 \begin{kotitehtavasivu}
 
 \begin{tehtava}
 	Määritä jakojäännös, kun
-	\begin{alakohdat}
-	\alakohta{luku $700 - 22 \cdot 185$ jaetaan luvulla $6$}
-	\alakohta{luku $2799^{2799}$ jaetaan luvulla $7$}
-	\alakohta{luku $1+2+3+4+ \ldots + 36 + 37$ jaetaan luvulla $8$.}
-	\end{alakohdat}
+	\alakohdat{
+	§ luku $700 - 22 \cdot 185$ jaetaan luvulla $6$
+	§ luku $2799^{2799}$ jaetaan luvulla $7$
+	§ luku $1+2+3+4+ \ldots + 36 + 37$ jaetaan luvulla $8$.
+	}
   \begin{vastaus}
-    \begin{alakohdat}
-      \alakohta{$2$}
-      \alakohta{$6$}
-      \alakohta{$7$}
-    \end{alakohdat}
+    \alakohdat{
+      § $2$
+      § $6$
+      § $7$
+    }
   \end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Määritä jakojäännös, kun
-	\begin{alakohdat}
-	\alakohta{luku $2^{256}$ jaetaan luvulla $5$}
-	\alakohta{luku $12^{10} \cdot 13^{3} - 114 \cdot 552$ jaetaan luvulla $11$}
-	\alakohta{luku $34^{3} - 966$ jaetaan luvulla $9$}
-	\alakohta{luku $6^{57}$ jaetaan luvulla $15$.}
-	\end{alakohdat}
+	\alakohdat{
+	§ luku $2^{256}$ jaetaan luvulla $5$
+	§ luku $12^{10 \cdot 13^{3} - 114 \cdot 552}$ jaetaan luvulla $11$
+	§ luku $34^{3 - 966}$ jaetaan luvulla $9$
+	§ luku $6^{57}$ jaetaan luvulla $15$.
+	}
   \begin{vastaus}
-    \begin{alakohdat}
-      \alakohta{$1$}
-      \alakohta{$0$}
-      \alakohta{$7$}
-      \alakohta{$6$}
-    \end{alakohdat}
+    \alakohdat{
+      § $1$
+      § $0$
+      § $7$
+      § $6$
+    }
   \end{vastaus}
 \end{tehtava}
 
@@ -184,10 +182,10 @@
 \begin{tehtava}
 	Mikä on luvun a) $2^{103}$  b) $4^{111}$ viimeinen numero?
   \begin{vastaus}
-    \begin{alakohdat}
-      \alakohta{$8$}
-      \alakohta{$4$}
-    \end{alakohdat}
+    \alakohdat{
+      § $8$
+      § $4$
+    }
   \end{vastaus}
 \end{tehtava}
 
@@ -200,10 +198,10 @@
 
 \begin{tehtava}
 	Osoita, että
-	\begin{alakohdat}
-	\alakohta{luku $10^n - 1$ on jaollinen luvulla $9$ kaikilla positiivisilla kokonaisluvuilla $n$}
-	\alakohta{luku $11^n + 1$ on jaollinen luvulla $12$ kaikilla parittomilla positiivisilla kokonaisluvuilla $n$.}
-	\end{alakohdat}
+	\alakohdat{
+	§ luku $10^n - 1$ on jaollinen luvulla $9$ kaikilla positiivisilla kokonaisluvuilla $n$
+	§ luku $11^n + 1$ on jaollinen luvulla $12$ kaikilla parittomilla positiivisilla kokonaisluvuilla $n$.
+	}
 \end{tehtava}
 
 \begin{tehtava}
@@ -215,18 +213,18 @@
 
 \begin{tehtava}
 	Tutki, onko luku jaollinen luvulla $9$.
-	\begin{alakohdat}
-	\alakohta{$182\, 736\, 451$}
-	\alakohta{$18\, 273\, 645\, 144$}
-	\end{alakohdat}
+	\alakohdat{
+	§ $182\, 736\, 451$
+	§ $18\, 273\, 645\, 144$
+	}
 \end{tehtava}
 
 \begin{tehtava}
 	Määritä jakojäännös, kun luku jaetaan luvulla $3$.
-	\begin{alakohdat}
-	\alakohta{$222\, 333\, 445$}
-	\alakohta{$101\, 010\, 101\, 111$}
-	\end{alakohdat}
+	\alakohdat{
+	§ $222\, 333\, 445$
+	§ $101\, 010\, 101\, 111$
+	}
 \end{tehtava}
 
 \begin{tehtava}
@@ -235,12 +233,12 @@
 
 \begin{tehtava}
 	Tutki, onko luku jaollinen luvulla $11$.
-	\begin{alakohdat}
-	\alakohta{$24\, 927$}
-	\alakohta{$928\, 072\, 618$}
-	\alakohta{$7\, 000\, 000\, 000\, 000\, 007$}
-	\alakohta{$7\, 000\, 000\, 000\, 000\, 070$}
-	\end{alakohdat}
+	\alakohdat{
+	§ $24\, 927$
+	§ $928\, 072\, 618$
+	§ $7\, 000\, 000\, 000\, 000\, 007$
+	§ $7\, 000\, 000\, 000\, 000\, 070$
+	}
 \end{tehtava}
 
 \begin{tehtava}
