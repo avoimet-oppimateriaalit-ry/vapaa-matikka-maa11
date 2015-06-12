@@ -18,7 +18,7 @@
 \begin{tehtava}
     Osoita, että a) $3|66$ b) $7\nmid 120$ c) $15|(-330)$ d) $11\nmid (-619)$.
     \begin{vastaus}
-        a) $66 = 22\cdot 3$ b) $120 = 17\cdot 7 + 1$ c) $-330 = -22\cdot 15$ d) $-659 = -59\cdot 11$ 
+        a) $66 = 22\cdot 3$ b) $120 = 17\cdot 7 + 1$ c) $-330 = -22\cdot 15$ d) $-619 = -57\cdot 11 + 8$ 
     \end{vastaus}
 
 \end{tehtava}
@@ -122,10 +122,10 @@
     Leipomossa on pakattavana $260$ sämpylää. Kuinka monta täyttä pussia saadaan ja kuinka monta sämpylää jää yli, jos käytetään vain a) $24$ b) $10$ c) $6$ d) $4$ sämpylän pusseja?
     \begin{vastaus}
         \alakohdat{
-        § $260 = 10\cdot 24 + 20$
-        § $260 = 26\cdot 10$
-        § $260 = 43\cdot 6 + 2$
-        § $260 = 65\cdot 4$
+        § 10 täyttä pussia, 20 sämpylää jää yli.
+        § 26 täyttä pussia.
+        § 43 täyttä pussia, 2 sämpylää jää yli.
+        § 65 täyttä pussia.
         }     
     \end{vastaus}
 
@@ -134,8 +134,9 @@
 \begin{tehtava}
     Jos kello on nyt 13.05, niin mitä kello oli 2012 tuntia ja 45 minuuttia sitten?
     \begin{vastaus}
-        $13\, t + 5\, m - 2012\, t - 45\, m \equiv 13\, t - 20(\mod 24)\, t + 5\, m - 45\, m \equiv -7\, t -40\, m \equiv 24 -7\, t -40\, m \equiv 16(\mod 24)\, t + 20\, m $ \\
-        Vastaus: $16.20$
+%        $13\, t + 5\, m - 2012\, t - 45\, m \equiv 13\, t - 20(\mod 24)\, t + 5\, m - 45\, m \equiv -7\, t -40\, m \equiv 24 -7\, t -40\, m \equiv 16(\mod 24)\, t + 20\, m $ \\
+%        Vastaus: $16.20$
+         16.20
     \end{vastaus}
 \end{tehtava}
 
@@ -171,7 +172,7 @@
 \begin{tehtava}
 	Olkoot $a$, $b$, $c$, $r$ ja $s$ kokonaislukuja ja $a \neq 0$. Osoita, että jos $a|b$ ja $a|c$, niin $a|(rb + sc)$.
     \begin{vastaus}
-        Koska $a\mid b$ ja $a\mid c$ niin $b = ak$ ja $b = al$ joillain $k, l \in \mathbb{Z}$. Nyt $rb = rak$ ja $sc = sal$. Siis $rb +sc = rak + sal = (rk + sl)a$. $(rk +sl) \in \mathbb{Z}$ ja $a\in \mathbb{Z}\setminus \lbrace 0 \rbrace$. Siten $a\mid(rk+sl)$. 
+        Koska $a\mid b$ ja $a\mid c$ niin $b = ak$ ja $c = al$ joillain $k, l \in \mathbb{Z}$. Nyt $rb = rak$ ja $sc = sal$. Siis $rb +sc = rak + sal = (rk + sl)a$. $(rk +sl) \in \mathbb{Z}$ ja $a\in \mathbb{Z}$. Siten $a\mid(rb+sc)$.
     \end{vastaus}
 \end{tehtava}
 
@@ -185,6 +186,9 @@
 
 \begin{tehtava}
 	Olkoot $a$ ja $b$ nollasta eroavia kokonaislukuja. Mitä voidaan päätellä, jos $a|b$ ja $b|a$?
+    \begin{vastaus}
+        Joko $a = b$ tai $a = -b$.
+    \end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -195,6 +199,18 @@
 	§ luku $n^3 + 3n^2 - n - 3$ jaetaan luvulla $n + 3$
 	§ luku $2n^3 + 3n^2 + 4n + 9$ jaetaan luvulla $2n + 3$.
 	}
+    \begin{vastaus}
+        \alakohdat{
+        § $5n + 3 = n\cdot 5 + 3$ \\
+        Vaillinainen osamäärä on $n$, jakojäännös $3$.
+        § $n^2 + 2n + 2 = (n + 1) (n + 1)$ \\
+        Vaillinainen osamäärä on $n + 1$, jakojäännös $0$.
+        § $n^3 + 3n^2 - n - 3 = (n^2 - 1) (n+3)$ \\
+        Vaillinainen osamäärä on $n^2 - 1$, jakojäännös $0$.
+        § $2n^3 + 3n^2 + 4n + 9 = (n^2 + 2) (2n + 3) + 3$ \\
+        Vaillinainen osamäärä on $n^2 + 2$, jakojäännös $3$.
+        }
+    \end{vastaus}
 \end{tehtava}
 
 %%%%%%%%%%%%%% FIX ME   Mikä on oikea tapa laittaa välit \ldots komentoa ennen ja jälkee? Nyt ennen on väli, jälkeen ei, kannattaa korjata kaikki esiintymät samanlaisiksi
@@ -204,6 +220,19 @@
 	§ Muodosta jakoyhtälö luvuille $0, 1, 2, \ldots, 7$, kun jakajana on luku $3$. Mitä arvoja jakojäännös voi saada?
 	§ Osoita, että jos kahden kokonaisluvun tulo on jaollinen luvulla $3$, niin ainakin toinen luvuista on jaollinen luvulla $3$. Vihje: Käytä epäsuoraa todistusta.
 	}
+    \begin{vastaus}
+        \alakohdat{
+        § $0 = 0\cdot 3$ \\
+          $1 = 0\cdot 3 + 1$ \\
+          $2 = 0\cdot 3 + 2$ \\
+          $3 = 1\cdot 3$ \\
+          $4 = 1\cdot 3 + 1$ \\
+          $5 = 1\cdot 3 + 2$ \\
+          $6 = 2\cdot 3$ \\
+          $7 = 2\cdot 3 + 1$ \\
+          Jakojäännös saa arvoja $0$, $1$ ja $2$.
+        }
+    \end{vastaus}
 \end{tehtava}
 
 \end{tehtavasivu}
