@@ -39,7 +39,7 @@
 	\begin{tehtava}
 		Todista, että kahden rationaaliluvun tulo on rationaalinen.
 		\begin{vastaus}
-		Merkitään rationaalilukuja $q_1 = \frac{m_1}{n_1}$ ja $q_2 = \frac{m_2}{n_2}$. Nyt sekä luvut $m_1$, $n_1$, $m_2$ ja $n_2$ ovat kaikki kokonaislukuja. Lukujen $q_1$ ja $q_2$ tulo on $q_3 = q_1q_2 =  \frac{m_1n_1}{m_2n_2}$, ja koska kahden kokonaisluvun tulo on aina kokonaisluku, sekä luvun $q_3$ osoittaja että nimittäjä ovat kokonaislukuja, ja siten $q_3$ on rationaaliluku.
+		Merkitään rationaalilukuja $q_1 = \frac{m_1}{n_1}$ ja $q_2 = \frac{m_2}{n_2}$. Nyt sekä luvut $m_1$, $n_1$, $m_2$ ja $n_2$ ovat kaikki kokonaislukuja, ja $n_1,n_2 \neq 0$. Lukujen $q_1$ ja $q_2$ tulo on $q_3 = q_1q_2 =  \frac{m_1m_2}{n_1n_2}$. Koska kahden kokonaisluvun tulo on aina kokonaisluku, sekä luvun $q_3$ osoittaja että nimittäjä ovat kokonaislukuja. Lisäksi myös $n_1n_2 \neq 0$, joten nimittäjä ei ole nolla, ja siten $q_3$ on rationaaliluku.
 		
 		\end{vastaus}
 	\end{tehtava}
@@ -49,12 +49,12 @@
 		$a + b$ on parillinen jos ja vain jos luku
 		$a - b$ on parillinen.
 		\begin{vastaus}
-		Todistetaan ensin väite ''$a + b$ on parillinen'' $\Rightarrow$ ''$a - b$ on parillinen'': Olkoon $a+b = 2c$, jossa $c$ on kokonaisluku. Nyt
+		Todistetaan ensin väite ''$a + b$ on parillinen'' $\Rightarrow$ ''$a - b$ on parillinen'': Olkoon $a+b = 2c$, jossa $c$ on kokonaisluku. Nyt
 		\begin{align*}
 		 a+b-2b &= 2c-2b \\
 		 a-b &= 2(c-b) 
 		\end{align*}
-		josta nähdään että $a-b$ on parillinen. Vastaavasti todistetaan väite ''$a - b$ on parillinen'' $\Rightarrow$ ''$a + b$ on parillinen''. Oletetaan että $a-b$ on parillinen; tällöin
+		josta nähdään että $a-b$ on parillinen. Vastaavasti todistetaan väite ''$a - b$ on parillinen'' $\Rightarrow$ ''$a + b$ on parillinen''. Oletetaan että $a-b$ on parillinen; tällöin
 		\begin{align*}
 		a - b &= 2c \\
 		a-b+2b &= 2c + 2b \\
@@ -69,7 +69,7 @@
 		Olkoon $m$ sellainen kokonaisluku, että $m^2$ on
 		pariton. Todista, että tällöin $m$ on pariton.
 		\begin{vastaus}
-		Todistetaan käänteisesti olettamalla, että $m$ on parillinen, jolloin $m = 2c$ jossa $c \in \mathbb{Z}$. Tällöin $m^2 = (2c)^2 = 4c^2$, joka on parillinen. Siis väite pätee.
+		Todistetaan käänteisesti,  että jos $m$ on parillinen, niin on myös $m^2$. Nimittäin, jos $m$ on parillinen, $m = 2c$ jollain $c \in \mathbb{Z}$. Tällöin $m^2 = (2c)^2 = 4c^2$, joka on parillinen, eli väite pätee.
 		\end{vastaus}
 	\end{tehtava}
 
@@ -77,7 +77,7 @@
 		Todista väite todeksi tai epätodeksi: Kahden
 		irrationaaliluvun summa on aina irrationaaliluku.
 		\begin{vastaus}
-			(Epätosi.)
+			Väite on epätosi. Esim. $\sqrt{2}$ ja $-\sqrt{2}$ ovat irrationaalilukuja, mutta niiden summa, $\sqrt{2} + \left(-\sqrt{2}\right) = 0$ on rationaaliluku.
 		\end{vastaus}
 	\end{tehtava}
 
@@ -85,14 +85,33 @@
 		Luku $\sqrt{3}$ on irrationaaliluku. Todista,
 		että $\sqrt{3}+1/2$ on irrationaaliluku. Vihje: Käytä
 		epäsuoraa todistusta.
+		\begin{vastaus}
+			Tehdään vastaoletus: $\sqrt{3} + \frac{1}{2} = q$, jollain rationaaliluvulla $q$. Mutta nythän $\sqrt{3} = q - \frac{1}{2}$ on kahden rationaaliluvun erotuksena rationaalinen, mikä on ristiriidassa $\sqrt{3}$:n irrationaalisuuden kanssa. Siis $\sqrt{3} + \frac{1}{2}$ on irrationaalinen.
+		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
 		Todista, että irrationaaliluvun ja nollasta poikkeavan rationaaliluvun tulo on irrationaaliluku.
+		\begin{vastaus}
+			Olkoon $a$ irrationaaliluku, ja $b$ nollasta poikkeava rationaaliluku. Tehdään vastaoletus: $ab = c$, jollain rationaaliluvulla $c$. Koska $b \neq 0$, voimme jakaa yhtälön $b$:llä, ja saamme. $a = \frac{c}{b}$. Mutta nythän $a$ on kahden rationaaliluvun osamääränä rationaaliluku, vastoin oletusta. Siis $ab$:n oltava irrationaalinen, ja väite on todistettu.
+		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
 		Todista, että luku $\sqrt{6}$ on irrationaaliluku.
+		\begin{vastaus}
+			Tehdään vastaoletus: $\sqrt{6}$ on rationaalinen. Tällöin $\sqrt{6} = \frac{m}{n}$ jollaine yhteistekijättömillä luvuilla kokonaisluvuilla $m$ ja $n$. Tästä voidaan päätellä, että
+			\begin{align*}
+				\sqrt{6} = \frac{m}{n} \\
+				6n^2 = m^2.
+			\end{align*}
+			Nyt siis $6n^2$ parillinen, joten myös $m^2$ on. Johdannon lauseen $4$ nojalla tällöin myös $m$ on parillinen, eli $m = 2k$, jollain kokonaisluvulla $k$. Siis saadaan
+			 \begin{align*}
+				6n^2 = (2k)^2 \\
+				3n^2 = 2k^2.
+			\end{align*}
+			Edelleen, $2k^2$ on siis parillinen, joten on myös $3n^2$. Koska $3$ on pariton, saadaan, että $n^2$ on parillinen, jolloin taas $n$ on parillinen. Mutta sittenhän $m$ ja $n$ ovat molemmat parillisia vastoin oletusta. Siis $\sqrt{6}$:n on oltava irrationaaliluku.
+		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
@@ -101,8 +120,14 @@
 		\[
 			\frac{2a-5}{3a-11}
 		\]
-		on irrationaaliluku. Vihje: Käytä symbolisen laskimen
-		\texttt{solve}-toimintoa.
+		on irrationaaliluku.
+		\begin{vastaus}
+			Tehdään vastaoletus, että luku on rationaalinen, $b \in \qq$. Nyt voidaan ratkaista, että
+			\[
+				a = \frac{11b - 5}{3b - 2} \in \qq,
+			\]
+			sillä rationaalilukujen tulot, summat ja osamäärät ovat rationaalilukuja. Päädyimme ristiriitan, joten $b$:n o oltava irrationaaliluku.
+		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
@@ -118,8 +143,15 @@
 		}
 		\begin{vastaus}
 			\alakohdat{
-				§ (Tosi.)
-				§ (Tosi.)
+				§ Tosi. Esim. $6^2+8^2= 36 + 64 = 100 = 10^2$, joten käänteisen Pythagoraan lauseen nojalla $6,8,10$ -sivuinen kolmio on suorakulmainen, jonka kaikkien svujen pituudet ovat lisäksi parillisia.
+				§ Epätosi. Jos sivujen pituudet $a,b,c$  olisivat parittomia, siis muotoa $a = 2a' + 1$, $b = 2b' + 1$, $c = 2c' + 1$, saadaan pythagoraan lauseella.
+				\begin{align*}
+					a^2 + b^2 = c^2 \\
+					(2a' + 1)^2 + (2b' + 1)^2 = (2c' + 1)^2 \\
+					4a'^2+4a' + 1 + 4b'^2+4b' + 1 = 4c'^2 + 4c' + 1 \\
+					2(2a'^2+2a'+2b'^2+2b' +1) = 2(2c'^2+2c') + 1. 
+				\end{align*}
+				Mutta nythän vasen luku on parillinen ja oikea pariton, joten tällaisia lukuja, eikä siis vaaditunlaista kolmioitakaan voi siis olla olemassa.
 			}
 		\end{vastaus}
 	\end{tehtava}
@@ -128,9 +160,9 @@
 		Kokonaisluvut $0, 1, 2, \ldots, 12$ asetetaan
 		mielivaltaiseen järjestykseen ympyrän kehälle. Todista,
 		että joidenkin neljän peräkkäisen luvun summa on
-		vähintään 26.
+		vähintään 26. Vihje: tutki tilannetta, jossa olisi vain luvut $1, 2, \ldots, 12$ (ilman nollaa).
 		\begin{vastaus}
-			Vihje: tutki tilannetta, jossa olisi vain luvut $1, 2, \ldots, 12$ (ilman nollaa).
+			Jaetaan ympyrän kaari neljään osaan: yhteen jossa on vain nolla, ja kolmeen muuhun neljä peräkkäistä lukua sisältävään. Koska kaikkien lukujen summa on $1 + 2 + 3 + \ldots + 12 = 78$, on jonkin osan lukujen summan oltava vähintään $78/3 = 26$. Nimittäin, jos kaikkien osien summa olisi $< 26$, olisi myös kaikkien lukujen summan yhteensä oltava $< 26 + 26 + 26 + 0 = 78$, mikä on mahdotonta. Väite on näin todistettu.
 		\end{vastaus}
 	\end{tehtava}
 
@@ -150,25 +182,43 @@
 		\begin{vastaus}
 			\alakohdat{
 				§ $1, 4, 9, 16, 25, 36, 49, 64, 81, 100$
-				§ Luonnollisen luvun neliön parillisuus on sama kuin luvun itsensä.
+				§ Luonnollisen luvun neliön parillisuus on sama kuin luvun itsensä. Jos nimittäin luku $n$ on parillinen, eli muotoa $2k$ jollain luonnollisella luvulla $k$, niin $n^2 = (2k)^2 = 4k^2 = 2(2k^2)$ on myös parillinen. Lisäksi jos $n$ on pariton, eli muotoa $2k + 1$, $n^2 = (2k+1)^2 = 4k^2+4k + 1 =2(2k^2+2k) + 1$ on pariton, ja olemme valmiit.
 			}
 		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
 		Todista, että kolmen parittoman kokonaisluvun summa on pariton.
+		\begin{vastaus}
+			Koska luvut ovat parittomia, ne voidaan kirjoittaa muodossa $2a + 1$, $2b + 1$ ja $2c + 1$, jollain kokonaisluvuilla $a, b$ ja $c$. Mutta silloinha lukujen summa $(2a+1) + (2b+ 1) + (2c + 1) = 2(a+b+c+1) + 1$ on pariton.
+		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
 		Todista, että kolmen peräkkäisen kokonaisluvun summa on jaollinen luvulla 3.
+		\begin{vastaus}
+			Kolme peräkkäistä lukua voidaan esittää muodossa $n$, $n + 1$ ja $n + 2$ jollain kokonaisluvulla $n$. Mutta nythän näiden lukujen summa $n + (n + 1) + (n + 2) = 3(n +1)$ on kolmella jaollinen.
+		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
 		Todista, että kahden parittoman kokonaisluvun tulo on pariton.
+		\begin{vastaus}
+			Kaksi paritonta lukua voidaan esittää muodossa $2a+1$ ja $2b + 1$, joillain kokonaisluvuilla $a$ ja $b$. Näiden lukujen tulo on $(2a+1)(2b+1) = 2(2ab+a +b) + 1$, siis pariton.
+		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
 		Olkoot $a$ ja $b$ reaalilukuja. Todista, että tulo $ab = 0$, jos ja vain jos $a=0$ tai $b=0$.
+		\begin{vastaus}
+			Jos $a \neq 0$, on $a$:lla käänteisluku $a^{-1}$, jolloin saamme
+			\begin{align*}
+				ab = 0 \\
+				a^{-1}(ab) = a^{-1}0 \\
+				b = 0.
+			\end{align*}
+			Vastaavasti jos $b \neq 0$, niin on oltava $a \neq 0$. Siis väitteen toinen suunta on selvä. Lisäksi jos $a = 0$, $ab = 0b = 0$, ja vastaavasti, jos $b = 0$, joten myös toinen suunta on selvä.
+		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
