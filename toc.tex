@@ -1,3 +1,7 @@
+\newcommand{\vast}{\section*{Vastaukset} \addcontentsline{toc}{section}{Vastaukset} \begin{vastaussivu} \input{vast} \end{vastaussivu}}
+
+\Opensolutionfile{ans}[vast] %kirjoittaa vastaukset tiedostoon vast.tex
+
 \include{content/logiikka_paattely}
 \include{content/logiikka_lauseet}
 \include{content/logiikka_matematiikka}
@@ -5,3 +9,8 @@
 \include{content/lukuteoria_johdanto}
 \include{content/lukuteoria_tuloksia}
 \include{content/logiikka_algebra}
+
+\Closesolutionfile{ans}
+
+\chapter{Vastaukset ja hakemisto}
+\vast
