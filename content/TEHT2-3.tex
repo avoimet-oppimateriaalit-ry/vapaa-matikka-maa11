@@ -458,6 +458,13 @@ Lause on loogisesti ristiriitainen.
 	§ $(\lnot A \lequiv (B \land C)) \lequiv \lnot (A
 	\lequiv B \land C)$.
 	}
+	
+	\begin{vastaus}
+	\alakohdat{
+	§ Ei ole.
+	§ On.
+	}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -465,6 +472,13 @@ Lause on loogisesti ristiriitainen.
 	Kirjoita luonnollisella kielellä lauseet $A\to \lnot B$
 	ja $B\to \lnot A$. Osoita totuustaulujen avulla, että
 	lauseet ovat loogisesti ekvivalentit.
+	
+	\begin{vastaus}
+	\begin{description}
+	\item[$A\to \lnot B$:] ''jos tunti jatkuu, kello ei soi''
+	\item[$B\to \lnot B$:] ''jos kello soi, tunti ei jatku''
+	\end{description}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -489,6 +503,14 @@ Lause on loogisesti ristiriitainen.
 	§ $(A\lor B) \land A$.
 	§ $(A\lor B) \land (A\lor \lnot B)$
 	}
+	
+	\begin{vastaus}
+	\alakohdat{
+	§ $A$
+	§ $A$
+	§ $A$
+	}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -519,11 +541,19 @@ Lause on loogisesti ristiriitainen.
 	$0$ & $0$ & $1$\\ \hline
 	\end{tabular}
 	\end{center}
+	
+	\begin{vastaus}
+	Esimerkiksi $A \lor \lnot A$
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 	Tarkastele seuraavaa ennustetta: maapallon öljyvarat ehtyvät, jos ja vain jos länsimaiset demokratiat romahtavat, mutta ei pidä paikkaansa, että jos maapallon
 	öljyvarat ehtyvät, niin länsimaiset demokratiat romahtavat. Miten ennusteeseen pitäisi suhtautua?
+	
+	\begin{vastaus}
+	Maapallon öljyvarat eivät ehdy eivätkä länsimaiset demokratiat romahda.
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -558,9 +588,26 @@ Lause on loogisesti ristiriitainen.
 
 \begin{tehtava}
 	Shefferin viivaan ja Peircen nuoleen on tutustuttu
-	edellisen kappaleen kotitehtävässä 12. Esitä negaatio,
+	edellisen kappaleen \ref{shefferpeirce}. Esitä negaatio,
 	konjunktio ja disjunktio a) Shefferin viivan avulla b)
 	Peircen nuolen avulla.
+	
+	\begin{vastaus}
+	\alakohdat{
+	§ Jos Shefferin viivaa merkitään merkillä $|$, seuraavat lauseet ovat aina tosia:
+	\begin{align*}
+	\lnot A &\lequiv A | A, \\
+	A \land B &\lequiv (A | B) | (A | B), \\
+	A \lor B &\lequiv (A | A) | (B | B), \\
+	\end{align*}
+	§ Jos Peircen nuolta merkitään merkillä $\downarrow$, seuraavat lauseet ovat aina tosia:
+	\begin{align*}
+	\lnot A &\lequiv A \downarrow A, \\
+	A \land B &\lequiv (A \downarrow A) \downarrow (B \downarrow B), \\
+	A \lor B &\lequiv (A \downarrow B) \downarrow (A \downarrow B), \\
+	\end{align*}
+	}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -588,11 +635,16 @@ Lause on loogisesti ristiriitainen.
 	§ Osoita, että jos lauseet $A$ ja $B$ saavat
 	vain arvoja $0$ ja $1$, niin edellä mainitut määritelmät johtavat
 	klassisen kaksiarvoisen logiikan totuustauluihin.
-	§ Osoita, että sumeassa logiikassa $\lnot(A\land B)
-	\lequiv \lnot A \lor \lnot B$.
+	§ Osoita, että sumeassa logiikassa $\lnot(A\land B)$ ja $\lnot A \lor \lnot B$ ovat loogisesti ekvivalentit.
 	§ Etsi Internetistä sumean logiikan
 	käyttökohteita.
 	}
+	
+	\begin{vastaus}
+	\alakohdat{
+	§ $\lnot A = 0,7$, $A\land B = 0,3$, $A\lor B = 0,5$, $A\to B = 1$
+	}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
