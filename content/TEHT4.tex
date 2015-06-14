@@ -224,18 +224,28 @@
 	\begin{tehtava}
 		Olkoon $n$ kokonaisluku. Todista, että luku $n^{2} + 3n + 1$ on aina pariton. Käytä a) suoraa b) epäsuoraa
 		todistusta.
+		\begin{vastaus}
+			\alakohdat{
+				§ On kaksi vaihtoehtoa: joka $n$ on parillinen, eli muotoa $2k$, tai pariton, muotoa $2k + 1$, jollain kokonaisluvulla $k$. Ensimmäisessä tapauksessa $n^2 + 3n + 1 = (2k)^2+3(2k)+1 = 2(2k^2+3k)+1$ on pariton, toisessa $n^2 + 3n + 1 = (2k + 1)^2+3*(2k +1)+1 = 2(2k^2 + 5k + 2)+1$ on pariton. Siis luku on aina pariton.
+				§Tehdään vastaoletus: $n^2 + 3n + 1$ on parillinen. Nyt on taas kaksi vaihtoehtoa, $n$ on parillinen tai pariton. $a)$-kohdan tapaan molemmissa huomataan, että $n^2 + 3n + 1$ on pariton, vastoin oletusta. Siis luvun on oltava pariton.
+				}
+				Huomaa, että molemmat todistukset ovat rakenteeltaa samanlaiset: suoran todistuksen voi aina muokata epäsuoraksi, ja toisinpäin.
+		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
 		Todista, että ei ole olemassa sellaisia positiivisia kokonaislukuja $x$ ja $y$, jotka toteuttavat
 		yhtälön $4^{x} = 7^{y}$.
+		\begin{vastaus}
+			Huomaa, että yhtälön vasen puoli on aina parillinen, kun $x > 0$, ja oikea puoli pariton, joten yhtälöllä ei voi olla ratkaisuja.
+		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
 		Todista väite todeksi tai epätodeksi: Kahden
 		irrationaaliluvun tulo voi olla rationaaliluku.
 		\begin{vastaus}
-			(Tosi.)
+			Väite on tosi. Esimerkiksi minkä tahansa irrationaaliluvun tulo luvun käänteisluvun kanssa on $1$, eli rationaalinen. Siis esim. $\sqrt{2} \cdot \sqrt{2}^{-1} = 1 \in \qq$
 		\end{vastaus}
 	\end{tehtava}
 
@@ -244,11 +254,31 @@
 		Tarvitset seuraavaa lisätietoa: jos kahden kokonaisluvun
 		tulo on jaollinen luvulla 5, niin ainakin toinen tulon
 		tekijöistä on jaollinen luvulla 5.
+		\begin{vastaus}
+			Tehdään vastaoletus: $\sqrt{5}$ on rationaalinen. Tällöin voidaan valita yhteistekijättömät luvut $m$ ja $n$, joille $\sqrt{5} = \frac{m}{n}$. Nyt
+			\begin{align*}
+				\sqrt{5} = \frac{m}{n} \\
+				5n^2 = m^2.
+			\end{align*}
+			Siis $5n^2 = m^2$ on jaollinen  $5$:llä. Siis tehtävänannon aputuloksen nojalla $m$ on jaollinen $5$:llä. Olkoon siis $m = 5k$ jollain kokonaisluvulla $k$. Siis
+			\begin{align*}
+				5n^2 = \left(5k\right)^2 \\
+				n^2 = 5k^2.
+			\end{align*}
+			Täysin vastaavalla päättelyllä nähdään, että myös $n$ on jaollinen $5$:llä. Mutta tämä on ristiriidassa $m$ ja $n$:n yhteistekijättömyyden kanssa: ristiriita, siis $\sqrt{5}$ on irrationaalinen.
+		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
 		Tarkastellaan paritonta määrää parittomia kokonaislukuja.
 		Todista, että lukujen keskiarvo ei voi olla nolla.
+		\begin{vastaus}
+			Jos lukuja on $n = 2k + 1$ kappaletta, ja ne ovat $2a_1 + 1, 2a_2+1,  \ldots, 2a_{n} + 1$ niiden summa on
+			\[
+			(2a_1 + 1) + (2a_2+1) +  \ldots + (2a_{n} + 1) = 2(a_1 + a_2 +  \ldots +a_{n}) + n =  2(a_1 + a_2 +  \ldots +a_{n} + k) + 1.
+			\]
+			Lukujen summa on siis pariton, eikä se voi olla nolla: täten ei voi olla myöskään niiden keskiarvo.
+		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
@@ -258,6 +288,9 @@
 		missä $p = \frac{1}{2}(a+b+c)$. Todista, että jos kolmion
 		sivujen pituudet ovat luvulla 4 jaollisia kokonaislukuja,
 		niin kolmion pinta-alan neliö on jaollinen luvulla 16.
+		\begin{vastaus}
+			Sivujen pituudet voidaan kirjoittaa muodossa $4k_a$, $4k_b$ ja  $4k_c$. Nyt siis esim. $p = \frac{1}{2}(a+b+c) = 2(k_a + k_b + k_c) = 2n$, ja täysin vastaavasti esim. $p - a =2(-k_a + k_b + k_c) = 2n_a$. Nyt siis alan neliö on muotoa $(2n \cdot 2n_{a} \cdot 2n_{b} \cdot 2n_{c}) = 16(nn_an_bn_c)$, eli $16$:a jaollinen. 
+		\end{vastaus}
 	\end{tehtava}
 
 	\begin{tehtava}
@@ -276,10 +309,16 @@
 			olemassa sellaisia keskenään eri suuria kokonaislukuja
 			$x$, $y$ ja $z$, jotka toteuttavat yhtälön $x^{3} + y^{3} = z^{3}$.
 		}
+		
 		\begin{vastaus}
 			\alakohdat{
-				§ 
-				§ (Epätosi eli on olemassa.)
+				§ Jos yhtälöllä olisi positiivisia rationaaliratkaisuja, $x$, $y$ ja $z$, ne voitaisiin kirjoittaa muodossa lavennettuna muodossa $x = \frac{x'}{d}$, $y = \frac{y'}{d}$ ja $z = \frac{z'}{d}$. Nyt
+				\begin{align*}
+					\left(\frac{x'}{d}\right)^n + \left(\frac{y'}{d}\right)^n = \left(\frac{z'}{d}\right)^n \\
+					x'^n + y'^n = x'^n,
+				\end{align*}
+				vastoin Fermat'n suurta lausetta.
+				§ Väite on epätosi. Esim. luvut $x = 1$, $y = -1$ ja  $z = 0$ toteuttavat yhtälön.
 			}
 		\end{vastaus}
 	\end{tehtava}
@@ -287,6 +326,14 @@
 	\begin{tehtava}
 		Olkoot $a$ ja $b$ reaalilukuja, joille pätee $0 \le a \le 1$ ja $0 \le b \le 1$.
 		Todista, että tällöin $0 \le \frac{a + b}{1 + ab} \le 1$.
+		\begin{vastaus}
+			Vasen epäyhtälö pätee, koska keskellä oleva lauseke on selkeästi epänegatiivinen. Oikea epäyhtälö voidaan kertoa positiivisella luvulla $1 + ab$, jolloin se saadaan yhtäpitävään muotoon $a  + b \le 1 + ab$, josta edelleen
+			\begin{align*}
+				0 \le 1+ ab - a - b \\
+				0 \le (1-a)(1-b),
+			\end{align*}
+			mikä on selkeästi totta, sillä molemmat tulon luvut ovat positiivisia oletuksen nojalla.
+		\end{vastaus}
 	\end{tehtava}
 
 \end{kotitehtavasivu}
